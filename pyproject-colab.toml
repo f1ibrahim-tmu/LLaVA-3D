@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,27 +7,59 @@ name = "llava-3d"
 version = "1.0.0"
 description = "A Simple yet Effective Pathway to Empowering LMMs with 3D-awareness."
 readme = "README.md"
-requires-python = "==3.11"
+requires-python = "==3.11.11"
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+license = { text = "Apache-2.0" }
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License"
 ]
 dependencies = [
-    "transformers", "tokenizers", "sentencepiece", "shortuuid",
-    "accelerate", "peft", "bitsandbytes",
-    "pydantic", "markdown2[all]", "numpy", "scikit-learn",
-    "gradio", "gradio_client",
-    "requests", "httpx", "uvicorn", "fastapi",
-    "einops", "einops-exts", "timm", "opencv-python", "protobuf"
+  "transformers==4.37.2",
+  "tokenizers",
+  "sentencepiece",
+  "shortuuid",
+  "accelerate",
+  "peft",
+  "bitsandbytes",
+  "pydantic",
+  "numpy",
+  "markdown2[all]",
+  "scikit-learn",
+  "gradio",
+  "gradio_client",
+  "requests",
+  "httpx",
+  "uvicorn",
+  "fastapi",
+  "einops",
+  "einops-exts",
+  "timm",
+  "opencv-python",
+  "protobuf",
+  "torch==2.5.1",
+  "torchvision==0.20.1",
+  "torchaudio==2.5.1",
+  "flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp311-cp311-linux_x86_64.whl",
+  "torch-scatter",
+  "torch-sparse",
+  "torch-cluster",
+  "torch-spline-conv",
+  "torch-geometric"
 ]
 
 [project.optional-dependencies]
-train = ["deepspeed", "ninja", "wandb"]
-build = ["build", "twine"]
-
+train = [
+  "deepspeed",
+  "ninja",
+  "wandb"
+]
+build = [
+  "build",
+  "twine"
+]
 
 [tool.setuptools.packages.find]
-exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
-
-[tool.wheel]
 exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]

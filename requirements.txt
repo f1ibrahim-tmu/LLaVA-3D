@@ -1,0 +1,43 @@
+# Python version required: 3.11.11
+
+transformers==4.37.2
+tokenizers
+sentencepiece
+shortuuid
+accelerate
+peft
+bitsandbytes
+pydantic
+numpy
+markdown2[all]
+scikit-learn
+gradio
+gradio_client
+requests
+httpx
+uvicorn
+fastapi
+einops
+einops-exts
+timm
+opencv-python
+protobuf
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+flash-attn 
+torch-scatter
+torch-sparse
+torch-cluster
+torch-spline-conv
+torch-geometric
+
+# for training:
+deepspeed
+ninja
+wandb
+
+# Optional dependencies for build:
+# build
+# twine
+

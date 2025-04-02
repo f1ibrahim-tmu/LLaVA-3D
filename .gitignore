@@ -1,2 +1,5 @@
 *.whl
 *.egg-info/
+playground/
+*__pycache__*
+data/

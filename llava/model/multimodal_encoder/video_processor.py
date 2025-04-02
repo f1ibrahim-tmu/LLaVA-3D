@@ -10,6 +10,8 @@ import json
 import cv2
 from scipy.spatial.transform import Rotation as R
 
+# import ipdb
+
 
 class RGBDVideoProcessor(ProcessorMixin):
     attributes = []
@@ -177,7 +179,7 @@ class RGBDVideoProcessor(ProcessorMixin):
         dataset = video.split('/')[-2]
         video_folder = str(Path(*video_path.parts[:-2]))
         video_info = self.scene[video_name]
-        video_frames = [str(key) for key in video_info.keys() if key.startswith(dataset)]  # remove other paramters
+        video_frames = [str(key) for key in video_info.keys() if dataset in key]  # remove other paramters
 
         if len(video_frames) > self.num_frames:
             sample_factor = len(video_frames) // self.num_frames
@@ -377,6 +379,7 @@ class RGBDVideoProcessor(ProcessorMixin):
         elif 'openscan' in video:
             video_info = self.extract_openscan_video(video)
         else:
+            #breakpoint()
             video_info = self.extract_embodiedscan_video(video)
 
         dataset = video_info['dataset']

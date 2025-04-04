@@ -1,4 +1,4 @@
-*.whl
+*.whl*
 *.egg-info/
 playground/
 *__pycache__*

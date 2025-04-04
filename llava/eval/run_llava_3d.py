@@ -62,10 +62,10 @@ def eval_model(args):
 
     if args.video_path:
         print(f"Video path provided: {args.video_path}")
-        mode = 'video'
+        mode = "video"
     if args.image_file:
         print(f"Image file provided: {args.image_file}")
-        mode = 'image'
+        mode = "image"
 
     model_name = get_model_name_from_path(args.model_path)
     tokenizer, model, processor, context_len = load_pretrained_model(
@@ -76,12 +76,12 @@ def eval_model(args):
 
     matches = re.search(r"\[([^\]]+)\]", qs)
     if matches:
-        coord_list = [float(x) for x in matches.group(1).split(',')]
+        coord_list = [float(x) for x in matches.group(1).split(",")]
         coord_list = [round(coord, 3) for coord in coord_list[:3]]
         qs = re.sub(r"\[([^\]]+)\]", "<boxes>", qs)
         clicks = torch.tensor([coord_list])
     else:
-        clicks = torch.zeros((0,3))
+        clicks = torch.zeros((0, 3))
 
     image_token_se = DEFAULT_IM_START_TOKEN + DEFAULT_IMAGE_TOKEN + DEFAULT_IM_END_TOKEN
     if IMAGE_PLACEHOLDER in qs:
@@ -124,32 +124,32 @@ def eval_model(args):
     conv.append_message(conv.roles[1], None)
     prompt = conv.get_prompt()
 
-    if mode == 'image':
+    if mode == "image":
         image_files = image_parser(args)
         images = load_images(image_files)
         image_sizes = [x.size for x in images]
-        images_tensor = process_images(
-            images,
-            processor['image'],
-            model.config
-        ).to(model.device, dtype=torch_dtype)
+        images_tensor = process_images(images, processor["image"], model.config).to(
+            model.device, dtype=torch_dtype
+        )
         depths_tensor = None
         poses_tensor = None
         intrinsics_tensor = None
         clicks_tensor = None
 
-    if mode == 'video':
+    if mode == "video":
         videos_dict = process_videos(
             args.video_path,
-            processor['video'],
-            mode='random',
+            processor["video"],
+            mode="random",
             device=model.device,
-            text=args.query
+            text=args.query,
         )
-        images_tensor = videos_dict['images'].to(model.device, dtype=torch_dtype)
-        depths_tensor = videos_dict['depths'].to(model.device, dtype=torch_dtype)
-        poses_tensor = videos_dict['poses'].to(model.device, dtype=torch_dtype)
-        intrinsics_tensor = videos_dict['intrinsics'].to(model.device, dtype=torch_dtype)
+        images_tensor = videos_dict["images"].to(model.device, dtype=torch_dtype)
+        depths_tensor = videos_dict["depths"].to(model.device, dtype=torch_dtype)
+        poses_tensor = videos_dict["poses"].to(model.device, dtype=torch_dtype)
+        intrinsics_tensor = videos_dict["intrinsics"].to(
+            model.device, dtype=torch_dtype
+        )
         clicks_tensor = clicks.to(model.device, dtype=torch.bfloat16)
 
     input_ids = (

@@ -39,8 +39,11 @@ def eval_model(args):
     questions = get_chunk(questions, args.num_chunks, args.chunk_idx)
     answers_file = os.path.expanduser(args.answers_file)
     os.makedirs(os.path.dirname(answers_file), exist_ok=True)
-    ans_file = open(answers_file, "w")
-    for line in tqdm(questions):
+    
+    # ans_file = open(answers_file, "w")
+    ans_list = [] # a list of dictionaries, to be written after to the file
+
+    for line in tqdm(questions): # The key info for the questions file
         idx = line["question_id"]
         video_file = line["video"]
         video_path = os.path.join(args.video_folder, video_file)
@@ -58,7 +61,7 @@ def eval_model(args):
 
         input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
 
-        videos_dict = process_videos(
+        videos_dict = process_videos( # just passing in the scene on the fly
             video_path,
             processor['video'],
             mode='random',
@@ -90,13 +93,22 @@ def eval_model(args):
         outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)[0].strip()
 
         ans_id = shortuuid.uuid()
-        ans_file.write(json.dumps({"question_id": idx,
-                                   "prompt": cur_prompt,
-                                   "text": outputs,
-                                   "answer_id": ans_id,
-                                   "model_id": model_name,
-                                   "metadata": {}}) + "\n")
-        ans_file.flush()
+        ans_list.append({"question_id": idx,
+                         "prompt": cur_prompt,
+                         "text": outputs,
+                         "answer_id": ans_id,
+                         "model_id": model_name,
+                         "metadata": {}})
+
+        # ans_file.write(json.dumps({"question_id": idx,
+        #                            "prompt": cur_prompt,
+        #                            "text": outputs,
+        #                            "answer_id": ans_id,
+        #                            "model_id": model_name,
+        #                            "metadata": {}}) + "\n")
+        # ans_file.flush()
+    ans_file = open(answers_file, "w")
+    json.dump(ans_list, ans_file, indent=4)
     ans_file.close()
 
 if __name__ == "__main__":

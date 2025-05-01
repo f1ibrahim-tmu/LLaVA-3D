@@ -6,6 +6,7 @@ import csv
 import numpy as np
 from tqdm import tqdm
 import mmengine
+import argparse
 
 # refer to LEO: embodied-generalist
 # https://github.com/embodied-generalist/embodied-generalist/blob/477dc44b8b18dbfbe6823c307436d896ec8b062e/data/data_utils.py#L322-L379
@@ -125,10 +126,16 @@ def calc_sqa3d_score(preds, gts):
     return val_scores
 
 
-pred_json = 'llava-3d-7b-sqa3d_test_answer.json'
-preds = [json.loads(q) for q in open(pred_json, "r")]
-gt_json = 'playground/data/annotations/llava3d_sqa3d_test_answer.json'
-gts = mmengine.load(gt_json)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--pred-json", type=str, default='llava-3d-7b-sqa3d_test_answer.json')
+    parser.add_argument("--gt-json", type=str, default='playground/data/annotations/llava3d_sqa3d_test_answer.json')
+    args = parser.parse_args()
 
-val_scores = calc_sqa3d_score(preds, gts)
-print(val_scores)
+    pred_json = args.pred_json 
+    preds = json.load(open(pred_json, 'r')) #[json.loads(q) for q in open(pred_json, "r")]
+    gt_json = args.gt_json 
+    gts = mmengine.load(gt_json)
+
+    val_scores = calc_sqa3d_score(preds, gts)
+    print(val_scores)

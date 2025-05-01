@@ -10,6 +10,7 @@ import json
 import cv2
 from scipy.spatial.transform import Rotation as R
 
+import pdb
 # import ipdb
 
 
@@ -54,14 +55,14 @@ class RGBDVideoProcessor(ProcessorMixin):
         do_convert_rgb (`bool`, *optional*, defaults to `True`):
             Whether to convert the image to RGB.
     """
-    def __init__(self, vision_tower_name, num_frames=24, tokenizer=None, **kwargs):
+    def __init__(self, vision_tower_name, num_frames=24, tokenizer=None, **kwargs): # NOTE: this num_frames parameter specifies how many frames we are allowed to use from the video. We can play around with this to get better results.
         super().__init__(**kwargs)
         self.vision_tower_name = vision_tower_name
         self.image_processor = CLIPImageProcessor.from_pretrained(self.vision_tower_name)
         self.tokenizer = tokenizer
         self.num_frames = num_frames
-
-        with open('./playground/data/annotations/embodiedscan_infos_full.json', 'r') as file:
+        
+        with open('/root/SceneUnderstanding/LLaVA-3D/playground/data/annotations/embodiedscan_infos.json', 'r') as file: # NOTE: for generalization, this is a symlink to a file set from a script.
             self.scene = json.load(file)
 
     def valid_pose(self, video_poses):
@@ -175,11 +176,12 @@ class RGBDVideoProcessor(ProcessorMixin):
     def extract_embodiedscan_video(self, video):
         # video is the full path for the video
         video_path = Path(video)
-        video_name = str(Path(*video_path.parts[-2:]))
+        video_name = str(Path(*video_path.parts[-1:]))
         dataset = video.split('/')[-2]
-        video_folder = str(Path(*video_path.parts[:-2]))
-        video_info = self.scene[video_name]
-        video_frames = [str(key) for key in video_info.keys() if dataset in key]  # remove other paramters
+        video_folder = str(Path(*video_path.parts[:-3]))
+        dataset = 'ScanNet' # FIXME: Avoid hardcoding the dataset prefix
+        video_info = self.scene[dataset.lower() + '/' + video_name] 
+        video_frames = [str(key) for key in video_info.keys() if dataset in key]  # remove other parameters
 
         if len(video_frames) > self.num_frames:
             sample_factor = len(video_frames) // self.num_frames
@@ -202,7 +204,7 @@ class RGBDVideoProcessor(ProcessorMixin):
         for frame in sample_frames:
             pose = np.array(video_info[frame]['pose']) # 4x4 array
             image = os.path.join(video_folder, frame)
-            if 'scannet' in frame:
+            if 'ScanNet' in frame:
                 depth = os.path.join(video_folder, video_info[frame]['depth'])
             elif '3rscan' in frame:
                 depth = os.path.join(video_folder, frame.replace('color.jpg', 'depth.png').replace('3rscan', '3rscan_depth'))
@@ -367,6 +369,7 @@ class RGBDVideoProcessor(ProcessorMixin):
             video:  1. str video id / single video frame
                     2. list  list of video frames
         """
+
         if isinstance(video, list):   # list of video frames only could be embodiedscan data
             video_info = self.extract_embodiedscan_frames(video)
         elif video.endswith('png') or video.endswith('jpg'):

@@ -47,7 +47,8 @@ dependencies = [
   "torch-sparse",
   "torch-cluster",
   "torch-spline-conv",
-  "torch-geometric"
+  "torch-geometric",
+  "mmengine-lite"
 ]
 
 [project.optional-dependencies]

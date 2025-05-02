@@ -8,6 +8,9 @@ from tqdm import tqdm
 import mmengine
 import argparse
 
+from model_sqa3d import get_chunk, split_list
+import pdb
+
 # refer to LEO: embodied-generalist
 # https://github.com/embodied-generalist/embodied-generalist/blob/477dc44b8b18dbfbe6823c307436d896ec8b062e/data/data_utils.py#L322-L379
 def clean_answer(data):
@@ -94,7 +97,8 @@ def calc_sqa3d_score(preds, gts):
     em_type = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
     em_refined_type = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
     print("Total samples:", len(preds))
-    assert len(preds) == len(gts)  # number of samples
+
+    assert len(preds) == len(gts) 
     for pred, gt in tqdm(zip(preds, gts)):
         question_id = pred['question_id']
         gt_question_id = gt['question_id']
@@ -128,14 +132,32 @@ def calc_sqa3d_score(preds, gts):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pred-json", type=str, default='llava-3d-7b-sqa3d_test_answer.json')
-    parser.add_argument("--gt-json", type=str, default='playground/data/annotations/llava3d_sqa3d_test_answer.json')
+    parser.add_argument("--pred-json", type=str, nargs='+', default='llava-3d-7b-sqa3d_test_answer.json', help="path(s) to 1+ jsons of LLaVa-3D predictions")
+    parser.add_argument("--gt-json", type=str, default='playground/data/annotations/llava3d_sqa3d_test_answer.json', help="path to the ground truth json")
+    parser.add_argument("--num-chunks", type=int, default=1, help="number of chunks that the predictions were partitioned into (for distributed inference)")
+    parser.add_argument("--chunk-idx", type=int, nargs='+', default=0, help="list of 1+ chunk indices, representing the index of each args.pred_json entry; each should be in range [0, args.pred_json], in the same order of the args.pred_json files")
     args = parser.parse_args()
 
-    pred_json = args.pred_json 
-    preds = json.load(open(pred_json, 'r')) #[json.loads(q) for q in open(pred_json, "r")]
-    gt_json = args.gt_json 
-    gts = mmengine.load(gt_json)
+    assert len(args.pred_json) == len(args.chunk_idx)
+
+    preds = []
+    for pred_json in args.pred_json:
+        with open(pred_json, 'r') as f:
+            preds += json.load(f)
+        f.close()
+    
+    gt = mmengine.load(args.gt_json)
+    gts = []
+    for chunk in args.chunk_idx:
+        gts += get_chunk(gt, args.num_chunks, chunk)
+
+    breakpoint()
+
+    # gt_json = args.gt_json 
+    # gts = mmengine.load(gt_json) 
+    # gts = get_chunk(gts, args.num_chunks, args.chunk_idx)
+
+    # TODO: rework this so that we can handle the case where this is related to a chunk (i.e. take the same subset), and this script can also handle where there are multiple incoming jsons (the different chunks).
 
     val_scores = calc_sqa3d_score(preds, gts)
     print(val_scores)

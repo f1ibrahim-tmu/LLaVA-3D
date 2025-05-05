@@ -151,7 +151,7 @@ if __name__ == "__main__":
     for chunk in args.chunk_idx:
         gts += get_chunk(gt, args.num_chunks, chunk)
 
-    breakpoint()
+    #breakpoint()
 
     # gt_json = args.gt_json 
     # gts = mmengine.load(gt_json) 

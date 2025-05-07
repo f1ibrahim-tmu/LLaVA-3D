@@ -8,7 +8,11 @@ from tqdm import tqdm
 import mmengine
 import argparse
 
-from model_sqa3d import get_chunk, split_list
+try:
+    from model_sqa3d import get_chunk, split_list
+except ModuleNotFoundError:
+    from llava.eval.model_sqa3d import get_chunk, split_list
+
 import pdb
 
 # refer to LEO: embodied-generalist
@@ -150,14 +154,6 @@ if __name__ == "__main__":
     gts = []
     for chunk in args.chunk_idx:
         gts += get_chunk(gt, args.num_chunks, chunk)
-
-    #breakpoint()
-
-    # gt_json = args.gt_json 
-    # gts = mmengine.load(gt_json) 
-    # gts = get_chunk(gts, args.num_chunks, args.chunk_idx)
-
-    # TODO: rework this so that we can handle the case where this is related to a chunk (i.e. take the same subset), and this script can also handle where there are multiple incoming jsons (the different chunks).
 
     val_scores = calc_sqa3d_score(preds, gts)
     print(val_scores)

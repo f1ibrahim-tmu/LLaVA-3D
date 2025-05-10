@@ -201,7 +201,6 @@ def qwen_video_test(image_paths: list, text_prompt: str, model_path: str, device
     )
     # print(model.hf_device_map)
     # print(model.device)
-    print("image path length: ", len(image_paths))
     processor = AutoProcessor.from_pretrained(model_path)
     text = processor.apply_chat_template(
         messages, tokenize=False, add_generation_prompt=True
@@ -243,6 +242,11 @@ def parse_json(json_output):
         if line == "```json":
             json_output = "\n".join(lines[i+1:])  # Remove everything before "```json"
             json_output = json_output.split("```")[0]  # Remove everything after the closing "```"
+            # remove [ and ] if lines[i+1] is [
+            if lines[i + 1] == "[":
+                # remove the first [ and last ] from the json_output which occupies the first and last line
+                json_output = json_output[1:-2]
+                print("after removing: ", json_output)
             break  # Exit the loop once "```json" is found
     return json_output
 
@@ -284,6 +288,38 @@ def save_output(output_text: str, question: dict, output_file_path: str):
                 f.write("\n")
     except json.JSONDecodeError:
         print(f"Failed to parse output: {output_text}")
+        with open(output_file_path, "a") as f:
+            json.dump(
+                {
+                    "reason": "Failed to parse",
+                    "text": output_text,
+                    "question_id": question["question_id"],
+                    "scene_name": question["video"],
+                    "prompt": question["text"],
+                },
+                f,
+                indent=4,
+                ensure_ascii=False,
+            )
+            f.write("\n")
+
+def detect_repeated_questions(questions: list) -> bool:
+    """
+    Detect repeated questions in the list of questions.
+    Args:
+        questions (list): List of questions.
+    Returns:
+        list: List of repeated questions.
+    """
+    seen_questions = set()
+    repeated_questions = []
+    for question in questions:
+        question_id = question["question_id"]
+        if question_id in seen_questions:
+            repeated_questions.append(question)
+        else:
+            seen_questions.add(question_id)
+    return len(repeated_questions) > 0
 
 
 def main(question_file_path:str, answer_file_path:str, image_folder_path:str, export_json_path:str, model_path:str):
@@ -294,8 +330,7 @@ def main(question_file_path:str, answer_file_path:str, image_folder_path:str, ex
     # Find image paths in questions
     questions = find_image_paths(questions, image_folder_path, 5)
 
-    for question in questions:
-        # print(question)
+    for i, question in enumerate(questions):
         # Get the image paths for the first question
         image_paths = question["scene_images_path"]
         # Get the text prompt for the first question
@@ -319,5 +354,5 @@ if __name__ == "__main__":
     model_path = "Qwen/Qwen2.5-VL-7B-Instruct"
     image_folder_path = "/data/SceneUnderstanding/ScanNet/scans"
     # image_folder_path = "/root/research_projects/LLaVA-3D/demo/scannet/posed_images/scene0356_00/"
-    export_path = "/root/research_projects/LLaVA-3D/reason_evaluation/qwen2.5vl_3d_test_results.json"
+    export_path = "./qwen2.5vl_3d_test_results.json"
     main(question_file_path, answer_file_path, image_folder_path, export_path, model_path)

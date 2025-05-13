@@ -1,9 +1,10 @@
-from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
-from qwen_vl_utils import process_vision_info
+# from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
+# from qwen_vl_utils import process_vision_info
 import os
 import torch
 import json
 import gc
+
 
 def load_images(folder_path: str):
     """
@@ -70,7 +71,9 @@ def find_image_paths(questions: list, folder_path: str, sample_rate: int = 1):
     image_paths = []
     for question in questions:
         scene_name = question["video"]
-        scene_folder_path = os.path.join(folder_path, scene_name, scene_name+"_sens", "color")
+        scene_folder_path = os.path.join(
+            folder_path, scene_name, scene_name + "_sens", "color"
+        )
         # add all jpg files in the folder to the image_paths list
         count = 0
         for filename in os.listdir(scene_folder_path):
@@ -87,7 +90,9 @@ def find_image_paths(questions: list, folder_path: str, sample_rate: int = 1):
 # You can set the maximum tokens for a video through the environment variable VIDEO_MAX_PIXELS
 # based on the maximum tokens that the model can accept.
 # export VIDEO_MAX_PIXELS = 32000 * 28 * 28 * 0.9
-def qwen_video_test(image_paths: list, text_prompt: str, model_path: str, device: str = "cuda:2"):
+def qwen_video_test(
+    image_paths: list, text_prompt: str, model_path: str, device: str = "cuda:2"
+):
     # You can directly insert a local file path, a URL, or a base64-encoded image into the position where you want in the text.
     messages = [
         # Image
@@ -235,13 +240,17 @@ def qwen_video_test(image_paths: list, text_prompt: str, model_path: str, device
     return output_text
 
 
-def parse_json(json_output):
+def parse_json(json_output) -> str:
     # Parsing out the markdown fencing
     lines = json_output.splitlines()
     for i, line in enumerate(lines):
         if line == "```json":
-            json_output = "\n".join(lines[i+1:])  # Remove everything before "```json"
-            json_output = json_output.split("```")[0]  # Remove everything after the closing "```"
+            json_output = "\n".join(
+                lines[i + 1 :]
+            )  # Remove everything before "```json"
+            json_output = json_output.split("```")[
+                0
+            ]  # Remove everything after the closing "```"
             # remove [ and ] if lines[i+1] is [
             if lines[i + 1] == "[":
                 # remove the first [ and last ] from the json_output which occupies the first and last line
@@ -251,12 +260,57 @@ def parse_json(json_output):
     return json_output
 
 
+def sglang_qwen_video_test(
+    image_paths: list, text_prompt: str, model_path: str, port: int = 8080
+):
+    client = OpenAI(base_url=f"http://localhost:{port}/v1", api_key="None")
+
+    class Answer(BaseModel):
+        reason: str = Field(..., description="reason")
+        answer: str = Field(..., description="answer")
+
+    response = client.chat.completions.create(
+        model=model_path,
+        messages=[
+            {
+                "role": "user",
+                "content": [
+                    *[
+                        {
+                            "type": "image_url",
+                            "image_url": {"url": path},
+                        }
+                        for path in image_paths
+                    ],
+                    {
+                        "type": "text",
+                        "text": text_prompt,
+                    },
+                ],
+            }
+        ],
+        temperature=0,
+        max_tokens=128,
+        response_format={
+            "type": "json_schema",
+            "json_schema": {
+                "name": "qwen_output",
+                "schema": Answer.model_json_schema(),
+            },
+        },
+    )
+
+    response_content = response.choices[0].message.content
+    final_json_output = Answer.model_validate_json(response_content)
+    return final_json_output.model_dump_json()
+
+
 def save_output(output_text: str, question: dict, output_file_path: str):
     # Parse the output text to extract the reasoning and answer
     # This is a placeholder implementation. You may need to adjust it based on the actual output format.
     try:
         print(output_text)
-        output_json = json.loads(parse_json(output_text))
+        output_json = json.loads(output_text)
         reasoning = output_json.get("reason", "")
         answer = output_json.get("answer", "")
         # append this new json enry to the output file
@@ -303,6 +357,7 @@ def save_output(output_text: str, question: dict, output_file_path: str):
             )
             f.write("\n")
 
+
 def detect_repeated_questions(questions: list) -> bool:
     """
     Detect repeated questions in the list of questions.
@@ -322,30 +377,49 @@ def detect_repeated_questions(questions: list) -> bool:
     return len(repeated_questions) > 0
 
 
-def main(question_file_path:str, answer_file_path:str, image_folder_path:str, export_json_path:str, model_path:str):
+def main(
+    question_file_path: str,
+    answer_file_path: str,
+    image_folder_path: str,
+    export_json_path: str,
+    model_path: str,
+    use_sglang: bool = False,
+    port: int = 30000,
+):
     # Load questions from a JSON file
     questions = load_questions_json(question_file_path)
     # Load answers from a JSON file
     questions = add_answers_to_questions(questions, answer_file_path)
     # Find image paths in questions
-    questions = find_image_paths(questions, image_folder_path, 5)
+    sample_rate = 5 if use_sglang else 5
+    questions = find_image_paths(questions, image_folder_path, sample_rate)
 
-    for i, question in enumerate(questions):
+    for question in questions:
         # Get the image paths for the first question
         image_paths = question["scene_images_path"]
         # Get the text prompt for the first question
         question_text = question["text"]
         # Get text prompt from the question
-        text_prompt = question_text + " Please reason step by step, and give your reason and answer in the json format with field reason and answer."
+        text_prompt = (
+            question_text
+            + " Please reason step by step, and give your reason and answer in the json format with field reason and answer."
+        )
         # Run the Qwen video test
-        output_text = qwen_video_test(image_paths, text_prompt, model_path)
-        save_output(output_text[0], question, export_json_path)
+        output_text = (
+            qwen_video_test(image_paths, text_prompt, model_path)
+            if not use_sglang
+            else sglang_qwen_video_test(image_paths, text_prompt, model_path, port)
+        )
+
+        output = output_text if use_sglang else parse_json(output_text[0])
+        save_output(output, question, export_json_path)
 
     # Load images from a folder
     # regular_images, _ = load_images(image_folder_path)
     # text_prompt = "Tell me the only object that I could see from the other room and describe the object. Please reason step by step, and give your reason and answer in the json format with field reason and answer."
     # output_text = qwen_video_test(regular_images, text_prompt, model_path)
     # save_output(output_text[0], None, export_json_path)
+
 
 if __name__ == "__main__":
     # Load images from a folder
@@ -355,4 +429,20 @@ if __name__ == "__main__":
     image_folder_path = "/data/SceneUnderstanding/ScanNet/scans"
     # image_folder_path = "/root/research_projects/LLaVA-3D/demo/scannet/posed_images/scene0356_00/"
     export_path = "./qwen2.5vl_3d_test_results.json"
-    main(question_file_path, answer_file_path, image_folder_path, export_path, model_path)
+    port = 30000
+    use_sglang = True
+    if use_sglang:
+        from openai import OpenAI
+        from pydantic import BaseModel, Field
+    else:
+        from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
+        from qwen_vl_utils import process_vision_info
+    main(
+        question_file_path,
+        answer_file_path,
+        image_folder_path,
+        export_path,
+        model_path,
+        use_sglang,
+        port,
+    )

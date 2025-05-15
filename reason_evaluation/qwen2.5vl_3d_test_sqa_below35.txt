@@ -1,0 +1,426 @@
+Total samples: 424
+pred_answer: chair closest to you is white gt_answers: tan
+pred_answer: amount of printers in video can be divided by three gt_answers: two
+pred_answer: to left along wall, there is wall-mounted shelf or storage unit gt_answers: sink
+pred_answer: toilet cover's position cannot be determined from given video gt_answers: down
+pred_answer: there is no clear evidence in video that water is leaking through ceiling and dripping into specific container gt_answers: bucket
+pred_answer: table is round gt_answers: round
+pred_answer: to exit room, you should go towards right side of frame gt_answers: right
+pred_answer: even gt_answers: even
+pred_answer: you are standing on green bath mat in bathroom gt_answers: rug
+pred_answer: there are four chairs in front of you gt_answers: five
+pred_answer: toilet gt_answers: toilet
+pred_answer: white cabinet or storage unit gt_answers: bathtub
+pred_answer: stairs lead upwards gt_answers: right
+pred_answer: no gt_answers: no
+pred_answer: yes, there is light in room gt_answers: yes
+pred_answer: no, shower curtain is not same color as bathtub gt_answers: no
+pred_answer: there is nothing on right side of toilet gt_answers: handicap bar
+pred_answer: shower curtain is partially closed gt_answers: partially
+pred_answer: no, you cannot see bin where you are standing gt_answers: no
+pred_answer: stairs are located on left side gt_answers: behind
+pred_answer: go to left side of room gt_answers: left
+pred_answer: cabinet is white gt_answers: brown
+pred_answer: no, you cannot see bin where you are standing gt_answers: no
+pred_answer: no, you cannot see bulletin board where you are standing gt_answers: yes
+pred_answer: no, you cannot grab towels without moving gt_answers: no
+pred_answer: first object you'd run into on your right is toilet gt_answers: bathroom cabinet
+pred_answer: door is partially open gt_answers: unknown
+pred_answer: no, door is not on your left gt_answers: yes
+pred_answer: go to left side of room gt_answers: right
+pred_answer: no, video does not provide enough information to determine if number of bulletin boards can be divided by three gt_answers: no
+pred_answer: there are towels hanging on rack above sink that you can use to dry your hands gt_answers: towels
+pred_answer: white cabinet or storage unit gt_answers: toilet paper holder
+pred_answer: there is one table in room gt_answers: two
+pred_answer: there is one printer on right side gt_answers: four
+pred_answer: no, you cannot use mirror without turning or moving because mirror is positioned above sink, and camera's perspective suggests that person would need to turn their head or move slightly to look into mirror gt_answers: no
+pred_answer: sink is biggest object between five o'clock and four o'clock gt_answers: toilet
+pred_answer: highest sitting object to your right that is not attached to wall is shelf gt_answers: printer
+pred_answer: you should go towards right side of room, near door, to find light switch gt_answers: forward
+pred_answer: there is one table in room gt_answers: two
+pred_answer: two gt_answers: two
+pred_answer: there is mirror above sink gt_answers: mirror
+pred_answer: video does not provide enough information to determine exact number of ink cartridges needed for each printer gt_answers: two
+pred_answer: number of cabinets on right is odd gt_answers: odd
+pred_answer: sink behind you is rectangular gt_answers: rectangle
+pred_answer: number of trash cans behind you is odd gt_answers: even
+pred_answer: below sink is cabinet or storage area gt_answers: bathroom cabinet
+pred_answer: bin is blue gt_answers: brown
+pred_answer: there are four chairs in room gt_answers: eight
+pred_answer: to reach toilet, you should move to right gt_answers: forward
+pred_answer: cabinets in front of you are white gt_answers: brown
+pred_answer: video does not provide enough information to determine divisibility of number of boxes gt_answers: two
+pred_answer: darker table is on left gt_answers: left
+pred_answer: recycling bin is blue gt_answers: black
+pred_answer: there are four chairs in room gt_answers: eight
+pred_answer: no, there are no stairs in room gt_answers: yes
+pred_answer: bathtub is on right side gt_answers: left
+pred_answer: there are no boxes to your left gt_answers: four
+pred_answer: no, you are not inside toilet gt_answers: no
+pred_answer: trash cans are on both left and right sides of shelving unit gt_answers: left
+pred_answer: there is not enough information provided to determine what is directly to right of camera's current position gt_answers: copier
+pred_answer: no, door is not behind you gt_answers: yes
+pred_answer: there are two towels on right side of sink gt_answers: two
+pred_answer: there is one towel in bathroom gt_answers: two
+pred_answer: doorway is on left side gt_answers: left
+pred_answer: curtain is on right side gt_answers: left
+pred_answer: there is one toilet to your direct right gt_answers: zero
+pred_answer: mailboxes are on left side of you gt_answers: left
+pred_answer: color of box cannot be determined from given information gt_answers: white
+pred_answer: stairs are located on left side of image gt_answers: to my right hand side
+pred_answer: no, you do not have place to wash hands near you gt_answers: no
+pred_answer: on your right side, you can read message or note from bulletin board gt_answers: bulletin board
+pred_answer: no, you do not need to turn around to check bulletin board gt_answers: yes
+pred_answer: behind shower curtain on right is likely bathtub gt_answers: bathtub
+pred_answer: insufficient information provided gt_answers: yes
+pred_answer: door is on right gt_answers: left
+pred_answer: no, you cannot see door where you are standing based on video content gt_answers: yes
+pred_answer: to hide from boss, you could use large piece of equipment like printer or copier to create shadowed area gt_answers: left
+pred_answer: there is one table in room gt_answers: two
+pred_answer: there are two towels in front of you gt_answers: zero
+pred_answer: no, you did not walk up stairs gt_answers: yes
+pred_answer: at your ten o'clock position, there is mirror gt_answers: bathtub
+pred_answer: behind shower curtain in front of you is likely bathtub gt_answers: bathtub
+pred_answer: number of copiers behind you is even gt_answers: odd
+pred_answer: object in front of you bit to right is likely toilet gt_answers: toilet
+pred_answer: you need to walk to right to reach door gt_answers: forward
+pred_answer: object in front of you is likely printer or multifunctional office machine mounted on wall gt_answers: light switch
+pred_answer: you need to go to right gt_answers: forward
+pred_answer: there are four chairs in room gt_answers: eight
+pred_answer: counter is on right side of room gt_answers: behind
+pred_answer: there are no chairs to your left gt_answers: four
+pred_answer: color of floor is beige with dark brown patterns gt_answers: brown
+pred_answer: object at two o'clock position is towel rack gt_answers: picture
+pred_answer: there is nothing in room that makes it dark enough to hide from boss gt_answers: unknown
+pred_answer: trash cans behind you are one blue barrel and one gray rectangular trash can gt_answers: unknown
+pred_answer: there is one table behind you gt_answers: two
+pred_answer: left gt_answers: right
+pred_answer: bucket is on floor near trash can and printer gt_answers: behind
+pred_answer: there are no chairs behind you gt_answers: four
+pred_answer: no, there is no picture on wall in front of you gt_answers: no
+pred_answer: yes, you are in bathroom gt_answers: yes
+pred_answer: there are at least two printers behind you gt_answers: four
+pred_answer: you would need to go through door in background of video to leave room gt_answers: behind me
+pred_answer: two objects on right that use paper and ink are printers gt_answers: printer
+pred_answer: to your right, there is cabinet with drawers gt_answers: bathroom cabinet
+pred_answer: trash can is closer to you than copier gt_answers: copier
+pred_answer: shape of mail slots cannot be determined from provided frames gt_answers: cube
+pred_answer: go to left side of room gt_answers: right
+pred_answer: you should look up at mirror above sink gt_answers: left
+pred_answer: yes, you can see paper cutter if you turn right gt_answers: yes
+pred_answer: mirror gt_answers: sink
+pred_answer: yes, darker table is closest table to you gt_answers: no
+pred_answer: you need to go to left to wash your hands gt_answers: forward
+pred_answer: large copier is on left side of room gt_answers: left
+pred_answer: there is printer on cabinet to right gt_answers: printer
+pred_answer: light is on gt_answers: on
+pred_answer: go to wall near door leading out of room gt_answers: right
+pred_answer: there are two towels behind you gt_answers: two
+pred_answer: table is in front gt_answers: back
+pred_answer: fabric softener sheets or dryer balls gt_answers: dryer sheets
+pred_answer: no, there are no stairs in front of you gt_answers: no
+pred_answer: stairs are to left of blackboard gt_answers: left
+pred_answer: to reach sink to wash your hands, you need to walk towards left side of room, where sink is located gt_answers: backward
+pred_answer: there is one clothes dryer to your left gt_answers: two
+pred_answer: there is fire extinguisher on table gt_answers: blackboard
+pred_answer: box of bounce fabric softener gt_answers: dryer sheets
+pred_answer: walk towards sink to find soap dispenser gt_answers: forward
+pred_answer: one dryer's motor starts spinning, causing drum to rotate slowly drum's movement creates airflow within dryer, which helps distribute heat evenly heat is generated from internal heating element, warming air inside drum warm, circulating air dries clothes as they move through drumn once drying cycle is complete or user gt_answers: unknown
+pred_answer: there are two dryers in front of you gt_answers: two
+pred_answer: handrail is made of metal gt_answers: metal
+pred_answer: see-through part of washing machine door is circular gt_answers: round
+pred_answer: chairs are organized in rows facing forward gt_answers: in rows
+pred_answer: flat surface in front of you is likely table or desk used for students to write on or place items during class gt_answers: table
+pred_answer: chair to immediate right is black with green cushion gt_answers: green
+pred_answer: to reach paper towel dispenser, go to sink area next to washing machine dispenser is mounted on wall above sink gt_answers: backward
+pred_answer: no, not all of chairs in audience are black gt_answers: no
+pred_answer: chair at ten o'clock position from chair on left would be second chair in row behind it gt_answers: door
+pred_answer: no, you cannot touch blackboard from where you are standing gt_answers: yes
+pred_answer: sink behind you is where you should wash your hands gt_answers: sink
+pred_answer: blackboard is black gt_answers: black
+pred_answer: handrail is to your left gt_answers: steps
+pred_answer: no, door you are pushing is not next to stairs gt_answers: no
+pred_answer: you should walk towards left side of room to reach sink gt_answers: backward
+pred_answer: door to your right is likely natural wood color gt_answers: one
+pred_answer: see-through portion of washing machine is circular gt_answers: round
+pred_answer: yes, door to your right appears to be wooden door gt_answers: yes
+pred_answer: chairs in closest row to you are black with green cushions gt_answers: black and brown
+pred_answer: reach out from right side of room towards sink area where fire extinguisher is located gt_answers: right
+pred_answer: there are five rows of chairs facing speaker gt_answers: three
+pred_answer: sink is rectangular gt_answers: square
+pred_answer: there are at least five-six rows of chairs visible in audience from perspective shown in video gt_answers: three
+pred_answer: you should take wet clothes from washing machine or dryer to sink gt_answers: right
+pred_answer: there is chair in front of door gt_answers: chair
+pred_answer: there are two dryers in front of you gt_answers: two
+pred_answer: there is no dryer in this room gt_answers: unknown
+pred_answer: video shows classroom with rows of black chairs, but it does not provide exact count therefore, it's impossible to determine if total number of chairs is odd or even based on video alone gt_answers: odd
+pred_answer: there are approximately ten chairs on far right gt_answers: one
+pred_answer: washing machine gt_answers: washing machine
+pred_answer: there are at least five rows of desks visible in classroom gt_answers: three
+pred_answer: behind you, there is staircase gt_answers: stairs
+pred_answer: you must reach over sink to left gt_answers: washing machine
+pred_answer: you can use washing machine and dryer to clean your dirty clothing gt_answers: washing machines
+pred_answer: object is blackboard gt_answers: blackboard
+pred_answer: chairs are arranged in rows facing forward gt_answers: in rows
+pred_answer: floor is green gt_answers: unknown
+pred_answer: there are two handrails provided for steps to left gt_answers: one
+pred_answer: there are two washing machines to your right gt_answers: two
+pred_answer: turn towards left side of image to find sink gt_answers: left
+pred_answer: no, there is no table with laptop on it gt_answers: unknown
+pred_answer: no, you cannot get water from table to your left gt_answers: yes
+pred_answer: no, you cannot leave room by turning to your left gt_answers: yes
+pred_answer: there are no chairs behind you gt_answers: one
+pred_answer: you could be standing in front of table if you were facing direction of chairs gt_answers: turn right
+pred_answer: you can get laundry detergent from box placed on top of washing machine gt_answers: unknown
+pred_answer: there are three chairs in first row to left gt_answers: eight
+pred_answer: presenter's chair is black gt_answers: purple
+pred_answer: object beneath table to your left is trash can gt_answers: box
+pred_answer: go to countertop gt_answers: backward
+pred_answer: you won't be able to see red chair because it's not mentioned or shown in video gt_answers: left
+pred_answer: yes, blackboard is likely located behind you gt_answers: no
+pred_answer: it is possible to wash white and dark clothes at same time using these washing machines, but it depends on their specific features gt_answers: yes
+pred_answer: drying machines are likely located next to washing machine gt_answers: right
+pred_answer: your dirty clothes are on washing machine to left of you gt_answers: table
+pred_answer: you can wash your hands at sink with faucet and soap dispenser gt_answers: sink
+pred_answer: box is small gt_answers: small
+pred_answer: there is one clothes dryer to your left gt_answers: two
+pred_answer: video does not provide enough information to determine direction of entry into classroom gt_answers: left
+pred_answer: there are at least ten chairs visible on each side of room gt_answers: one
+pred_answer: sink on your right is used to wash hands gt_answers: sink
+pred_answer: to exit room, you need to go to right gt_answers: right
+pred_answer: students' chairs are black with green cushions gt_answers: black
+pred_answer: no, there are no drying machines nearby gt_answers: yes
+pred_answer: chair behind you is facing away from you gt_answers: unknown
+pred_answer: see-through part of washing machine is circular gt_answers: round
+pred_answer: yes, there is box of detergent and bottle of fabric softener on top of washing machine on right gt_answers: yes
+pred_answer: video does not provide enough information to determine exact number of chairs on immediate left gt_answers: one
+pred_answer: video shows sequence of frames that include sink, washing machine, and door camera movement suggests it's moving from one object to another within room given context of objects shown, it's reasonable to infer that person is walking through laundry area or utility room floor tiles and presence of sink suggest this is likely bathroom or utility room where such fixtures are common camera's movement does not indicate any specific object directly beneath table, but based on typical layout of such rooms, it's plausible that there might gt_answers: box
+pred_answer: you should go down staircase gt_answers: right
+pred_answer: dryer machines are organized in row, side by side gt_answers: stack
+pred_answer: stair likely leads to upper level or exit gt_answers: outside
+pred_answer: there is one table in front of you gt_answers: one
+pred_answer: walk towards back of room and then turn right to reach sink gt_answers: right
+pred_answer: you can use flat countertop on your right to fold laundry gt_answers: table
+pred_answer: you should go to washing machine on left to get clothes out gt_answers: left
+pred_answer: you should go through door on right side of frame gt_answers: right
+pred_answer: use detergent box on top of washing machine gt_answers: unknown
+pred_answer: there are no stairs or railings visible in image gt_answers: handrails
+pred_answer: sink is attached to table gt_answers: unknown
+pred_answer: handle is located on right side of door gt_answers: left
+pred_answer: chair at seven o'clock position relative to chair on left is one directly behind it gt_answers: table
+pred_answer: side by side gt_answers: stack
+pred_answer: oven is on right side of room gt_answers: right
+pred_answer: cloth on left is light brown or beige gt_answers: black
+pred_answer: move towards left door gt_answers: right
+pred_answer: table behind you is rectangular gt_answers: rectangular
+pred_answer: object at seven o'clock is washing machine gt_answers: shelf
+pred_answer: safest direction to exit room would be towards door on left side of room gt_answers: backward
+pred_answer: object to right of sink is washing machine gt_answers: chair
+pred_answer: it is not possible to determine exact number of boxes in room based on provided image gt_answers: two
+pred_answer: add fabric softener to washing machine gt_answers: unknown
+pred_answer: go to laundry area gt_answers: left
+pred_answer: there is microwave oven on twelve o'clock position of cabinet on right gt_answers: cabinet
+pred_answer: yes, you can exit room by walking towards your left gt_answers: yes
+pred_answer: people will come in from left side of room gt_answers: left
+pred_answer: no, they do not have different colors gt_answers: yes
+pred_answer: go towards left gt_answers: right
+pred_answer: behind you and in front of windows, there is likely blackboard and possibly projector screen or additional equipment for presentations gt_answers: chairs
+pred_answer: table on right is brown gt_answers: brown
+pred_answer: no, curtain is not behind you gt_answers: yes
+pred_answer: turn to right and walk through door gt_answers: right
+pred_answer: there are two frying pans in front of you gt_answers: two
+pred_answer: you can wash your hands at sink on left side gt_answers: on right
+pred_answer: there are three boxes on top of cabinets gt_answers: two
+pred_answer: yes, you can see blackboard from where you are standing gt_answers: forward
+pred_answer: box is on table gt_answers: on cabinet
+pred_answer: there is door between you and area in front of you gt_answers: chairs
+pred_answer: there are more chairs to your right gt_answers: left
+pred_answer: you should wash your dirty mugs at sink on right side of kitchen counter gt_answers: sink
+pred_answer: there are two windows on wall to right gt_answers: zero
+pred_answer: there is nothing hanging from window gt_answers: sign
+pred_answer: pile of clothes is lying on washing machine gt_answers: floor
+pred_answer: there is no information provided about window's weakness gt_answers: glass
+pred_answer: presence of washing machine and sink indicates that this is laundry room gt_answers: radiator
+pred_answer: yes, you can see windows from your angle of view gt_answers: yes
+pred_answer: image shows classroom setting with wooden chairs arranged around long table chairs are positioned facing front of room where there is blackboard this arrangement is typical for classroom environment where students sit facing teacher or presenter at front gt_answers: wooden chairs
+pred_answer: shower on left is white gt_answers: grey
+pred_answer: number of cabinets on either side of room is odd gt_answers: even
+pred_answer: kitchen cabinets on right are brown gt_answers: gray
+pred_answer: move to right gt_answers: backward
+pred_answer: left gt_answers: left
+pred_answer: red object with two green circles on top of cabinet on right is likely water heater or boiler gt_answers: sink
+pred_answer: there is blackboard on wall to your right gt_answers: blackboard
+pred_answer: water heater is likely located near shower gt_answers: water heater
+pred_answer: there are twenty chairs visible in image gt_answers: unknown
+pred_answer: behind sink, there are cabinets gt_answers: window
+pred_answer: there is no object at eleven o'clock position relative to chair in front of you gt_answers: chair
+pred_answer: cabinet gt_answers: cabinet
+pred_answer: chairs are organized in row gt_answers: organized
+pred_answer: monitors are located on top of wooden cabinet gt_answers: unknown
+pred_answer: no, there is no flat in front of you gt_answers: kitchen counter
+pred_answer: door on left side of image is transparent, allowing visibility into another room gt_answers: unknown
+pred_answer: yes, you can see door while facing window gt_answers: no
+pred_answer: on your left side, there is microwave oven which you can use to reheat food gt_answers: microwave
+pred_answer: there are four chairs in room gt_answers: nine
+pred_answer: there are six chairs behind table gt_answers: nine
+pred_answer: there are at least two shelves visible on right side of image gt_answers: three
+pred_answer: based on image provided, it appears you cannot wash your whole body with soap and shampoo here as there is no bathtub or shower visible this space seems to be laundry room gt_answers: shower
+pred_answer: there is microwave on top of oven at eight o'clock position gt_answers: unknown
+pred_answer: right gt_answers: right
+pred_answer: cabinet at twelve o'clock position is directly above washing machine gt_answers: washing machine
+pred_answer: there are at least two tables in room gt_answers: two
+pred_answer: table to your left is rectangular gt_answers: rectangular
+pred_answer: drying rack is directly in front of washing machine gt_answers: refrigerator
+pred_answer: in front of you, there is stove that you can use to cook gt_answers: stove
+pred_answer: washing machine is nearer to you gt_answers: shower
+pred_answer: kitchen is cluttered with various items such as washing machine, sink, and shelves filled with food and household supplies gt_answers: drying rack
+pred_answer: two gt_answers: one
+pred_answer: there is blackboard on right side of table gt_answers: chair
+pred_answer: total number of chairs is even gt_answers: odd
+pred_answer: there is window on door that is on nine o'clock position from perspective of someone standing in front of door gt_answers: chair
+pred_answer: object to right of refrigerator is washing machine gt_answers: cabinet
+pred_answer: table behind you is brown gt_answers: dark brown
+pred_answer: counter on left resembles l-shape gt_answers: unknown
+pred_answer: there is no evidence of hot water leaking all over floor in room to right based on provided image gt_answers: water heater
+pred_answer: oven in front of you is black gt_answers: black
+pred_answer: there is cutting board on top of kitchen counter gt_answers: sign
+pred_answer: move to right gt_answers: left
+pred_answer: no, people will not be sitting at table only gt_answers: no
+pred_answer: no, table is not clear of any objects gt_answers: no
+pred_answer: no, there is no picture hung on wall to your left gt_answers: yes
+pred_answer: microwave is farthest behind you gt_answers: window
+pred_answer: above table, there is blackboard gt_answers: projector
+pred_answer: go to center of room gt_answers: right
+pred_answer: sink is on right side gt_answers: right
+pred_answer: there is oven to your right that you can use to bake cake gt_answers: oven
+pred_answer: one gt_answers: four
+pred_answer: table on right is rectangular gt_answers: semicircle
+pred_answer: you can use stove on your left side to bake cookies gt_answers: oven
+pred_answer: there is red box on table gt_answers: crate
+pred_answer: based on current view of room, there is no visible mattress it might be located in another part of house that is not shown in this video gt_answers: right
+pred_answer: monitors are behind you gt_answers: in front
+pred_answer: there is one oven on right gt_answers: one
+pred_answer: items set around sink include cutting board, knife block, and some plants gt_answers: sign
+pred_answer: go to left side of room gt_answers: right
+pred_answer: it's not possible to determine exact number of boxes behind person based on given image gt_answers: two
+pred_answer: boxes on far right are likely used for storage and are placed against wall gt_answers: two
+pred_answer: there is red kettle or similar appliance on right side of table gt_answers: cabinet
+pred_answer: drying rack is closer gt_answers: drying rack
+pred_answer: there is one sink to your left gt_answers: two
+pred_answer: there is sofa on left side of ping pong table gt_answers: cabinet
+pred_answer: insufficient information provided to determine if number of signs can be divided by three gt_answers: no
+pred_answer: ping pong table gt_answers: table
+pred_answer: number of chairs is even gt_answers: odd
+pred_answer: water heater is likely larger gt_answers: water heater
+pred_answer: number of chairs behind you cannot be determined from given information image shows empty room with long table and chairs, but it does not specify exact number of chairs gt_answers: no
+pred_answer: go towards back of kitchen gt_answers: right
+pred_answer: one gt_answers: four
+pred_answer: yes, you can see curtains covering window gt_answers: yes
+pred_answer: there is one fridge in front of you gt_answers: one
+pred_answer: there is red box with white text and graphics located at six o'clock position relative to table on left gt_answers: mattress
+pred_answer: sink is to left gt_answers: left
+pred_answer: cabinets on wall behind ping pong table gt_answers: unknown
+pred_answer: you should move to left side of room gt_answers: right
+pred_answer: door on left side of room is likely exit gt_answers: left
+pred_answer: you are facing left side of kitchen, which contains refrigerator gt_answers: cabinets
+pred_answer: object in corner to right is likely whiteboard or projection screen gt_answers: table
+pred_answer: you are in meeting room gt_answers: unknown
+pred_answer: number of boxes on right side of table is odd gt_answers: even
+pred_answer: washing machine gt_answers: laundry detergent
+pred_answer: you would run into laundry or utility room gt_answers: water heater
+pred_answer: floor is patterned gt_answers: patterned
+pred_answer: there is red box on table in front of you gt_answers: crate
+pred_answer: number of chairs on right is odd gt_answers: even
+pred_answer: there is one chair behind you gt_answers: one
+pred_answer: there is no way to determine number of pans in oven from given video gt_answers: two
+pred_answer: presence of washing machine indicates that this room is likely used for laundry gt_answers: clothes
+pred_answer: table on right side of image is most likely placed against wall gt_answers: radiator
+pred_answer: there is one sink in image gt_answers: two
+pred_answer: refrigerator is closer to cabinet gt_answers: cabinet
+pred_answer: object at twelve o'clock position relative to mattress on right is red box gt_answers: table
+pred_answer: image shows classroom setting with chairs arranged around table chairs are positioned in rows facing front of room where there is blackboard question asks about object at six o'clock position relative to chair behind you since you are standing behind chair, six o'clock position would be directly to your right in this classroom setup, it's common for chairs to be arranged in way that allows students to face front, which means six o'clock position would be empty space or possibly another chair gt_answers: window
+pred_answer: chair to left is brown gt_answers: brown
+pred_answer: there is cabinet to left of kitchen counter gt_answers: table
+pred_answer: closed gt_answers: open
+pred_answer: there is nothing under kitchen counter in front of you gt_answers: kitchen cabinets
+pred_answer: there are two monitors in front of you gt_answers: two
+pred_answer: no, there are not lot of lights on in room gt_answers: no
+pred_answer: to check if water keeps coming out ice-cold, you should gt_answers: water heater
+pred_answer: there are two chairs on each side of table gt_answers: nine
+pred_answer: place your dirty clothes in washing machine gt_answers: washing machine
+pred_answer: table behind you is rectangular gt_answers: semicircle
+pred_answer: there is box or container at three o'clock position of cabinet gt_answers: chair
+pred_answer: no, you cannot take ice from fridge behind you without moving things in room because there is no fridge visible in current scene gt_answers: no
+pred_answer: no, you cannot reach microwave gt_answers: no
+pred_answer: there is one window visible in image gt_answers: two
+pred_answer: you need to turn towards wall gt_answers: left
+pred_answer: yes, you can see crate from where you are standing gt_answers: no
+pred_answer: refrigerator gt_answers: refrigerator
+pred_answer: windows are on left side gt_answers: backward
+pred_answer: item on top of kitchen counter behind you is not clearly identifiable from video gt_answers: sink
+pred_answer: there are two cabinets behind you gt_answers: two
+pred_answer: insufficient information provided to determine if number of pictures is odd or even gt_answers: odd
+pred_answer: on top of washing machine, there is box labeled 'persil' and some other cleaning supplies gt_answers: laundry detergent
+pred_answer: there are two cabinets in front of you gt_answers: two
+pred_answer: yes, it is possible to see out through window by turning your head rightwards gt_answers: yes
+pred_answer: object at seven o'clock position from sofa is wall gt_answers: door
+pred_answer: behind you, there is kitchen setup with various appliances and cabinetry gt_answers: refridgerator
+pred_answer: there are three windows on left side of room gt_answers: two
+pred_answer: object in corner to left is trash can gt_answers: chairs
+pred_answer: cabinets are above sink gt_answers: window
+pred_answer: water heater behind you is red gt_answers: red
+pred_answer: there is shelf filled with various items such as bottles, jars, and other containers gt_answers: shelf
+pred_answer: there is no mattress visible in image gt_answers: directly in front of me
+pred_answer: go straight down aisle towards back of room gt_answers: left
+pred_answer: one gt_answers: three
+pred_answer: there is one door in room gt_answers: four
+pred_answer: object on top of radiator behind table at one o'clock position is red spherical object with green sticker, resembling face gt_answers: clothing
+pred_answer: if you turn around, you will see same kitchen environment that was initially shown in video camera has already panned across room, so turning around would likely show same view gt_answers: refridgerator
+pred_answer: monitors are powered off gt_answers: unknown
+pred_answer: presence of washing machine and sink indicates that this room is likely used for laundry gt_answers: radiator
+pred_answer: number of doors is odd gt_answers: odd
+pred_answer: you would write on blackboard in front of you gt_answers: blackboard
+pred_answer: door is open gt_answers: open
+pred_answer: drying rack on right side gt_answers: drying rack
+pred_answer: you are closer to washing machine gt_answers: washing machine
+pred_answer: object on table in top left corner is cardboard box gt_answers: crate
+pred_answer: no, you cannot see shower from where you are standing gt_answers: no
+pred_answer: drying racks are on right side gt_answers: right
+pred_answer: area at six o'clock on blackboard would be on right side of the gt_answers: chair
+pred_answer: oven is positioned below microwave gt_answers: left
+pred_answer: window can be accessed from kitchen area gt_answers: front left
+pred_answer: there are two cabinets on right side of room gt_answers: two
+pred_answer: object behind you is table gt_answers: table
+pred_answer: there are ten chairs in group against wall across from you gt_answers: odd
+pred_answer: unknown gt_answers: closed
+pred_answer: stove in front of you is black gt_answers: black
+pred_answer: microwave is above oven gt_answers: microwave
+pred_answer: window is not visible in video gt_answers: large
+pred_answer: yes, washing machine is within your reach gt_answers: no
+pred_answer: floor you are standing on is dark gray or black gt_answers: black
+pred_answer: you will be writing with chalk on blackboard during presentation gt_answers: behind
+pred_answer: you are standing on floor gt_answers: table
+pred_answer: number of monitors is even gt_answers: even
+pred_answer: to right of washing machine is refrigerator gt_answers: sink
+pred_answer: there is microwave oven on top of cabinet gt_answers: monitor
+pred_answer: largest piece of furniture behind you with flat surface is table gt_answers: table
+pred_answer: no, projector is not on top of table you are currently sitting at gt_answers: no
+pred_answer: i cannot determine if you are sitting or standing based on video alone gt_answers: standing
+pred_answer: mattress is off of bed gt_answers: off
+pred_answer: no, door behind you is not visible gt_answers: no
+pred_answer: one gt_answers: four
+pred_answer: no, there are no multiple chairs between you and window gt_answers: four
+pred_answer: no, water heaters are not similar in color gt_answers: no
+pred_answer: there is no object immediately beside frying pan on stove gt_answers: unknown
+pred_answer: there is red container on right side of table gt_answers: cabinet
+pred_answer: yes, you can see oven if you turn around gt_answers: yes
+pred_answer: to open window, you should look for it above sink and reach upwards gt_answers: left
+pred_answer: to use oven, you need to turn to right gt_answers: left
+pred_answer: object at six o'clock position relative to mattress is red box or container gt_answers: shelf
+pred_answer: there is microwave oven on top of cabinet at eleven o'clock position gt_answers: box
+pred_answer: table behind you is approximately 60 to 72 inches long gt_answers: large
+pred_answer: there is one large window in room gt_answers: five
+pred_answer: video does not provide enough information to determine if chair behind you is pushed in or out gt_answers: unknown
+pred_answer: yes, there are shelves to left of you gt_answers: yes
+pred_answer: cabinets above refrigerator are located directly above microwave gt_answers: kitchen cabinet
+{'[sqa3d] EM1': 0.02122641509433962, '[sqa3d] EM1_refined': 0.3443396226415094, '[sqa3d] EM_type0': 0.01764705882351903, '[sqa3d] EM_refined_type0': 0.25294117647043945, '[sqa3d] EM_type1': 0.038461538461464495, '[sqa3d] EM_refined_type1': 0.5192307692297707, '[sqa3d] EM_type2': 0.013513513513495251, '[sqa3d] EM_refined_type2': 0.2837837837834003, '[sqa3d] EM_type3': 0.0, '[sqa3d] EM_refined_type3': 0.5499999999972499, '[sqa3d] EM_type4': 0.03703703703689986, '[sqa3d] EM_refined_type4': 0.3703703703689986, '[sqa3d] EM_type5': 0.024691358024660874, '[sqa3d] EM_refined_type5': 0.41975308641923487}

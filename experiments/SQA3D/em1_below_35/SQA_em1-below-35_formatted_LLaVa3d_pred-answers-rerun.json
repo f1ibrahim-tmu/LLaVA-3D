@@ -1,0 +1,3394 @@
+[
+    {
+        "question_id": 220602000288,
+        "prompt": "What color is the chair closest to me?",
+        "text": "White.",
+        "answer_id": "M7MYvAJaDZnwi85i9Mnd6H",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602000408,
+        "prompt": "What integer can the amount of printers in front of me be divided by?",
+        "text": "Two.",
+        "answer_id": "SwbDHs4i6cBG5QWmbf37fZ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602000709,
+        "prompt": "What is to the left along the wall?",
+        "text": "Shower.",
+        "answer_id": "P7imARdgVFo2ZwWHdDthsT",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602000852,
+        "prompt": "Is the toilet cover down or up behind me?",
+        "text": "Down.",
+        "answer_id": "aetP2fsn4vfMe8MkTCtSZa",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001853,
+        "prompt": "What is the water leaking through the ceiling to my left dripping into?",
+        "text": "Bucket.",
+        "answer_id": "LVGwJRoCbzofDdErsbYAvV",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602002697,
+        "prompt": "What is the shape of the table?",
+        "text": "Round.",
+        "answer_id": "NK4AGi6ajHCZDiqA3QeBy2",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602002730,
+        "prompt": "Which direction should I go if I want to exit the room?",
+        "text": "Right.",
+        "answer_id": "PWM7fTGyqigA6gJja773LT",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602002858,
+        "prompt": "Is there an even amount of printer on my right or odd?",
+        "text": "Odd.",
+        "answer_id": "aepkBraDNAd3FcJSdchQZz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003035,
+        "prompt": "What am I standing on?",
+        "text": "Mat.",
+        "answer_id": "ihNg8Ymy23b5GLTmBXRdtn",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003109,
+        "prompt": "How many chairs are in front of me?",
+        "text": "4.",
+        "answer_id": "P4tMNdEf7mo95owUQwektq",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003378,
+        "prompt": "What is against the wall to my right?",
+        "text": "Shelf.",
+        "answer_id": "C4Bybn7QceRtJ7oJo6nk5v",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003426,
+        "prompt": "What is at my 1 o'clock?",
+        "text": "Bathtub.",
+        "answer_id": "EDRaw2aSNDHYTM9TpiZ3F6",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003492,
+        "prompt": "Which direction are the stairs?",
+        "text": "Right.",
+        "answer_id": "hRa4SYXfPCFjQn6GGXffeU",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003832,
+        "prompt": "Is there any visible door in the room?",
+        "text": "Yes, there is.",
+        "answer_id": "gD3RC3JCLBRJH8Y4yPtPzy",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602004326,
+        "prompt": "Is there light in the room?",
+        "text": "Yes.",
+        "answer_id": "LuGvjUnQXYyH8br8pQtjfF",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005841,
+        "prompt": "Is the shower curtain the same colour as the bathtub?",
+        "text": "Yes, the shower curtain and the bathtub are both white.",
+        "answer_id": "Dc8GfBsbCk2wDSSdYnyjKk",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602006473,
+        "prompt": "What is on the right side of the toilet that is behind me?",
+        "text": "Shower.",
+        "answer_id": "f9Pj26shwFsAfG59zaauyL",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007638,
+        "prompt": "Are the shower curtains fully closed or partially closed to my right?",
+        "text": "Partially closed.",
+        "answer_id": "GYqVKzXMSZwxyWy6eQSybL",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009006,
+        "prompt": "Can I see the bin where I am standing?",
+        "text": "Yes.",
+        "answer_id": "3SM4UymYhuK8wbHTuj5sfT",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009155,
+        "prompt": "Where are the stairs?",
+        "text": "Left of chair.",
+        "answer_id": "KShtbiEnjpDuEkRxzJhZYw",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009324,
+        "prompt": "Which direction should I go if I want to use the mailboxes?",
+        "text": "Right.",
+        "answer_id": "X29XRuoioKTJubbLneM6Ri",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009397,
+        "prompt": "What color is the cabinet?",
+        "text": "White.",
+        "answer_id": "m6hWzDdo4xFpdAAowHWVQq",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009423,
+        "prompt": "Can I see the bin where I am standing?",
+        "text": "Yes.",
+        "answer_id": "M7QHUotJqWzCN8w3XovNjo",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009601,
+        "prompt": "Can I see the bulletin board where I am standing?",
+        "text": "Yes.",
+        "answer_id": "g2tGA7V3fTJTPZR9qTB99u",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009710,
+        "prompt": "From my current position, can I be able to grab the towels without moving?",
+        "text": "No.",
+        "answer_id": "46zidmLQ59Q3oXJMFUFZik",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010404,
+        "prompt": "What is the first object I'd run into on my right?",
+        "text": "Shower.",
+        "answer_id": "6gCUVXQSbMssJFtZCkA3fo",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010468,
+        "prompt": "Is the door to my right side, behind me open fully or closed?",
+        "text": "Open.",
+        "answer_id": "TQJZVM26s6ornN96S9Jqh7",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011048,
+        "prompt": "Is the door on my left?",
+        "text": "Yes.",
+        "answer_id": "NeSdirQGdKw9rbyQXshM6y",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011246,
+        "prompt": "Which direction should I go if I want to use the copier?",
+        "text": "Left.",
+        "answer_id": "8Hc7EHBKPbUfer2bRiZKmQ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011481,
+        "prompt": "Can the amount of bulletin board on my left be divided by three?",
+        "text": "No.",
+        "answer_id": "9p5yHNgmApLrj7ynMNLey9",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011500,
+        "prompt": "What can I use in front of me to dry my hands?",
+        "text": "Towel.",
+        "answer_id": "UftsQM7XQNdTwokvCtPaKT",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011573,
+        "prompt": "What is on the left of the toilet that is on my 2 o'clock?",
+        "text": "Shower.",
+        "answer_id": "W9e6ZQ43jttorbp6F2qZaC",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011712,
+        "prompt": "How many tables are in the room?",
+        "text": "4.",
+        "answer_id": "4RzJqxJfqMxpKT3HgKToYc",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011774,
+        "prompt": "How many printers are there on my right side?",
+        "text": "1.",
+        "answer_id": "Bcwj5jtLfYZSe9d4iQ3sLz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012127,
+        "prompt": "From my current position, can I be able to use the mirror without turning or moving?",
+        "text": "No.",
+        "answer_id": "jCjaij9UMz6GhPFpZvCbxw",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012159,
+        "prompt": "What is the biggest object I'd find between five o'clock and four o'clock?",
+        "text": "Bathtub.",
+        "answer_id": "Qn8sZm8WYR94g46b3S3oL8",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012433,
+        "prompt": "What is the highest sitting object to my right not attached to the wall?",
+        "text": "Shelf.",
+        "answer_id": "SVxEMfG4rSnnmjJLq6HxKZ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012527,
+        "prompt": "Which direction should I go if I want to use the light switch?",
+        "text": "Right.",
+        "answer_id": "cCqnJD5FPPERWdmjeWfULH",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012607,
+        "prompt": "How many tables are in the room?",
+        "text": "3.",
+        "answer_id": "RQf2PTpu8AeHkYRZvwZSSU",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012623,
+        "prompt": "How many drawers does the bathroom cabinet have to my right?",
+        "text": "2.",
+        "answer_id": "nctmVDjowrUtbq2jVBHX89",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012783,
+        "prompt": "What is above the sink that is in front of me?",
+        "text": "Towel.",
+        "answer_id": "fRDJ5QXr8GbSqVWroMB3vX",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013067,
+        "prompt": "How many ink cartridges do I need to fix every printer on top of the table behind me?",
+        "text": "2.",
+        "answer_id": "kjDxmzVydaQz6j2xUfkRCo",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013681,
+        "prompt": "Is the amount of cabinets on my right odd or even?",
+        "text": "Odd.",
+        "answer_id": "LKtDgkWEvVvgW6NkzFScyc",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013712,
+        "prompt": "What shape is the sink behind me?",
+        "text": "Rectangular.",
+        "answer_id": "6v4i2iYsigXtg849FyxRCd",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014480,
+        "prompt": "Is the amount of trash cans behind me odd or even?",
+        "text": "Even.",
+        "answer_id": "47DChhv7kGWCHy7UkgGzpw",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014530,
+        "prompt": "What is below the sink that is in front of me?",
+        "text": "Mat.",
+        "answer_id": "XiaHWEP3PCp282ysuDuhgQ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014888,
+        "prompt": "What color is the bin?",
+        "text": "Blue.",
+        "answer_id": "SZdFsYM5Jc6kaZ4eR8SebE",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015178,
+        "prompt": "How many chairs are in the room?",
+        "text": "14.",
+        "answer_id": "H7zGgPHPvRrSpjajWUq2fZ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015259,
+        "prompt": "From my current position, which direction should I move to reach the toilet?",
+        "text": "Left.",
+        "answer_id": "k3TFNXwKDDGxreUWoCQNjo",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015365,
+        "prompt": "What color are the cabinets in front of me?",
+        "text": "White.",
+        "answer_id": "cV2C9j7kc9BVtwiiJzMWUh",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015617,
+        "prompt": "What integer can the amount of boxes behind me be divided by?",
+        "text": "There are 12 boxes.",
+        "answer_id": "3t4qktsH3o9XRVChrn6zCv",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015996,
+        "prompt": "Is the darker table on my left or right?",
+        "text": "Right.",
+        "answer_id": "PoHp7KQXPQahTNsxKHz8cM",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016071,
+        "prompt": "What color is the recycling bin?",
+        "text": "Blue.",
+        "answer_id": "FSUaj7VTnTDtiM8fox5XC2",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016896,
+        "prompt": "How many chairs are in the room?",
+        "text": "11.",
+        "answer_id": "YsSr7A5nedkJ3TL9wmC6mD",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016958,
+        "prompt": "Are there stairs in the room?",
+        "text": "Yes.",
+        "answer_id": "PN2MNMQC7QeVmdqFBWMimW",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016993,
+        "prompt": "What side is the bathtub on from where I am?",
+        "text": "Right.",
+        "answer_id": "QmH4EmRHzppsFdkppVve5G",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017110,
+        "prompt": "How many boxes are there to my left?",
+        "text": "1.",
+        "answer_id": "N4u6xFZkJGaMVqE5LL5X57",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017280,
+        "prompt": "Am I inside the toilet?",
+        "text": "No.",
+        "answer_id": "kcwZAgZfwwTzimDea59YP2",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018015,
+        "prompt": "Are the trash cans on my left or right side?",
+        "text": "Right.",
+        "answer_id": "SUNSNrVeSwE2GuvJUXx4ic",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018279,
+        "prompt": "What is directly to my right?",
+        "text": "Door.",
+        "answer_id": "QmmMGxYKBtTnT3tKh444Vo",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018713,
+        "prompt": "Is the door behind me?",
+        "text": "Yes.",
+        "answer_id": "FjUAFuCEmMxt775pvDY3Bn",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019011,
+        "prompt": "How many towels are on my right?",
+        "text": "2.",
+        "answer_id": "SEKRmPZx8DkRYjv89KUrvp",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019170,
+        "prompt": "How many towels are in the bathroom?",
+        "text": "2.",
+        "answer_id": "CHndsyzqPbhSjhr6VvcdEr",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019918,
+        "prompt": "Which side of me is the doorway?",
+        "text": "Left.",
+        "answer_id": "d3nynHxxPjNg8WH232vBwY",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020218,
+        "prompt": "What side is the curtain on from where I am?",
+        "text": "Left.",
+        "answer_id": "d76UyamSJXqWc2FM8MAGrf",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020235,
+        "prompt": "How many toilets are to my direct right?",
+        "text": "1.",
+        "answer_id": "7aES97WQvQ7YeoEDjqsUQz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020314,
+        "prompt": "The mailboxes are in front and which side of me?",
+        "text": "Left.",
+        "answer_id": "9iXUTmfAN8gFFsMcriS834",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020508,
+        "prompt": "What color is the box on the top of the mailboxes in front of me?",
+        "text": "Brown.",
+        "answer_id": "MnrPKKoJMSU4eXuazvaJZ9",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020512,
+        "prompt": "Where are the stairs located?",
+        "text": "Left of the chair.",
+        "answer_id": "TJrR7PbjFf2gCSkwbNJDsU",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020553,
+        "prompt": "Do I have a place to wash hands near me?",
+        "text": "No.",
+        "answer_id": "TqiHsfQkS9qujyWK6gfX7M",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020808,
+        "prompt": "Where on my right side could I read a message or note?",
+        "text": "On bulletin board.",
+        "answer_id": "SiJeQRMsmKZXv8289cVv7U",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020818,
+        "prompt": "Do I need to turn around to check the bulletin board?",
+        "text": "Yes.",
+        "answer_id": "6UmsatkEThmk7JUS9tnnFZ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020895,
+        "prompt": "What is behind the shower curtain that is on my right?",
+        "text": "Bathtub.",
+        "answer_id": "oNpDpi6aPgzSeUpPkTrQEX",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020999,
+        "prompt": "Can the number of boxes on my right be divided by two?",
+        "text": "No.",
+        "answer_id": "mRFVVrcB5kPuFcssWKhJzE",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602021343,
+        "prompt": "Is the door on my left or right?",
+        "text": "Left.",
+        "answer_id": "27Es3BYiCMzv8yoCXvSJdH",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602021555,
+        "prompt": "Can I see the door where I am standing?",
+        "text": "Yes.",
+        "answer_id": "bVuaCsxmTRJV3jxC5EdbKy",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602021962,
+        "prompt": "What direction is something that help make this room dark so I can hide out from the boss?",
+        "text": "Left.",
+        "answer_id": "aiFRuVs5rX8XSRUCzy83uy",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602022353,
+        "prompt": "How many tables are in the room?",
+        "text": "4.",
+        "answer_id": "L38QWdrDzKDt49uUy4ytQK",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602023467,
+        "prompt": "How many towels are in front of me?",
+        "text": "1.",
+        "answer_id": "mWGurGAfZ6tgj9R8ST7ypp",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602023550,
+        "prompt": "Did I walk up the stairs?",
+        "text": "Yes.",
+        "answer_id": "mtcgje9bqjcWhbmWJnoQ8M",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024415,
+        "prompt": "What is at my 10 o'clock?",
+        "text": "Bathtub.",
+        "answer_id": "j9DdoaNgXUk4CqAfQSatFo",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602025075,
+        "prompt": "What is behind the shower curtain in front of me?",
+        "text": "Bathtub.",
+        "answer_id": "XgUnDNepvG6GoryhgPSATH",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602025082,
+        "prompt": "Is the amount of copiers behind me odd or even?",
+        "text": "Even.",
+        "answer_id": "TnXqR26Hys7MAQ9NBD7mK4",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602025129,
+        "prompt": "What is in front of me a bit to the right?",
+        "text": "Bathtub.",
+        "answer_id": "RMqh3hAuH4DXLJxPznLiK9",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602025438,
+        "prompt": "Which direction do I have to walk to reach the door?",
+        "text": "Backward.",
+        "answer_id": "8CVRJnJu6GUDmiDZKHZipm",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602025742,
+        "prompt": "What is the object in front of me attached to the wall?",
+        "text": "Shelf.",
+        "answer_id": "9qxNqPFomgV2SbzsoHrY9d",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026121,
+        "prompt": "To get into the bathtub , which direction do I need to go?",
+        "text": "Right.",
+        "answer_id": "4B3hXHRGCsaK2TeF5yVCvF",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026249,
+        "prompt": "How many chairs are in the room?",
+        "text": "14.",
+        "answer_id": "PsR7CuBXgSgAWdFwbRcdGF",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026466,
+        "prompt": "Where is the counter?",
+        "text": "On the floor.",
+        "answer_id": "8whN52PXMji7W2Dqbg2P2s",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602027002,
+        "prompt": "How many chairs are to my left?",
+        "text": "4.",
+        "answer_id": "8UvsgUjEFxsaMASkFqaJSy",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602027031,
+        "prompt": "What is the color of the floor?",
+        "text": "Brown.",
+        "answer_id": "emVL5gyG6bKTGNRjQwDrfE",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602027882,
+        "prompt": "What is above the toilet paper holder that is on my 2 o'clock?",
+        "text": "Shelf.",
+        "answer_id": "9APEfNMSFftA6DTX9d6L5e",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028069,
+        "prompt": "What is something to my left that help make this room dark so I can hide out from the boss?",
+        "text": "Shelf.",
+        "answer_id": "A8eLrQjW3SjaHueBgEasrw",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028143,
+        "prompt": "What's shape of trash cans behind me?",
+        "text": "Cylindrical.",
+        "answer_id": "mKmfa3zfMX2S9pDV4ewitq",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028161,
+        "prompt": "How many tables are located behind me?",
+        "text": "1.",
+        "answer_id": "AjPrWndy5UH9tLx7wJUKfo",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028524,
+        "prompt": "Is the closest table on my left or right?",
+        "text": "Left.",
+        "answer_id": "6vbR98h5cVPGASMsAVVu7k",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028887,
+        "prompt": "Where is the bucket?",
+        "text": "On floor.",
+        "answer_id": "MwnP8TV7dVvwXm42iQfNVP",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028907,
+        "prompt": "How many chairs are behind me?",
+        "text": "1.",
+        "answer_id": "4MvNWTnTgKcikEtuWZgMVH",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029098,
+        "prompt": "Is there a picture on the wall in front of me?",
+        "text": "No.",
+        "answer_id": "iraHSzpM437EnQfevsR8Eu",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029228,
+        "prompt": "Am I in the wahsroom?",
+        "text": "Yes.",
+        "answer_id": "63BRbSB2A3t3UrZ7AxhZ75",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029381,
+        "prompt": "How many printers behind me?",
+        "text": "2.",
+        "answer_id": "WQuFApAPbhAqhQhCgjVKUE",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029457,
+        "prompt": "If I wanted to leave the room, where would I go?",
+        "text": "You can go through the door.",
+        "answer_id": "8VaEjxiVeST9PcEuLn3JGB",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029468,
+        "prompt": "What two objects on my right use paper and ink?",
+        "text": "Printer.",
+        "answer_id": "hduXLVpCZqKo9HafYdjeoc",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602030156,
+        "prompt": "What is to my right that has drawers?",
+        "text": "Cabinet.",
+        "answer_id": "D2wUx5g4eGaesdK6enJif7",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602030173,
+        "prompt": "Which is closer to me - trash can or copier?",
+        "text": "Copier.",
+        "answer_id": "PLfmTCEiKswf4yM8Aj4zpg",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602030248,
+        "prompt": "The mail slots in front of me have what shape?",
+        "text": "Rectangular.",
+        "answer_id": "As5UfeTSw9zibaETQs2Lwz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602030931,
+        "prompt": "Which direction should I go if I want to use the copier?",
+        "text": "Right.",
+        "answer_id": "k3Ljy5hd6DjhNcYiyuF2Er",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031184,
+        "prompt": "Which direction should I look to see myself in the mirror?",
+        "text": "Left.",
+        "answer_id": "gU38JAc4Ak4faHnqz8y9ds",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031197,
+        "prompt": "Can I see the paper cutter if I turn right?",
+        "text": "Yes.",
+        "answer_id": "8Ty9bg8uvd7Gigu7pnGqcR",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031292,
+        "prompt": "What is on top of the bathroom cabinet that is on my 11 o'clock?",
+        "text": "Sink.",
+        "answer_id": "WkJCDXmhDESgBjJCjeAwG6",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031307,
+        "prompt": "Is the darker table the closest table to me?",
+        "text": "Yes.",
+        "answer_id": "LviT5XMT7kVjN9scrPyYXn",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602032169,
+        "prompt": "Which direction do I have to go to wash my hands?",
+        "text": "Left.",
+        "answer_id": "3fMFxrqKzKYYDPL2E9JGTi",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602032170,
+        "prompt": "Which direction is the large copier?",
+        "text": "Right.",
+        "answer_id": "Sirj8SD3eJhsCgjRAMzwho",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602032340,
+        "prompt": "What is on the cabinet to my right?",
+        "text": "There is a printer on top of the cabinet.",
+        "answer_id": "7D4aoe5zJGgtNC2GUVEA8Y",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602032394,
+        "prompt": "Is the light on my towards my right on or off?",
+        "text": "On.",
+        "answer_id": "SosiRAsAotu5KvTZKPqZoC",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602032821,
+        "prompt": "Which direction should I go if I want to turn on the light?",
+        "text": "Right.",
+        "answer_id": "7VDoDWgrW7wC4GZFfeQTHT",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602032834,
+        "prompt": "How many towels are behind me?",
+        "text": "1.",
+        "answer_id": "hGrkHaXgFTyRMPJCde4AHK",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602000423,
+        "prompt": "Is the table in front or at my back?",
+        "text": "Front.",
+        "answer_id": "DDewVDKuieNHyjAr4o6Vqz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602000689,
+        "prompt": "What can I add to the dryer to keep the clothes from sticking together due to static?",
+        "text": "You can add clothes dryer sheets.",
+        "answer_id": "EDmYh2Zj9GAD77EbamXHnJ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602000946,
+        "prompt": "Are the stairs somewhere in front of me?",
+        "text": "Yes.",
+        "answer_id": "Mbj3cHYBmjzr4poYacYDj7",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001614,
+        "prompt": "Are the stairs to the left of the blackboard or to the right?",
+        "text": "Right.",
+        "answer_id": "6CzvuZXJQiLeBrWp8pPgq6",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001807,
+        "prompt": "How do I get to the sink to wash my hands?",
+        "text": "You can go to the sink to wash your hands.",
+        "answer_id": "52Jbzbh2CTkDssdqgt2uaQ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602002704,
+        "prompt": "How many clothes dryers are to my left?",
+        "text": "1.",
+        "answer_id": "kWocTwcQWzXnkfsByiHpWN",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602002973,
+        "prompt": "What is on the 9 o'clock of the table that is on my 7 o'clock?",
+        "text": "Chair.",
+        "answer_id": "ZKqafKvP9LYV24PiDmQb8V",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003142,
+        "prompt": "What is sitting on top of the washing machine to my left that I used for the dryer?",
+        "text": "Washing machine.",
+        "answer_id": "Ei4sX4xcU6SXBDcZm6YxvP",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003472,
+        "prompt": "What direction should I walk to get soap?",
+        "text": "Forward.",
+        "answer_id": "LEdhf7omLgtURN7Fs3GVbp",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602004398,
+        "prompt": "If the turn on the dryer behind me, what happens in the inside of the dryer?",
+        "text": "The dryer will rotate.",
+        "answer_id": "46NehgqGJgV6us77yCNEtL",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602004762,
+        "prompt": "How many dryers are there in front of me?",
+        "text": "1.",
+        "answer_id": "cSUCHu6Ha5afABcAH6niJm",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602004949,
+        "prompt": "What material is the steps handrail made to my left?",
+        "text": "Metal.",
+        "answer_id": "HRQZr8HcpAsDTSAP7mttWm",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005167,
+        "prompt": "What shape is the see through part of the door of washing machine to my right?",
+        "text": "Rectangular.",
+        "answer_id": "eM9mZErASWpbqcUmAw9nhA",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005288,
+        "prompt": "How are chairs to my right organize?",
+        "text": "In rows.",
+        "answer_id": "Pix6qv6XYjCk3RFk9Ek2Qz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005462,
+        "prompt": "What is in front of me that has a flat surface?",
+        "text": "Table.",
+        "answer_id": "96hraQA7HAqNfkQwY6SxGQ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005526,
+        "prompt": "What color is the chair to my immediate right?",
+        "text": "Purple.",
+        "answer_id": "FSjESUGoWCtBC7jDvdkUmu",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005714,
+        "prompt": "How do I get to the paper towel dispenser to dry my hands?",
+        "text": "Turn right.",
+        "answer_id": "fGp5KGfj5zAXfYY7wcsPHK",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602006283,
+        "prompt": "Is my chair black as all of the chairs in the audience are?",
+        "text": "No, your chair is blue.",
+        "answer_id": "hHRg7o5VeRmkfG6xS2DJAa",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602006536,
+        "prompt": "What is on the 10 o'clock of the chair that is on my left?",
+        "text": "Chair.",
+        "answer_id": "9H5B3PXSgTuyf4NnwgJRab",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007246,
+        "prompt": "Can I touch the blackboard from where I am standing?",
+        "text": "Yes.",
+        "answer_id": "cGSUGrrnsYAWWjNV8gGjJe",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007502,
+        "prompt": "Where can I wash my hands that is behind me?",
+        "text": "Wash your hands in the sink.",
+        "answer_id": "6ba6GrMMnWU3dLnq6mDyRu",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008354,
+        "prompt": "What color is the blackboard?",
+        "text": "Green.",
+        "answer_id": "fi8WBeW3kwppiQE8QYL9AK",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008422,
+        "prompt": "What is to my left that has a handrail?",
+        "text": "Stairs.",
+        "answer_id": "DSUUGGTfBy8YqCniA2zKH2",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008706,
+        "prompt": "Is the door I am pushing next to the stairs?",
+        "text": "Yes, the door is next to the stairs.",
+        "answer_id": "QtymbPmspBS5sayEZDCvUV",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008901,
+        "prompt": "Where must I walk if I want to wash my hands?",
+        "text": "You must pass through the sink to wash your hands.",
+        "answer_id": "PARxCzspEh78WAQbzEMKn2",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008921,
+        "prompt": "What color is the door to my right?",
+        "text": "Brown.",
+        "answer_id": "cqiTjWur7bn6zfdAUdF6fo",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009244,
+        "prompt": "What shape is the see through portion of the washing machine in front of me?",
+        "text": "Rectangular.",
+        "answer_id": "D3YbMKgLUz9oPPAkif8JGj",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009326,
+        "prompt": "Is the door to my right a wooden door?",
+        "text": "Yes.",
+        "answer_id": "AstmLqEg6QDXfCcYobFRen",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009368,
+        "prompt": "What is the colour of the chairs in the closest row to me?",
+        "text": "Black.",
+        "answer_id": "8vYDTChSfHkMcK2e44LQWQ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010168,
+        "prompt": "Where should I reach out to grab the fire extinguisher in case there is an emergency?",
+        "text": "Reach out to grab the fire extinguisher from the right side of the room.",
+        "answer_id": "nb4GaYrS2q3nvipmS6HRbz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010283,
+        "prompt": "How many rows of chairs are there in the audience I am facing?",
+        "text": "3.",
+        "answer_id": "iqTgcFzHofu9YaLWb6K3JZ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010344,
+        "prompt": "What shape is the sink behind me?",
+        "text": "Rectangular.",
+        "answer_id": "8nfJR4yj3X9e6GiGU7Ef8C",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010651,
+        "prompt": "How many rows of chairs can I see in the audience from my perspective?",
+        "text": "3.",
+        "answer_id": "N9GLrSkHaSYZAiZfYeEPzF",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010821,
+        "prompt": "Where do I take wet clothes in my hand?",
+        "text": "Washing machine.",
+        "answer_id": "Sbpb6JzYkuvFMvENCKkFTa",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010823,
+        "prompt": "What is beside the door in front of me?",
+        "text": "Chair.",
+        "answer_id": "mxQs7TMxYLDDCMaPRzVTYk",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011503,
+        "prompt": "How many dryers are in front of me?",
+        "text": "1.",
+        "answer_id": "8FXe6jnn5i3Ay7qE6Thjug",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011585,
+        "prompt": "What can I dry my clothes in in the room?",
+        "text": "Washing machine.",
+        "answer_id": "Ww4VhtawBW6frJJHpSHZMb",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011588,
+        "prompt": "Is the total amount of chairs in the room odd or even?",
+        "text": "Even.",
+        "answer_id": "P8EL5crtTcaGADsmcroiuR",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012291,
+        "prompt": "How many chairs are on my far right?",
+        "text": "1.",
+        "answer_id": "bHd9PA9MtnGfHv9RRTcpDh",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012415,
+        "prompt": "If I want to reach the shelf on the left wall, what object would I have to reach over?",
+        "text": "Washing machine.",
+        "answer_id": "iaJoqxtyvmiE3jfG67vJvf",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012469,
+        "prompt": "How many rows of chairs are there to my right?",
+        "text": "1.",
+        "answer_id": "RHij3gsQQYoBY3nPY5ESsx",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013114,
+        "prompt": "What is behind me that has a step?",
+        "text": "Stairs.",
+        "answer_id": "2BZ4SBi3GqnqLfzdkx298E",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013408,
+        "prompt": "What object must I reach over if I want to reach the shelf to the left?",
+        "text": "Washing machine.",
+        "answer_id": "4Gv9NozwesFmYaEMrx2hvU",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013700,
+        "prompt": "What could I use to my left to clean my dirty clothing?",
+        "text": "Washing machine.",
+        "answer_id": "dLLsJAEGbZVWt8VbPipdBp",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014020,
+        "prompt": "What is wall mounted that you can write on in front of me?",
+        "text": "Blackboard.",
+        "answer_id": "P4DstwGBsd7dJvM8hoefV3",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014794,
+        "prompt": "How are the chairs behind me arranged?",
+        "text": "In rows.",
+        "answer_id": "NVKXhQS87nDErfUyeYordF",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014839,
+        "prompt": "What color is the floor?",
+        "text": "Green.",
+        "answer_id": "3NyJmAukCVFPS3uqMLkh2o",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015002,
+        "prompt": "How many handrails are provided for the steps to my left?",
+        "text": "2.",
+        "answer_id": "4eQ7DhGD5mdHah9cgQ6MUu",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015210,
+        "prompt": "How many washing machines are there to my right?",
+        "text": "1.",
+        "answer_id": "2MuoocAFV6qDtEM8pMVLTc",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016286,
+        "prompt": "I want to wash my hands in a sink, where should I turn?",
+        "text": "Left.",
+        "answer_id": "NKB867KLnjJVXmaxLYjTzB",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016643,
+        "prompt": "What does the table contain?",
+        "text": "Fire extinguisher.",
+        "answer_id": "M2dneAus5WG9CCEhcYcstT",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016688,
+        "prompt": "Am I able to get water from the table to my left?",
+        "text": "Yes.",
+        "answer_id": "DU5S5wWFNorukudfnMszVb",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016934,
+        "prompt": "Can I leave the room if I turn to my left?",
+        "text": "Yes.",
+        "answer_id": "Ts9xyzPA6VWHZbPdPiZFnG",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017043,
+        "prompt": "How many chairs are there behind me?",
+        "text": "1.",
+        "answer_id": "N3toWRa6smj3MweBAynucf",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017317,
+        "prompt": "How can I be standing in front of the table?",
+        "text": "You can stand in front of the table by walking through the door.",
+        "answer_id": "chsw7WEzKcEkR8y3rqMr5k",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017828,
+        "prompt": "Where can I get laundry detergent?",
+        "text": "You can get it from the table.",
+        "answer_id": "2wKtbyLQQ4heQB4zZzPr8j",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017883,
+        "prompt": "How many chairs are in the first row to my left?",
+        "text": "4.",
+        "answer_id": "EFGbueeuW9c9u63n5po4no",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018384,
+        "prompt": "What color is the presenter's chair chair behind me?",
+        "text": "Purple.",
+        "answer_id": "aQYqgFr5XAbbMKSrWH3eUE",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018541,
+        "prompt": "What object is beneath the table to my left?",
+        "text": "Washing machine.",
+        "answer_id": "9YT8g4eVnVvfhsSyuZJ4kj",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018816,
+        "prompt": "What direction should I go if I wanted to fold clothing on a flat surface?",
+        "text": "Right.",
+        "answer_id": "WVttTdPs6faJKbirGbp4gD",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019299,
+        "prompt": "In which direction will I be able to see the red chair?",
+        "text": "The red chair is on the left side of the room.",
+        "answer_id": "88ddXQLpi6vGokX7Nxaa76",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019507,
+        "prompt": "Is the blackboard somewhere behind me while I am standing?",
+        "text": "Yes.",
+        "answer_id": "62ow9kgnQySwZAgoELMH8G",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019723,
+        "prompt": "If I am washing white and darks, can I do it at the same time?",
+        "text": "No.",
+        "answer_id": "Q9TwHUnNicMwie7hhr7CUy",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602021150,
+        "prompt": "Where are the drying machines?",
+        "text": "Next to the washing machine.",
+        "answer_id": "NhQa2surYSRg6USG6BY2bE",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602021478,
+        "prompt": "What object are my dirty clothes on to the left of me?",
+        "text": "Table.",
+        "answer_id": "UT9sYQXvLg4r2xtNqvcYRX",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602021639,
+        "prompt": "If I got detergent on my hands, where can I wash them?",
+        "text": "Sink.",
+        "answer_id": "Y4U3fB5PruVhT52iK2ruuF",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602021645,
+        "prompt": "Is a box on a table in front of me big or small?",
+        "text": "Small.",
+        "answer_id": "4d9zLfiGQXpaYUHADuaygx",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602022564,
+        "prompt": "How many clothes dryers are there to my left?",
+        "text": "1.",
+        "answer_id": "6NDpWb7EAhhCTfBaRZyJnp",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602022763,
+        "prompt": "Facing the audience which side of the room does one enter from?",
+        "text": "Left.",
+        "answer_id": "8r9RHnEH7qyRMeBA489umf",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602022860,
+        "prompt": "How may chairs are to my right?",
+        "text": "There are 1.",
+        "answer_id": "mu3aeG89qgu9yky9DVP4UN",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602022998,
+        "prompt": "Which object on my right is used to wash hands?",
+        "text": "Sink.",
+        "answer_id": "SkfQbKLzupxHu4ifi8fvjp",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602023453,
+        "prompt": "Which direction do I have to move to exit the room through the door?",
+        "text": "Right.",
+        "answer_id": "Pfvfd8CAegvV4DKnHdHWVc",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602023464,
+        "prompt": "What color are the students chairs?",
+        "text": "Black.",
+        "answer_id": "DchwgSzXbQRvv2S9S5i2ZU",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024166,
+        "prompt": "Are there any drying machines nearby?",
+        "text": "Yes.",
+        "answer_id": "KbWaSnz9QPRRHdGagWii2v",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024190,
+        "prompt": "Is the chair behind my back facing me or facing away from me?",
+        "text": "Facing away.",
+        "answer_id": "5BCuLnrPP2MuCJYEcHGC6i",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024347,
+        "prompt": "What shape is the see-through part of the washing machine that is near me?",
+        "text": "Rectangular.",
+        "answer_id": "CF84dywQT24C5ndvLcKh2k",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602025153,
+        "prompt": "I there anything on the top of the washing machine on my right?",
+        "text": "Yes, there is.",
+        "answer_id": "Wh4MrJkSvMQt2LVBQz7ZEm",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026130,
+        "prompt": "How many chairs are on my immediate left?",
+        "text": "1.",
+        "answer_id": "XXQbzdzvQBS3vtnQEfRBcF",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026188,
+        "prompt": "What object is below the table I am sitting on?",
+        "text": "Washing machine.",
+        "answer_id": "QVUiLCWdwRwguLRPrhdbec",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026222,
+        "prompt": "If there was a fire, what direction should I go to exit the room?",
+        "text": "Right.",
+        "answer_id": "UYw8qmwQNu9NksM4CA5hLk",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602027315,
+        "prompt": "How are the dryer machines organized together?",
+        "text": "Stacked vertically.",
+        "answer_id": "iKUc2pFkwXgACYahuh6roX",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602027439,
+        "prompt": "Where does the stair lead to?",
+        "text": "To the second floor.",
+        "answer_id": "8poimuav6qVysm6DU9rgNv",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028272,
+        "prompt": "How many tables are in front of me?",
+        "text": "1.",
+        "answer_id": "8atgzL2mnjR6A6h9s4ZA8f",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028277,
+        "prompt": "How do I move to access the sink?",
+        "text": "You need to move forward.",
+        "answer_id": "6Fcq9QPU9p89aEbHYaoptt",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028360,
+        "prompt": "What can I use on my right that is flat to fold laudry?",
+        "text": "Table.",
+        "answer_id": "3BegpG3fvfCSNzz3QEzV7L",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028575,
+        "prompt": "Where do I go to get clothes out of the washing machine?",
+        "text": "Open the door and enter the room.",
+        "answer_id": "CM6GowsGHPWhcjTdiotUfc",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029009,
+        "prompt": "If I need an exit, where should I go?",
+        "text": "Backward.",
+        "answer_id": "CJucjqeTq74YDQirwuumnZ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029289,
+        "prompt": "What can I use to make sure my clothes smell clean that is in front of me?",
+        "text": "Detergent.",
+        "answer_id": "AGRtGLambRVzp5sTPNoQpN",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029727,
+        "prompt": "What is provided for the stairs behind me that you can use to hold on while using it?",
+        "text": "Rail.",
+        "answer_id": "oFgs9yWh8hbDWXJJohWDHc",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602030294,
+        "prompt": "Is the sink behind me attached to the table or is it standing by itself?",
+        "text": "Attached to the table.",
+        "answer_id": "HsXmujZitdejGWTFEf8xmu",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031278,
+        "prompt": "What side of the door in front of me is the handle located in?",
+        "text": "Right.",
+        "answer_id": "BACjiw3rtvPHHYmu227EYh",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031819,
+        "prompt": "What is on the 7 o'clock of the chair that is on my left?",
+        "text": "Chair.",
+        "answer_id": "2k6vBumPJCv46wDgNzvHz6",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602032505,
+        "prompt": "Are the clothes dryer to my left stack over top of each other or side by side?",
+        "text": "Stack.",
+        "answer_id": "VGxKdKnyNkFjovkYgsSQSP",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602000217,
+        "prompt": "On which side of the room is the oven for me?",
+        "text": "Left.",
+        "answer_id": "enEXvpH8h2Yb6tLfbXZ2np",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602000376,
+        "prompt": "What color is the cloth on my left?",
+        "text": "Green.",
+        "answer_id": "NkKLJMw5Ra6xGPsYhdraqh",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602000923,
+        "prompt": "How should I move to leave this room through the door near most?",
+        "text": "Backward.",
+        "answer_id": "edzE7wHhvKf6fTUjJPXfRR",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602000940,
+        "prompt": "Is the shape of table behind me round, square or rectangular?",
+        "text": "Rectangular.",
+        "answer_id": "GrSGMqP6YmGQnSDx7r4sfY",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602000961,
+        "prompt": "What is beside the door that is on my 7 o'clock?",
+        "text": "There is a shelf.",
+        "answer_id": "PEVmxED7kF9sXkADzVXigp",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001086,
+        "prompt": "If there was a fire, what direction should I go to exit the room?",
+        "text": "Left.",
+        "answer_id": "Wvc9Y5u3QxSoP8nKSMoY64",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001087,
+        "prompt": "What object is to my right?",
+        "text": "Washing machine.",
+        "answer_id": "EAVUARWqBjV9oku9adWbzs",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001163,
+        "prompt": "How many boxes are in the room?",
+        "text": "1.",
+        "answer_id": "jLvYxmcPSv5ACFArZqXFmA",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001196,
+        "prompt": "To ensure my clothes come out smelling nice on the washing machine in front of me, what should I add to the washing machine?",
+        "text": "Detergent.",
+        "answer_id": "Jtryq4dd3ZHyamugKfZUdW",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001387,
+        "prompt": "Need to take clothes out after they done washing, which dicrection to go?",
+        "text": "Backward.",
+        "answer_id": "R3Wju9zQDzjtFWdVbQFik7",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001433,
+        "prompt": "What is on the 12 o'clock of the cabinet that is on my right?",
+        "text": "Chair.",
+        "answer_id": "kBRwRTPpJ3AFsb9jyxALxe",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001473,
+        "prompt": "Is it possible to exit the room by walking towards my left?",
+        "text": "Yes.",
+        "answer_id": "nJogzyzjxY6fXeVLyv6svB",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001668,
+        "prompt": "Where will people come in from?",
+        "text": "Door.",
+        "answer_id": "LxtKQ9WL7c8wjXPFbfjv5v",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001750,
+        "prompt": "Does the table in front and the washing machine behind have similar color?",
+        "text": "No, the table is white and the washing machine is silver.",
+        "answer_id": "asMdBDaFHeG4s6MjDd78px",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602001975,
+        "prompt": "Which direction should I go if I want to leave this room?",
+        "text": "Left.",
+        "answer_id": "9w8tcuCRJ5Dzq7Su74nb43",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602002157,
+        "prompt": "What is behind me and in front of the windows?",
+        "text": "Chair.",
+        "answer_id": "Gjb5AKtoop9nG5WQUiHTe5",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602002295,
+        "prompt": "What color is the table to my right?",
+        "text": "Brown.",
+        "answer_id": "UcNUZADwm5ZrGwZkc9J4W9",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602002636,
+        "prompt": "Is the curtain behind me?",
+        "text": "Yes.",
+        "answer_id": "jsyBu9EJssNmWbsbBTqNpU",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602002648,
+        "prompt": "How should I turn to leave the room through the door near the washing machine?",
+        "text": "Left.",
+        "answer_id": "gdgEdZrncztP4CrChVTCxJ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003435,
+        "prompt": "How many frying pans are in front of me?",
+        "text": "1.",
+        "answer_id": "SqoJzeWuoHkBJE9xVVLiWv",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003449,
+        "prompt": "Where do I wash my hands?",
+        "text": "Wash hands in the sink.",
+        "answer_id": "m4nwNA6csea3koEMW4HAfM",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003459,
+        "prompt": "Are there two or three boxes on top of the cabinets?",
+        "text": "Three.",
+        "answer_id": "YHQVvAQSi9DaC3haPssSeD",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003692,
+        "prompt": "Can I see the blackboard from where I am standing?",
+        "text": "Yes.",
+        "answer_id": "cvZKq5tCnaeMhyPNbmBKvU",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602003720,
+        "prompt": "Where is the box located?",
+        "text": "On the floor.",
+        "answer_id": "Cg3szxvZs5bGucRqMvYUNs",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602004129,
+        "prompt": "What is between me and the door in front of me?",
+        "text": "Chair.",
+        "answer_id": "LpVnU6ZKRM7knxUXGF2BTA",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602004212,
+        "prompt": "Are there more chairs to my left or to my right?",
+        "text": "Right.",
+        "answer_id": "DNf8E72V2isssDJxuw8uv8",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602004282,
+        "prompt": "If I wanted to wash my dirty mugs, where should I wash them to my right?",
+        "text": "Sink.",
+        "answer_id": "CXnZk6j9qvLU4NjSKQNBKz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602004769,
+        "prompt": "How many windows are on the wall to my right?",
+        "text": "2.",
+        "answer_id": "nfmLjTY5xnkqkmDV2Zzecc",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602004816,
+        "prompt": "What is hanging from the window in front of me?",
+        "text": "Curtain.",
+        "answer_id": "RJo4aGsESgU5zE5AoJPXgP",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005148,
+        "prompt": "What is the pile of clothes behind me lying on?",
+        "text": "Floor.",
+        "answer_id": "fXLzUkE3YAvFFTXv88i9GW",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005396,
+        "prompt": "What is the weakest point of the window in front of me?",
+        "text": "Glass.",
+        "answer_id": "6nrmSdhWa43sfNWqA3pTct",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005593,
+        "prompt": "What is behind the table in front of me?",
+        "text": "Shelf.",
+        "answer_id": "GEVq6fWFxWBCeUvN5vK3JU",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005636,
+        "prompt": "Can I see the windows from my angle of view?",
+        "text": "Yes, I can see the windows from my angle of view.",
+        "answer_id": "DfrYLc3S9qckbiwv5Siyd7",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005854,
+        "prompt": "What is provided around the tables behind me?",
+        "text": "Chairs.",
+        "answer_id": "T9VhFE9ZNGwHK6SZqc86XP",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602005990,
+        "prompt": "What color is the shower on my left?",
+        "text": "White.",
+        "answer_id": "BgHdEVJeVRw4oNvgzW6MVR",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602006150,
+        "prompt": "Is the number of cabinets on either side of the room behind me even or odd?",
+        "text": "Even.",
+        "answer_id": "aVGTRjoqifjiwicp5FYTt8",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602006480,
+        "prompt": "What color is the kitchen cabinets on my right?",
+        "text": "Brown.",
+        "answer_id": "WPEmr6Zi3ADnLxnPYt9bnS",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602006659,
+        "prompt": "To what direction should I move to wash my hands in the sink?",
+        "text": "Right.",
+        "answer_id": "NoVE3d6X82YtJEwKLXRfDo",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602006706,
+        "prompt": "Which side of the room is the washing machine on?",
+        "text": "Left.",
+        "answer_id": "ayX9xNuAdNi88jq7vWgF7n",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602006742,
+        "prompt": "What is on top of the cabinet that is on my right?",
+        "text": "Microwave.",
+        "answer_id": "4HC9EDTeFT9mJhkVXnwVZt",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602006774,
+        "prompt": "What is on the wall to my right?",
+        "text": "Whiteboard.",
+        "answer_id": "YqmTezwry9HYXytAouQVNZ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602006975,
+        "prompt": "What keeps the water warm on the shower to my left that is behind me?",
+        "text": "Radiator.",
+        "answer_id": "dAKT8LY98MMLbp2t8bxBrE",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007074,
+        "prompt": "How many people can be seated for the presentation?",
+        "text": "30.",
+        "answer_id": "WY6SK6uSuWXu54fb8vuHy4",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007274,
+        "prompt": "What is behind the sink I am facing?",
+        "text": "Window.",
+        "answer_id": "juL6cK7d8F2BFT98JdqEyx",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007308,
+        "prompt": "What is on the 11 o'clock of the chair in front of me?",
+        "text": "Chair.",
+        "answer_id": "i7Y7yRiSqiBNLcamcnDUZv",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007312,
+        "prompt": "What is nearer to me, the washing machine or this cabinet?",
+        "text": "Washing machine.",
+        "answer_id": "Lg7N4VTn3hkVARo6G8ijWq",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007354,
+        "prompt": "Are the chairs to my right organized in a row or randomly placed?",
+        "text": "Organized in a row.",
+        "answer_id": "jZHxuWeGfwe7cvMQA6N4j2",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007372,
+        "prompt": "Where are the monotors located?",
+        "text": "On the table.",
+        "answer_id": "fhb8tPwSfjrHYDxxgKuzuV",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007379,
+        "prompt": "What is in front of me is a flat?",
+        "text": "Counter.",
+        "answer_id": "Gmv4cmddJQGCFVvRxEmoJY",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007500,
+        "prompt": "What is on the door that is see through on my left side?",
+        "text": "Towel.",
+        "answer_id": "gnNo4wWBKFWZQQpTRtSHob",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602007990,
+        "prompt": "Can I see the door while I am facing the window?",
+        "text": "Yes.",
+        "answer_id": "QAjdzTshXu3jTu24ZvCLd5",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008039,
+        "prompt": "What is on my left side that you can reheat food with?",
+        "text": "Microwave.",
+        "answer_id": "XdSkCyHPJnWtpbjY829QE3",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008142,
+        "prompt": "How many chairs are in the room?",
+        "text": "14.",
+        "answer_id": "kv8vgPMiYssvuHdn9cGUaz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008269,
+        "prompt": "How many chairs behind the table behind me?",
+        "text": "4.",
+        "answer_id": "2A76HcvwiCuXfNsYdW6RYm",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008273,
+        "prompt": "How many shelves are on my right side?",
+        "text": "1.",
+        "answer_id": "DM3wdSzxCWtjMpeJjsy4re",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008332,
+        "prompt": "To wash my whole body with soap and shampoo, where can I go to do that on my left side?",
+        "text": "You can go to the shower.",
+        "answer_id": "oAL2HjcSsLTGEBpYrnFxaz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008375,
+        "prompt": "What is on top of the oven that is on my 8 o'clock?",
+        "text": "Microwave.",
+        "answer_id": "RtFdWiHLtaNjjvTFvTQQZi",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602008655,
+        "prompt": "If I want to take a shower, should I go left or right?",
+        "text": "Left.",
+        "answer_id": "Kz6q4kRrNdGXehZuGEo83K",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009123,
+        "prompt": "What is on the 12 o'clock of the cabinet at my right?",
+        "text": "There is a shelf.",
+        "answer_id": "CW6F4YBjbmAxjQq8yUQeb5",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009230,
+        "prompt": "How many tables are in the room?",
+        "text": "1.",
+        "answer_id": "WWnFdL9NB8xJMg7Cgkksqv",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009265,
+        "prompt": "Is the table to my left round or rectangular?",
+        "text": "Rectangular.",
+        "answer_id": "Uz4e72yMaSsHm3XPTeMfiX",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009275,
+        "prompt": "What is directly in front of me beyond the drying rack?",
+        "text": "Washing machine.",
+        "answer_id": "YCie4BuTJGQAxhqsWGnDWN",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009594,
+        "prompt": "What is in front of me that I can use to cook?",
+        "text": "Stove.",
+        "answer_id": "WJs33DZwwopTre24FKEETu",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009691,
+        "prompt": "What is nearer to me , the shower or the washing machine?",
+        "text": "Washing machine.",
+        "answer_id": "5MesCpsN4sZs48EQivPSn3",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009795,
+        "prompt": "What is immediately in front of me?",
+        "text": "Door.",
+        "answer_id": "AY8b2xroHXfiFxkefJ8r7d",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009936,
+        "prompt": "How many walls have windows?",
+        "text": "3.",
+        "answer_id": "mAmS5QgDyhY7c3dgo5vkF3",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602009951,
+        "prompt": "What is on the right of the table in front of me?",
+        "text": "Chair.",
+        "answer_id": "FCUQAYKhYpWGNxbmncvi4V",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010115,
+        "prompt": "Is the total amount of chairs odd or even?",
+        "text": "Even.",
+        "answer_id": "4PGgHtR5h8RHR7PpWabNk6",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010291,
+        "prompt": "What is on the 9 o'clock of the door that is on my left?",
+        "text": "Washing machine.",
+        "answer_id": "k7tYTiwxggaGFcaToZ3u4t",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010405,
+        "prompt": "What is the object to the right of the refrigerator?",
+        "text": "Shelf.",
+        "answer_id": "UKYFRQqDbM5zTAjQBtzm9n",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010476,
+        "prompt": "What color is the table behind me?",
+        "text": "Brown.",
+        "answer_id": "Zfx9xhdvRH6UDNdFjcQ6V5",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602010807,
+        "prompt": "What shape does the counter to my left resemble?",
+        "text": "Rectangular.",
+        "answer_id": "BxRqQBsgyT4cdmfw4Q9yfH",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011240,
+        "prompt": "What is leaking hot water all over the floor in the room to my right?",
+        "text": "Radiator.",
+        "answer_id": "54zn5CRaFu4xTHAyCKP6Jz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011298,
+        "prompt": "What color is the oven in front of me?",
+        "text": "Silver.",
+        "answer_id": "LvieW5R84KXS82gyo45RKJ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011314,
+        "prompt": "What is on top of the kitchen counter?",
+        "text": "There is a sink.",
+        "answer_id": "Fcq5Kj9GS7JFNtTW8q6byd",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011559,
+        "prompt": "To what direction should I move to get into the shower?",
+        "text": "Forward.",
+        "answer_id": "RvB6bwCYezzPLneJytX94Z",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011582,
+        "prompt": "Will people be sitting at the table only?",
+        "text": "No.",
+        "answer_id": "8U6tHSw3fvVQed5Eg8SYZs",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011844,
+        "prompt": "Is the table behind me clear of any objects?",
+        "text": "No.",
+        "answer_id": "mAuo2AvCoLXhwp5BS2Ai5y",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602011962,
+        "prompt": "Is there a picture hung on the wall to my left?",
+        "text": "Yes, there is.",
+        "answer_id": "QFMjMDa4R62ttBfuqaEXZx",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012017,
+        "prompt": "What is farthest behind me?",
+        "text": "Cabinet.",
+        "answer_id": "ZBzSguWJfoj4SVqpssAzED",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012242,
+        "prompt": "What is above the table at my 5 o'clock?",
+        "text": "Whiteboard.",
+        "answer_id": "aJfdSGJNSLay47LHQvGkaj",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012256,
+        "prompt": "I need to grab a blanket out of my crate, which direction should I go?",
+        "text": "Left.",
+        "answer_id": "DtvASHywqXJxc7pJVBkXr7",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012401,
+        "prompt": "Where is the sink from where I am standing?",
+        "text": "The sink is to my right.",
+        "answer_id": "KU2K9crVwafnuqHCWg7Xkm",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012614,
+        "prompt": "What is to my right that I can use to bake cake?",
+        "text": "Stove.",
+        "answer_id": "PW5s9PjP2hTjotyE7N9W3X",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012896,
+        "prompt": "How many signs are near the sink behind me?",
+        "text": "2.",
+        "answer_id": "5JeXkRBSHNBihhjyByqKiX",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602012995,
+        "prompt": "The table to my right is what shape?",
+        "text": "Rectangular.",
+        "answer_id": "fMgJwqgzYDuDRH6hXRBGdj",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013108,
+        "prompt": "What appliance can I use to bake cookies with on my left side?",
+        "text": "Oven.",
+        "answer_id": "gPkzzx8rTHdH2M2ivWeN6m",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013273,
+        "prompt": "What is on top of the table that is on my left around the corner of my 7 o'clock?",
+        "text": "There is a box on top of the table.",
+        "answer_id": "mvsvqTNr3LMMSUiJkw9dHu",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013301,
+        "prompt": "Which way do I turn to find the mattress?",
+        "text": "Left.",
+        "answer_id": "kayuBAAi7CPjc4n4fhJrDL",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013338,
+        "prompt": "Are the monitors in front of me or behind me?",
+        "text": "Behind.",
+        "answer_id": "58bLiVdxoKsRG5gVthxyaZ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013516,
+        "prompt": "How many ovens are on my right?",
+        "text": "1.",
+        "answer_id": "NKMrjGvvjZpWJ6YjBLMgPU",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013562,
+        "prompt": "What is set around the sink I am using?",
+        "text": "Cabinets.",
+        "answer_id": "W9qKp65teUTnntZRM4e7JL",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013779,
+        "prompt": "Which direction should I go if I want to open the window?",
+        "text": "Left.",
+        "answer_id": "mjfZWcVCGLwZpzMe4mDkDQ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602013975,
+        "prompt": "How many boxes are behind me?",
+        "text": "1.",
+        "answer_id": "RZtXtua3PEdkYCB23Lkebk",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014451,
+        "prompt": "What boxes are on my far right?",
+        "text": "Storage.",
+        "answer_id": "PEMEq8JRybfvZC8FL2ejp4",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014722,
+        "prompt": "What is on the right of the table on my 1 o'clock?",
+        "text": "Door.",
+        "answer_id": "NgwJBC68dZT5WdnhhUE4kr",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014887,
+        "prompt": "What is closer to me between the drying rack to my left and the washing machine to my right?",
+        "text": "Washing machine.",
+        "answer_id": "55veQc8T63qicxwfPY5VaJ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014920,
+        "prompt": "How many sinks are to my left?",
+        "text": "1.",
+        "answer_id": "ASBEGQciVfXxEMsdQ7drCJ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014969,
+        "prompt": "What is on the left side of the table in front of me?",
+        "text": "Chair.",
+        "answer_id": "DyRd4f8Kn24QemKpnmrhYJ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014984,
+        "prompt": "Can the number of signs behind me be divided by three?",
+        "text": "No.",
+        "answer_id": "AmnMvsoTEwX8zpiQosDMfH",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602014988,
+        "prompt": "What is the largest furniture behind me that has flat surface?",
+        "text": "Table.",
+        "answer_id": "Wfjg4ZTF7mXpZiizmGYict",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015114,
+        "prompt": "Is the amount of chairs around the table odd or even?",
+        "text": "Even.",
+        "answer_id": "kwTDpEd4HjPJ44iwi8e8xA",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015238,
+        "prompt": "Which one is larger between the water heater behind me and the washing machine on my right?",
+        "text": "Washing machine.",
+        "answer_id": "gTMYSUdVF2A79z8mbESqpA",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015290,
+        "prompt": "Can the number of chairs behind me be divided by three?",
+        "text": "No.",
+        "answer_id": "5RoaeRQ7ZwFDvDmFGmBgKr",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015508,
+        "prompt": "Which direction should I go if I want to take frying pan?",
+        "text": "Left.",
+        "answer_id": "9wwvCsdCL6yJqNWRrqRWWt",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015569,
+        "prompt": "How many signs are in the room?",
+        "text": "1.",
+        "answer_id": "jPLmdX2oRH4Wj35H87EvE6",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015632,
+        "prompt": "Can I see the curtains covering the window?",
+        "text": "Yes.",
+        "answer_id": "XyTu3fLwGUtLTXYcsazw6N",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015884,
+        "prompt": "How many fridges are in front of me?",
+        "text": "1.",
+        "answer_id": "eqguffbLpCGWNPEkZCVgpy",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602015950,
+        "prompt": "What is on the 6 o'clock of the table that is on my left?",
+        "text": "Chair.",
+        "answer_id": "R3zmyqjYekZKPKEeumZCMu",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016274,
+        "prompt": "Are the sinks to my left or right?",
+        "text": "Right.",
+        "answer_id": "AkzGFXzzuQ89CVy5PsAm2W",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016282,
+        "prompt": "Which cabinets can I access easily?",
+        "text": "The cabinet under the table.",
+        "answer_id": "c7Pcsg3z3qTd6cbsHn3VLA",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016544,
+        "prompt": "Which side do I move to if I want to exit the room?",
+        "text": "Right.",
+        "answer_id": "6pD9Wieo9tKNxQtdfTyAm5",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016561,
+        "prompt": "Which way is the door to exit?",
+        "text": "Left.",
+        "answer_id": "2MmMxAvm5WEctDh7ab5jyz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016732,
+        "prompt": "What is above the refridgerator I am facing?",
+        "text": "Kitchen cabinets.",
+        "answer_id": "YKTWZ2juxsowpWRDQHEBTr",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016845,
+        "prompt": "What is in the corner to my right?",
+        "text": "Whiteboard.",
+        "answer_id": "7QmxgiXnURcDVV7wRbBo3i",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602016920,
+        "prompt": "Am I in the bathroom or am I in a meeting room?",
+        "text": "Meeting room.",
+        "answer_id": "EVSgK7NEvXMc44Xuc3JCxb",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017034,
+        "prompt": "Is the number of boxes on my right even or odd?",
+        "text": "Odd.",
+        "answer_id": "LkVJRx2Efo3JR63dnRH6Me",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017268,
+        "prompt": "What is near the washing machine on my left that makes lots of bubbles?",
+        "text": "Bottle.",
+        "answer_id": "9f54hArRhFaWxERxTaVEKn",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017557,
+        "prompt": "What would I running to ifni walked straight backward?",
+        "text": "I would run to the door.",
+        "answer_id": "EzpCjpFy8D4xri9dsdpqVB",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017686,
+        "prompt": "Is the floor patterned or solid?",
+        "text": "Patterned.",
+        "answer_id": "hMVsgn3bSXoGFmbHxwmABW",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017940,
+        "prompt": "What is on top of the table in front of me?",
+        "text": "There is a box on top of the table.",
+        "answer_id": "o3zh4sMnoTdcZYkLb3C6AJ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602017980,
+        "prompt": "Is the amount of chair on my right odd or even?",
+        "text": "Even.",
+        "answer_id": "kxSJtBzGVVaDrqDW5kVvk7",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018329,
+        "prompt": "How many chairs are behind me?",
+        "text": "1.",
+        "answer_id": "aAE4JrDVAg6ZHX5SAazTNg",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018334,
+        "prompt": "How many pans are in the oven to my left?",
+        "text": "1.",
+        "answer_id": "ZXBzAwytNe6xXQRgdXBE4L",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018407,
+        "prompt": "What is above the table?",
+        "text": "Window.",
+        "answer_id": "Coxx99mUWWdyjQVksaTgoQ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018427,
+        "prompt": "What is behind the table that is on my 1 o'clock?",
+        "text": "Shelf.",
+        "answer_id": "DepLvpkWXKWKng6esLAk5o",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018647,
+        "prompt": "How many sinks are there?",
+        "text": "1.",
+        "answer_id": "cdcpnk8iGC5icqSF9BRkMw",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018963,
+        "prompt": "Is the refrigerator closer to the cabinet or the radiator?",
+        "text": "Cabinet.",
+        "answer_id": "KhceSjGZC6HPUVhffczDfL",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602018966,
+        "prompt": "What is on the 12 o'clock of the mattress that is on my right?",
+        "text": "Chair.",
+        "answer_id": "jdhgpta925xnYHeBHTza3K",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019125,
+        "prompt": "What is on the 6 o'clock of the chair behind me?",
+        "text": "Whiteboard.",
+        "answer_id": "LaWXCAMr3tEXCkUbnCp2XK",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019271,
+        "prompt": "What color is the chair to my left?",
+        "text": "Brown.",
+        "answer_id": "ThY9NDNsKgtK4M6hAbK46y",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019403,
+        "prompt": "What is to the left of the cabinet?",
+        "text": "Door.",
+        "answer_id": "KUyRFmq9rGpuQRYqikxGCU",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019502,
+        "prompt": "Is the door behind me open or closed?",
+        "text": "Closed.",
+        "answer_id": "SAS7Na5mt5MyUgcTuBtB5r",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019760,
+        "prompt": "What is under the kitchen counter in front of me?",
+        "text": "Cabinet.",
+        "answer_id": "ZUzvttgJS7gmcFZ4cpsmkM",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019914,
+        "prompt": "How many monitors are in front of me?",
+        "text": "1.",
+        "answer_id": "PpqSUZFNsRHvWo6nicaLYw",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602019965,
+        "prompt": "Are there a lot of lights on in the room?",
+        "text": "Yes.",
+        "answer_id": "5pUxuRA8nuWQDJkgkaN63c",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020143,
+        "prompt": "What is in the room to my right that I need to check on if the water keeps coming out ice cold?",
+        "text": "Water cooler.",
+        "answer_id": "nEmg2cRqkWhvzHyXXwFcde",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020157,
+        "prompt": "How many chairs are on either side of the table on my right?",
+        "text": "2.",
+        "answer_id": "gLKFgx8o8Kj5v29WVhFZ4o",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020266,
+        "prompt": "If I have dirty clothes, where can I place them to get washed in front of me?",
+        "text": "Washing machine.",
+        "answer_id": "fx4WEM88pUaPzQeLCmaMBk",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020295,
+        "prompt": "What shape is the table behind me in the corner of the room?",
+        "text": "Rectangular.",
+        "answer_id": "5vkw4sJ4QVehWsfMGEsTuh",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020601,
+        "prompt": "What is on the 3 o'clock of the cabinet that is on my 11 o'clock?",
+        "text": "Chair.",
+        "answer_id": "DBYzHZEFdUHB8AQ78eJDNg",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020687,
+        "prompt": "Can I take the ice from a fridge behind me without moving the things in the room?",
+        "text": "No.",
+        "answer_id": "aZTWPWaDTqAZgeneDbkB3W",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020835,
+        "prompt": "Can I reach the microwave?",
+        "text": "Yes.",
+        "answer_id": "nE339wzxyZNozK7XgGKebW",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602020854,
+        "prompt": "How many windows can I see?",
+        "text": "2.",
+        "answer_id": "ETZeH6GdLVnCxQcSoMb3iG",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602021071,
+        "prompt": "Which side do I have to turn to see the monitors?",
+        "text": "Left.",
+        "answer_id": "4ftHPfe7dsXKBuCTXJ65m9",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602021348,
+        "prompt": "Can I see the crate from where I am standing?",
+        "text": "Yes.",
+        "answer_id": "FcHeqNw8DK37y2Mc3a2d8B",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602021993,
+        "prompt": "What appliance is to my left that is continuously on?",
+        "text": "Microwave.",
+        "answer_id": "XMoTCBtdA8jZiySMHCpniB",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602022004,
+        "prompt": "What side are the windows on from where I am standing?",
+        "text": "Left.",
+        "answer_id": "m6XgbaLmz49pdbM4sR3Uoi",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602022454,
+        "prompt": "What is on top of the kitchen counter behind me?",
+        "text": "There is a sink on top of the kitchen counter behind me.",
+        "answer_id": "WCdbjiD8vai9qSdtMmXjWZ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602022621,
+        "prompt": "How many cabinets are behind me?",
+        "text": "1.",
+        "answer_id": "M5ed9aXoc4WJcfQ6Mbv7AY",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602022652,
+        "prompt": "Is the amount of pictures I am facing odd or even?",
+        "text": "Odd.",
+        "answer_id": "6GUu4VmQvAxbSmY3h4H45R",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602022969,
+        "prompt": "What is on top of the washing machine?",
+        "text": "There is a basket.",
+        "answer_id": "aon5NujitQLnbGHnEPF9xF",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602023313,
+        "prompt": "How many cabinets are in front of me?",
+        "text": "1.",
+        "answer_id": "YvMMMGTLuahc2sWxn3Qrsf",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602023365,
+        "prompt": "Is it possible to see out through the window by turning my head rightwards?",
+        "text": "Yes.",
+        "answer_id": "J64rNYRgh6GAT434k6kSJd",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602023654,
+        "prompt": "What is on the 7 o'clock of the mattress behind me?",
+        "text": "Chair.",
+        "answer_id": "386orQXjfXZZaZeerTHLW5",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602023733,
+        "prompt": "What is behind me?",
+        "text": "Kitchen island.",
+        "answer_id": "cqQPYdhs9vTi2XcwynJgiT",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602023749,
+        "prompt": "How many windows are on my left?",
+        "text": "1.",
+        "answer_id": "VNJbFLFAnvTeQAcgV5PFFf",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024134,
+        "prompt": "What is in the corner to my left?",
+        "text": "Whiteboard.",
+        "answer_id": "3zqmCRKDdFo8G3gHG2crvx",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024150,
+        "prompt": "What is above the sink?",
+        "text": "Cabinet.",
+        "answer_id": "EFmRUYhvwuoVbPthfkae2v",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024225,
+        "prompt": "What color is the water heater behind me?",
+        "text": "White.",
+        "answer_id": "JsVMQhthuGt2akCuqrxBXS",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024308,
+        "prompt": "What can I see between the white water heater and the door in my 2 o'clock direction?",
+        "text": "There is a washing machine.",
+        "answer_id": "PmdKktAtsr6FTUzmFNu27i",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024374,
+        "prompt": "Where is the mattress located?",
+        "text": "On the floor.",
+        "answer_id": "8GDV2ck5DYKHqsEkGC6Emg",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024391,
+        "prompt": "Which direction should I go if I want to use blackboard?",
+        "text": "Right.",
+        "answer_id": "GB9rKzvtc3FawY25J2f6g3",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024508,
+        "prompt": "How many signs are to my right?",
+        "text": "1.",
+        "answer_id": "Gep9JNcpjJn8AR2trmcreY",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024578,
+        "prompt": "How many doors are in the room?",
+        "text": "2.",
+        "answer_id": "BvWLcHQTF7aBykDE8RKVEx",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602024976,
+        "prompt": "What is on top of the radiator that is behind the table at my 1 o'clock?",
+        "text": "There is a plant.",
+        "answer_id": "8UAahwV8XfNhdBB2k3jLgJ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602025177,
+        "prompt": "What do I see if I turn around?",
+        "text": "I see a cabinet when I turn around.",
+        "answer_id": "cn2bPXCniQRTo6BRYnwuyS",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602025220,
+        "prompt": "Are the monitors in front of me powered off or powered on?",
+        "text": "Powered off.",
+        "answer_id": "Z6wUtx6PbyhruWXhMzxpu8",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026029,
+        "prompt": "What is behind the table and the cabinet?",
+        "text": "Radiator.",
+        "answer_id": "dN9aDDqeQkgP2TL2eHMkSK",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026238,
+        "prompt": "Is the amount of door I am facing odd or even?",
+        "text": "Odd.",
+        "answer_id": "cUbd7TFzKd6zxU8KqiF6eS",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026328,
+        "prompt": "What do I write on in front of me?",
+        "text": "Table.",
+        "answer_id": "BxCKUUg83zGeCPBtmtfg2P",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026433,
+        "prompt": "Is the door in front of me open or closed?",
+        "text": "Closed.",
+        "answer_id": "ZsWduA9CLDXGvp2XXrc3TA",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026528,
+        "prompt": "What in my 4 o'clock direction could I use to hang out the clothes after washing?",
+        "text": "Clothes dryer.",
+        "answer_id": "Pdxdu8wTkft9MtweAJN4nE",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026962,
+        "prompt": "Am I closer to the washing machine or the water heater?",
+        "text": "Washing machine.",
+        "answer_id": "76FcsfbvCXhbgJYWjQ4RVZ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602026969,
+        "prompt": "What is the object on the table in the top left corner?",
+        "text": "Monitor.",
+        "answer_id": "FAoHNttMU9fByKFFWJFUxz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602027203,
+        "prompt": "Can I see the shower from where I am standing?",
+        "text": "Yes.",
+        "answer_id": "fCRei6ESsJyJ3uRBtitCZd",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602027682,
+        "prompt": "What direction are the drying racks?",
+        "text": "Vertically.",
+        "answer_id": "XCWWa59jPMJAk24YFepdPL",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602027742,
+        "prompt": "What is on 6 o'clock of the blackboard at my left?",
+        "text": "Brown wooden chair.",
+        "answer_id": "RQ2FsigKNbKRJQvzcpxALX",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602027923,
+        "prompt": "Where is the oven?",
+        "text": "Left of stove.",
+        "answer_id": "gPFbJDpiUGS66PCkgqkwjX",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602027973,
+        "prompt": "Where do I access the window?",
+        "text": "You can access the window through the door.",
+        "answer_id": "JVak7XY383Bsi363F7WXfX",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028011,
+        "prompt": "How many cabinets are on my right?",
+        "text": "1.",
+        "answer_id": "7D7sioVx4bLivzjt5aN69G",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028391,
+        "prompt": "What is behind me that is flat and has legs?",
+        "text": "Table.",
+        "answer_id": "fUdQQMDprCMAJkoZJJtXMj",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028560,
+        "prompt": "Are the an odd or even number of chairs in the group against the wall across from me?",
+        "text": "Even.",
+        "answer_id": "hS8GiADZsT7BQmZu9fTBsR",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028663,
+        "prompt": "Is the door in my 10 o'clock direction open or closed?",
+        "text": "Closed.",
+        "answer_id": "fCu94esBvo5dNyzaWqYyRu",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028811,
+        "prompt": "What color is the stove in front of me?",
+        "text": "Silver.",
+        "answer_id": "c7JH4kfvH2bxe6jjuZ6UB6",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028892,
+        "prompt": "What is above the oven that is on my right side?",
+        "text": "Microwave.",
+        "answer_id": "azRV4J5iiGNYoxheUVDZkA",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028902,
+        "prompt": "Is the window in front of me large or small?",
+        "text": "Large.",
+        "answer_id": "BapT6QaGAShmrgac8xqjHU",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028916,
+        "prompt": "Is the washing machine on my right within my touch?",
+        "text": "No.",
+        "answer_id": "ZnnKzSNwAX2crd6tSYh7WS",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602028938,
+        "prompt": "What color is the floor I am standing on?",
+        "text": "Black.",
+        "answer_id": "Wm2wZ7VyjgnTze9vuLgtEk",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029068,
+        "prompt": "Where will I be writing with chalk during the presentation?",
+        "text": "On blackboard.",
+        "answer_id": "o5GxBhTKMmdKQzwdQNKBTo",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029095,
+        "prompt": "What am I standing on top of which is surrounded by chairs?",
+        "text": "Carpet.",
+        "answer_id": "bWDvSz7xaR76nnWsRqceXJ",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029565,
+        "prompt": "Is the amount of monitors on top of the cabinet of my right odd or even?",
+        "text": "Even.",
+        "answer_id": "gHt4BnQgx3VVf3aG94LPNP",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029569,
+        "prompt": "What is to the right of the washing machine?",
+        "text": "Clothes dryer.",
+        "answer_id": "cWQNjarE4433tqtexgAtQ9",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602029711,
+        "prompt": "What is on top of the cabinet that is on my right?",
+        "text": "There is a tv on top of the cabinet.",
+        "answer_id": "QocCgssBw7eVjuqcBSv3zc",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602030011,
+        "prompt": "What is the largest furniture behind me that has flat surface?",
+        "text": "Table.",
+        "answer_id": "mw5YVm33S7AvSTGFngRMd9",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602030043,
+        "prompt": "Is the projector on top of the table I am currently sitting at?",
+        "text": "Yes.",
+        "answer_id": "MtmiVSx9FoEqfvvmjk2kTz",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602030142,
+        "prompt": "Am I sitting in a chair or standing?",
+        "text": "Sitting.",
+        "answer_id": "aXGWReTVc9EZM5uohbJVrt",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602030285,
+        "prompt": "Is the mattress on or off of a bed?",
+        "text": "Off.",
+        "answer_id": "VTmejhjPkADvDUd7EGPBtH",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602030578,
+        "prompt": "Is the door behind me closed?",
+        "text": "No.",
+        "answer_id": "7gDLN58MG88Jf9zJxtWDJX",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602030691,
+        "prompt": "How many signs are in the room?",
+        "text": "1.",
+        "answer_id": "DwvoXem5FmQZHGuYSrGV65",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031002,
+        "prompt": "Are there multiple chairs between me and the window?",
+        "text": "Yes.",
+        "answer_id": "hXpgG3KYkdaaZ36mwEMWpR",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031104,
+        "prompt": "Are the water heaters in front of me similar in color?",
+        "text": "Yes.",
+        "answer_id": "29eCCftdTetCkgEc47medu",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031508,
+        "prompt": "What is beside the frying pan that is on my right side?",
+        "text": "There is a stove next to it.",
+        "answer_id": "2HpugPmbBwr7VdC24gbsEt",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031568,
+        "prompt": "What is on the right of the table in front of me?",
+        "text": "Shelf.",
+        "answer_id": "8wvZvNwenFxKnXSkLFbw4B",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031600,
+        "prompt": "Can I see the oven if I turn around?",
+        "text": "Yes.",
+        "answer_id": "5pVEcR4pkKS9KGJWQeHZsw",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031624,
+        "prompt": "Which direction should I go if I want to open the window?",
+        "text": "Left.",
+        "answer_id": "HL3ajuLAXM548ARhuf9QqW",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031692,
+        "prompt": "What way do I turn to use the oven?",
+        "text": "Left.",
+        "answer_id": "HzrECu3NeGXQZShqE6KS7V",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602031864,
+        "prompt": "What is on the 6 o'clock of the mattress behind me?",
+        "text": "Chair.",
+        "answer_id": "mrs88GHzZKAQ536fSVYcY8",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602032689,
+        "prompt": "What is on top of the cabinet that is on my 11 o'clock?",
+        "text": "Shelf.",
+        "answer_id": "6KJtmito9D3zPcAjYQFBED",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602032725,
+        "prompt": "How big is the table behind me?",
+        "text": "Large.",
+        "answer_id": "C3GN6Gxs4oXAWBEYWvWXbM",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602032748,
+        "prompt": "How many windows are in the room?",
+        "text": "1.",
+        "answer_id": "bviYa9uP6Ypimb6qsEM5YX",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602032823,
+        "prompt": "Is the chair behind me pushed in or out?",
+        "text": "Pushed in.",
+        "answer_id": "XG56qnsVYbKU6Bz6sTMyLt",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602033283,
+        "prompt": "Are there shelves to the left of me?",
+        "text": "Yes.",
+        "answer_id": "7BTojgcxstvyNv8BjsDRPV",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    },
+    {
+        "question_id": 220602033387,
+        "prompt": "What is above the refrigerator in front of me?",
+        "text": "Cabinet.",
+        "answer_id": "ciQvGq32HDNToZ9jCEDprA",
+        "model_id": "LLaVA-3D-7B",
+        "metadata": {}
+    }
+]

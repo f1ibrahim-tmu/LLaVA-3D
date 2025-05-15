@@ -102,6 +102,8 @@ def calc_sqa3d_score(preds, gts):
     em_refined_type = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
     print("Total samples:", len(preds))
 
+    #breakpoint()
+
     assert len(preds) == len(gts) 
     for pred, gt in tqdm(zip(preds, gts)):
         question_id = pred['question_id']
@@ -143,6 +145,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     assert len(args.pred_json) == len(args.chunk_idx)
+
+    print(args)
 
     preds = []
     for pred_json in args.pred_json:

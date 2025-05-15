@@ -1,0 +1,77 @@
+python llava/eval/model_sqa3d.py --num-chunks 1 --question-file /data/SceneUnderstanding/7792397/ScanQA_format/scrap.json --video-folder /data/SceneUnderstanding/ScanNet/scans/ --answers-file /root/SceneUnderstanding/LLaVA-3D/experiments/scrap.json --chunk-idx 0 --model-path /data/SceneUnderstanding/checkpoints/LLaVA-3D-7B/
+python llava/eval/sqa3d_evaluator.py --pred-json /root/SceneUnderstanding/LLaVA-3D/experiments/scrap.json --gt-json /data/SceneUnderstanding/7792397/ScanQA_format/scrap_answers.json --num-chunks 1 --chunk-idx 0 >> /root/SceneUnderstanding/LLaVA-3D/experiments/SQA3D/em1_below_35/scrap.txt
+Namespace(pred_json=['/root/SceneUnderstanding/LLaVA-3D/experiments/scrap.json'], gt_json='/data/SceneUnderstanding/7792397/ScanQA_format/scrap_answers.json', num_chunks=1, chunk_idx=[0])
+Total samples: 72
+pred_answer: right gt_answers: right
+pred_answer: yes gt_answers: yes
+pred_answer: bicycle gt_answers: bike
+pred_answer: one gt_answers: one
+pred_answer: bicycle gt_answers: bike
+pred_answer: bed gt_answers: bed
+pred_answer: no, there isn't gt_answers: yes
+pred_answer: three gt_answers: four
+pred_answer: blue gt_answers: blue
+pred_answer: couch gt_answers: cabinet
+pred_answer: off gt_answers: on
+pred_answer: blue gt_answers: blue
+pred_answer: eleven gt_answers: one
+pred_answer: yes gt_answers: yes
+pred_answer: l gt_answers: letter l
+pred_answer: closed gt_answers: closed
+pred_answer: clothing gt_answers: pillow
+pred_answer: wood gt_answers: wood
+pred_answer: curtain gt_answers: curtains
+pred_answer: door gt_answers: curtains
+pred_answer: blue gt_answers: blue
+pred_answer: microwave gt_answers: kitchen cabinet
+pred_answer: bed gt_answers: bed
+pred_answer: 22 gt_answers: five
+pred_answer: covered by curtain gt_answers: covered
+pred_answer: right gt_answers: backward
+pred_answer: sectional gt_answers: sectional
+pred_answer: kitchen cabinets gt_answers: cabinet
+pred_answer: rectangular gt_answers: l shaped
+pred_answer: off gt_answers: off
+pred_answer: no gt_answers: no
+pred_answer: blue gt_answers: blue
+pred_answer: left gt_answers: right
+pred_answer: one gt_answers: one
+pred_answer: white gt_answers: blue
+pred_answer: left gt_answers: right
+pred_answer: closed gt_answers: closed
+pred_answer: l-shaped gt_answers: l-shaped
+pred_answer: stool gt_answers: coffee table
+pred_answer: l-shaped gt_answers: letter l
+pred_answer: l gt_answers: l
+pred_answer: microwave gt_answers: TV
+pred_answer: blue gt_answers: blue
+pred_answer: bicycle gt_answers: bike
+pred_answer: yes gt_answers: yes
+pred_answer: bicycle gt_answers: bicycle
+pred_answer: closed gt_answers: closed
+pred_answer: blue gt_answers: blue
+pred_answer: up gt_answers: down
+pred_answer: l gt_answers: l
+pred_answer: eleven gt_answers: one
+pred_answer: bathroom gt_answers: bathroom
+pred_answer: kitchen counter gt_answers: toaster oven
+pred_answer: toaster gt_answers: toaster oven
+pred_answer: couch gt_answers: couch
+pred_answer: tilt your head to your right to watch your TV gt_answers: left
+pred_answer: left gt_answers: right
+pred_answer: white gt_answers: blue
+pred_answer: cabinet gt_answers: cabinet
+pred_answer: left gt_answers: left
+pred_answer: off gt_answers: off
+pred_answer: two gt_answers: four
+pred_answer: curtainsss gt_answers: curtains
+pred_answer: two gt_answers: one
+pred_answer: curtain gt_answers: curtain
+pred_answer: yes gt_answers: no
+pred_answer: bed gt_answers: bed
+pred_answer: l gt_answers: l
+pred_answer: eleven gt_answers: three
+pred_answer: mat gt_answers: carpet
+pred_answer: cabinet gt_answers: cabinet
+pred_answer: closed gt_answers: open
+{'[sqa3d] EM1': 0.4722222222222222, '[sqa3d] EM1_refined': 0.5555555555555556, '[sqa3d] EM_type0': 0.4749999999988125, '[sqa3d] EM_refined_type0': 0.5999999999985, '[sqa3d] EM_type1': 0.6153846153798816, '[sqa3d] EM_refined_type1': 0.6923076923023669, '[sqa3d] EM_type2': 0.22222222221975307, '[sqa3d] EM_refined_type2': 0.22222222221975307, '[sqa3d] EM_type3': 0.0, '[sqa3d] EM_refined_type3': 0.0, '[sqa3d] EM_type4': 0.0, '[sqa3d] EM_refined_type4': 0.0, '[sqa3d] EM_type5': 0.7142857142755102, '[sqa3d] EM_refined_type5': 0.7142857142755102}

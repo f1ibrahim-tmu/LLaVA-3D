@@ -211,14 +211,14 @@ def process_videos(videos, video_processor, mode='random', device=None, text=Non
 
 
 def tokenizer_image_token(prompt, tokenizer, image_token_index=IMAGE_TOKEN_INDEX, return_tensors=None):
-    prompt_chunks = [tokenizer(chunk).input_ids for chunk in prompt.split('<image>')] # 被 <image> 分开的部分分别 tokenize
+    prompt_chunks = [tokenizer(chunk).input_ids for chunk in prompt.split('<image>')] # tokenize the parts separated by <image> respectively
 
     def insert_separator(X, sep):
         return [ele for sublist in zip(X, [sep]*len(X)) for ele in sublist][:-1]
     
     input_ids = []
     offset = 0
-    # 这里是因为有一个 begin token 所以 offset +1 
+    # There is a begin token, so offset+1
     if len(prompt_chunks) > 0 and len(prompt_chunks[0]) > 0 and prompt_chunks[0][0] == tokenizer.bos_token_id:
         offset = 1
         input_ids.append(prompt_chunks[0][0])

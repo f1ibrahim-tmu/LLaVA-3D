@@ -1,11 +1,27 @@
 #!/bin/bash
 
+# ============= ./sqa3d.sh ============
+# This script wraps the contents of sqa3d.sh.bak in a manner that makes running experiments more convenient.
+#
+# USAGE:
+# ./sqa3d.sh --gpu <int> --questions <path> --pred-answers <path> --gt-answers <path> --outfile <path> [--generate <command>] [other arguments...]
+# --gpu: the gpu to use (the python scripts currently only support one GPU)
+# --questions: the annotations for the scene
+# --pred-answers: where the model's predictions will be written to 
+# --gt-answers: location of the ground truth file 
+# --outfile: where the record of the experiment will be written to 
+# --generate: use this if --questions and --gt-answers already exist (i.e. don't generate the files)
+#       the <command> argument is what gets used to generate the files; pass it in without quotation marks, something like --generate echo 'scene0566_00'
+# [other arguments...] these are arguments that will be passed on to llava/eval/model_sqa3d.py directly; useful for grid search or similar
+# For numerous usage examples, see ./experiment_runner.sh
+# ===================================
 
+# --- handle arguments ---
 declare -A arr
 KEY=""
 VALUE=""
 for ARGUMENT in "$@"; do
-        
+
         if [[ ${ARGUMENT:0:2} == "--" ]]; then
 
                 if [[ $KEY != "" ]]; then
@@ -32,6 +48,16 @@ fi
 
 
 
+# --- higher-order arguments (not passed directly into the python scripts) 
+GPU=${arr['gpu']} && echo "GPU =" $GPU && unset 'arr[gpu]'
+QUESTIONS=${arr['questions']} && echo "QUESTIONS =" $QUESTIONS && unset 'arr[questions]'
+PRED_ANSWERS=${arr['pred-answers']} && echo "PRED_ANSWERS =" $PRED_ANSWERS && unset 'arr[pred-answers]'
+GT_ANSWERS=${arr['gt-answers']} && echo "GT_ANSWERS =" $GT_ANSWERS && unset 'arr[gt-answers]'
+OUTFILE=${arr['outfile']} && echo "OUTFILE =" $OUTFILE && unset 'arr[outfile]'
+GENERATE=${arr['generate']} && echo "GENERATE =" $GENERATE && unset 'arr[generate]'
+
+
+# --- print arguments ---
 echo "arguments:"
 for key in "${!arr[@]}"
 do
@@ -39,4 +65,48 @@ do
 done
 
 
+# --- for the model:
+MODEL_ARGS=""
+arr["question-file"]=${QUESTIONS}
+arr["answers-file"]=${PRED_ANSWERS}
+for i in "${!arr[@]}"; do
+        MODEL_ARGS+="--${i} ${arr[${i}]} "
+done
+
+# --- for sqa3d_evaluator:
+EVALUATOR_ARGS=""
+arr["pred-json"]=${PRED_ANSWERS}
+arr["gt-json"]=${GT_ANSWERS}
+ea=(pred-json gt-json num-chunks chunk-idx)
+for i in "${ea[@]}"; do
+        if [[ ${arr[$i]+_} ]]; then EVALUATOR_ARGS+="--${i} ${arr[${i}]} "; fi
+done
+
+echo "EVALUATOR_ARGS:"
+echo $EVALUATOR_ARGS
+
+
+# --- main script body ---
+
 export CUDA_VISIBLE_DEVICES="$GPU"
+
+# --- set the embodiedscan file ---
+unlink playground/data/annotations/embodiedscan_infos.json
+ln -s /root/SceneUnderstanding/LLaVA-3D/playground/data/annotations/embodiedscan_infos_full_formatted_cluster.json playground/data/annotations/embodiedscan_infos.json
+
+if [[ ${GENERATE} ]]; then
+        echo generating new annotation files...
+        pushd /data/SceneUnderstanding/7792397/ScanQA_format/ # NOTE: hardcoding this should be fine since this is where the various original JSONs live.
+        echo python ../../scripts/generate_SQA3D_LLaVA-3D_annotations.py "<($GENERATE)" ./SQA_train.formatted.json ./SQA_test.formatted.json ./SQA_val.formatted.json ${QUESTIONS}
+        python ../../scripts/generate_SQA3D_LLaVA-3D_annotations.py <($GENERATE) ./SQA_train.formatted.json ./SQA_test.formatted.json ./SQA_val.formatted.json ${QUESTIONS}
+        echo python ../../scripts/generate_SQA3D_LLaVA-3D_gt_answers.py "<($GENERATE)" ./SQA_train.formatted.json ./SQA_test.formatted.json ./SQA_val.formatted.json ${GT_ANSWERS}
+        python ../../scripts/generate_SQA3D_LLaVA-3D_gt_answers.py <($GENERATE) ./SQA_train.formatted.json ./SQA_test.formatted.json ./SQA_val.formatted.json ${GT_ANSWERS}
+        popd
+fi
+
+echo "Commands to run:"
+echo python llava/eval/model_sqa3d.py ${MODEL_ARGS} | tee ${OUTFILE}
+echo python llava/eval/sqa3d_evaluator.py ${EVALUATOR_ARGS} '>>' ${OUTFILE} | tee -a ${OUTFILE}
+
+python llava/eval/model_sqa3d.py ${MODEL_ARGS}
+python llava/eval/sqa3d_evaluator.py ${EVALUATOR_ARGS} >> ${OUTFILE}

@@ -1,0 +1,2 @@
+python llava/eval/model_sqa3d.py --question-file /data/SceneUnderstanding/7792397/ScanQA_format/scrap.json --answers-file
+llava/eval/sqa3d_evaluator.py --pred-json --gt-json /data/SceneUnderstanding/7792397/ScanQA_format/scrap_answers.json >> ./scrap.txt

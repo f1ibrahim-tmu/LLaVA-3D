@@ -1,0 +1,426 @@
+Total samples: 424
+pred_answer: white gt_answers: tan
+pred_answer: two gt_answers: two
+pred_answer: shower gt_answers: sink
+pred_answer: down gt_answers: down
+pred_answer: bucket gt_answers: bucket
+pred_answer: round gt_answers: round
+pred_answer: left gt_answers: right
+pred_answer: even gt_answers: even
+pred_answer: mat gt_answers: rug
+pred_answer: four gt_answers: five
+pred_answer: shelf gt_answers: toilet
+pred_answer: shower gt_answers: bathtub
+pred_answer: right gt_answers: right
+pred_answer: yes gt_answers: no
+pred_answer: yes gt_answers: yes
+pred_answer: yes gt_answers: no
+pred_answer: shower gt_answers: handicap bar
+pred_answer: partially closed gt_answers: partially
+pred_answer: yes gt_answers: no
+pred_answer: to right of table gt_answers: behind
+pred_answer: left gt_answers: left
+pred_answer: white gt_answers: brown
+pred_answer: yes gt_answers: no
+pred_answer: no gt_answers: yes
+pred_answer: no gt_answers: no
+pred_answer: toilet gt_answers: bathroom cabinet
+pred_answer: open gt_answers: unknown
+pred_answer: no gt_answers: yes
+pred_answer: right gt_answers: right
+pred_answer: no gt_answers: no
+pred_answer: towel gt_answers: towels
+pred_answer: shower gt_answers: toilet paper holder
+pred_answer: three gt_answers: two
+pred_answer: one gt_answers: four
+pred_answer: no gt_answers: no
+pred_answer: bathtub gt_answers: toilet
+pred_answer: box gt_answers: printer
+pred_answer: right gt_answers: forward
+pred_answer: four gt_answers: two
+pred_answer: one gt_answers: two
+pred_answer: mirror gt_answers: mirror
+pred_answer: one gt_answers: two
+pred_answer: even gt_answers: odd
+pred_answer: rectangular gt_answers: rectangle
+pred_answer: even gt_answers: even
+pred_answer: mat gt_answers: bathroom cabinet
+pred_answer: blue gt_answers: brown
+pred_answer: twelve gt_answers: eight
+pred_answer: right gt_answers: forward
+pred_answer: white gt_answers: brown
+pred_answer: there are twelve boxes gt_answers: two
+pred_answer: left gt_answers: left
+pred_answer: blue gt_answers: black
+pred_answer: fifteen gt_answers: eight
+pred_answer: yes, there are gt_answers: yes
+pred_answer: right gt_answers: left
+pred_answer: two gt_answers: four
+pred_answer: no gt_answers: no
+pred_answer: right gt_answers: left
+pred_answer: door gt_answers: copier
+pred_answer: yes gt_answers: yes
+pred_answer: one gt_answers: two
+pred_answer: two gt_answers: two
+pred_answer: left gt_answers: left
+pred_answer: right gt_answers: left
+pred_answer: one gt_answers: zero
+pred_answer: right gt_answers: left
+pred_answer: brown gt_answers: white
+pred_answer: to left of table gt_answers: to my right hand side
+pred_answer: no gt_answers: no
+pred_answer: you can read it on wall gt_answers: bulletin board
+pred_answer: yes gt_answers: yes
+pred_answer: bathtub gt_answers: bathtub
+pred_answer: no gt_answers: yes
+pred_answer: left gt_answers: left
+pred_answer: yes gt_answers: yes
+pred_answer: right gt_answers: left
+pred_answer: four gt_answers: two
+pred_answer: one gt_answers: zero
+pred_answer: yes gt_answers: yes
+pred_answer: bathtub gt_answers: bathtub
+pred_answer: bathtub gt_answers: bathtub
+pred_answer: even gt_answers: odd
+pred_answer: bathtub gt_answers: toilet
+pred_answer: right gt_answers: forward
+pred_answer: cabinet gt_answers: light switch
+pred_answer: right gt_answers: forward
+pred_answer: fourteen gt_answers: eight
+pred_answer: on floor gt_answers: behind
+pred_answer: three gt_answers: four
+pred_answer: brown gt_answers: brown
+pred_answer: towel gt_answers: picture
+pred_answer: light gt_answers: unknown
+pred_answer: round gt_answers: unknown
+pred_answer: one gt_answers: two
+pred_answer: left gt_answers: right
+pred_answer: on floor gt_answers: behind
+pred_answer: one gt_answers: four
+pred_answer: yes gt_answers: no
+pred_answer: yes gt_answers: yes
+pred_answer: one gt_answers: four
+pred_answer: you can go out through door gt_answers: behind me
+pred_answer: printers gt_answers: printer
+pred_answer: cabinet gt_answers: bathroom cabinet
+pred_answer: copier gt_answers: copier
+pred_answer: rectangular gt_answers: cube
+pred_answer: right gt_answers: right
+pred_answer: left gt_answers: left
+pred_answer: yes, you can see paper cutter gt_answers: yes
+pred_answer: sink gt_answers: sink
+pred_answer: yes gt_answers: no
+pred_answer: right gt_answers: forward
+pred_answer: left gt_answers: left
+pred_answer: printer gt_answers: printer
+pred_answer: on gt_answers: on
+pred_answer: right gt_answers: right
+pred_answer: one gt_answers: two
+pred_answer: front gt_answers: back
+pred_answer: you can add bottle of fabric softener gt_answers: dryer sheets
+pred_answer: yes, stairs are in front of me gt_answers: no
+pred_answer: right gt_answers: left
+pred_answer: you can go to sink to wash your hands gt_answers: backward
+pred_answer: one gt_answers: two
+pred_answer: chair gt_answers: blackboard
+pred_answer: washing machine gt_answers: dryer sheets
+pred_answer: right gt_answers: forward
+pred_answer: clothes inside dryer will be washed gt_answers: unknown
+pred_answer: one gt_answers: two
+pred_answer: metal gt_answers: metal
+pred_answer: rectangular gt_answers: round
+pred_answer: in rows gt_answers: in rows
+pred_answer: table gt_answers: table
+pred_answer: purple gt_answers: green
+pred_answer: turn right gt_answers: backward
+pred_answer: yes gt_answers: no
+pred_answer: chair gt_answers: door
+pred_answer: yes gt_answers: yes
+pred_answer: wash your hands in sink gt_answers: sink
+pred_answer: black gt_answers: black
+pred_answer: stairs gt_answers: steps
+pred_answer: yes gt_answers: no
+pred_answer: you must walk through door to enter room gt_answers: backward
+pred_answer: brown gt_answers: one
+pred_answer: rectangular gt_answers: round
+pred_answer: yes, door is wooden gt_answers: yes
+pred_answer: black gt_answers: black and brown
+pred_answer: reach out from stool gt_answers: right
+pred_answer: six gt_answers: three
+pred_answer: rectangular gt_answers: square
+pred_answer: three gt_answers: three
+pred_answer: washing machine gt_answers: right
+pred_answer: chair gt_answers: chair
+pred_answer: one gt_answers: two
+pred_answer: washing machine gt_answers: unknown
+pred_answer: even gt_answers: odd
+pred_answer: two gt_answers: one
+pred_answer: washing machine gt_answers: washing machine
+pred_answer: three gt_answers: three
+pred_answer: stairs gt_answers: stairs
+pred_answer: washing machine gt_answers: washing machine
+pred_answer: washing machine gt_answers: washing machines
+pred_answer: blackboard gt_answers: blackboard
+pred_answer: in rows gt_answers: in rows
+pred_answer: green gt_answers: unknown
+pred_answer: two gt_answers: one
+pred_answer: one gt_answers: two
+pred_answer: right gt_answers: left
+pred_answer: fire extinguisher gt_answers: unknown
+pred_answer: no gt_answers: yes
+pred_answer: yes gt_answers: yes
+pred_answer: two gt_answers: one
+pred_answer: you can walk from door to table gt_answers: turn right
+pred_answer: you can get it from table gt_answers: unknown
+pred_answer: four gt_answers: eight
+pred_answer: purple gt_answers: purple
+pred_answer: washing machine gt_answers: box
+pred_answer: left gt_answers: backward
+pred_answer: right gt_answers: left
+pred_answer: yes gt_answers: no
+pred_answer: no gt_answers: yes
+pred_answer: left of washing machine gt_answers: right
+pred_answer: table gt_answers: table
+pred_answer: sink gt_answers: sink
+pred_answer: small gt_answers: small
+pred_answer: one gt_answers: two
+pred_answer: left gt_answers: left
+pred_answer: there are one gt_answers: one
+pred_answer: sink gt_answers: sink
+pred_answer: right gt_answers: right
+pred_answer: black gt_answers: black
+pred_answer: yes gt_answers: yes
+pred_answer: facing away gt_answers: unknown
+pred_answer: rectangular gt_answers: round
+pred_answer: no gt_answers: yes
+pred_answer: one gt_answers: one
+pred_answer: washing machine gt_answers: box
+pred_answer: left gt_answers: right
+pred_answer: stacked vertically gt_answers: stack
+pred_answer: to second floor gt_answers: outside
+pred_answer: one gt_answers: one
+pred_answer: you can move forward from sink gt_answers: right
+pred_answer: table gt_answers: table
+pred_answer: you need to go to washing machine gt_answers: left
+pred_answer: right gt_answers: right
+pred_answer: detergent gt_answers: unknown
+pred_answer: rail gt_answers: handrails
+pred_answer: attached to table gt_answers: unknown
+pred_answer: right gt_answers: left
+pred_answer: chair gt_answers: table
+pred_answer: stack gt_answers: stack
+pred_answer: left gt_answers: right
+pred_answer: green gt_answers: black
+pred_answer: backward gt_answers: right
+pred_answer: rectangular gt_answers: rectangular
+pred_answer: there is shelf gt_answers: shelf
+pred_answer: backward gt_answers: backward
+pred_answer: clothes dryer gt_answers: chair
+pred_answer: one gt_answers: two
+pred_answer: detergent gt_answers: unknown
+pred_answer: backward gt_answers: left
+pred_answer: there is chair gt_answers: cabinet
+pred_answer: yes gt_answers: yes
+pred_answer: door gt_answers: left
+pred_answer: no gt_answers: yes
+pred_answer: right gt_answers: right
+pred_answer: table gt_answers: chairs
+pred_answer: brown gt_answers: brown
+pred_answer: yes gt_answers: yes
+pred_answer: left gt_answers: right
+pred_answer: one gt_answers: two
+pred_answer: in sink gt_answers: on right
+pred_answer: three gt_answers: two
+pred_answer: yes gt_answers: forward
+pred_answer: on top of cabinet gt_answers: on cabinet
+pred_answer: chair gt_answers: chairs
+pred_answer: right gt_answers: left
+pred_answer: sink gt_answers: sink
+pred_answer: two gt_answers: zero
+pred_answer: blinds gt_answers: sign
+pred_answer: floor gt_answers: floor
+pred_answer: glass gt_answers: glass
+pred_answer: radiator gt_answers: radiator
+pred_answer: yes gt_answers: yes
+pred_answer: chairs gt_answers: wooden chairs
+pred_answer: white gt_answers: grey
+pred_answer: odd gt_answers: even
+pred_answer: brown gt_answers: gray
+pred_answer: right gt_answers: backward
+pred_answer: left gt_answers: left
+pred_answer: refrigerator gt_answers: sink
+pred_answer: whiteboard gt_answers: blackboard
+pred_answer: radiator gt_answers: water heater
+pred_answer: 30 gt_answers: unknown
+pred_answer: window gt_answers: window
+pred_answer: chair gt_answers: chair
+pred_answer: washing machine gt_answers: cabinet
+pred_answer: randomly placed gt_answers: organized
+pred_answer: on table gt_answers: unknown
+pred_answer: counter gt_answers: kitchen counter
+pred_answer: towel gt_answers: unknown
+pred_answer: yes gt_answers: no
+pred_answer: microwave gt_answers: microwave
+pred_answer: fifteen gt_answers: nine
+pred_answer: four gt_answers: nine
+pred_answer: two gt_answers: three
+pred_answer: you can go to shower gt_answers: shower
+pred_answer: microwave gt_answers: unknown
+pred_answer: left gt_answers: right
+pred_answer: it is washing machine gt_answers: washing machine
+pred_answer: one gt_answers: two
+pred_answer: rectangular gt_answers: rectangular
+pred_answer: washing machine gt_answers: refrigerator
+pred_answer: stove gt_answers: stove
+pred_answer: washing machine gt_answers: shower
+pred_answer: door gt_answers: drying rack
+pred_answer: two gt_answers: one
+pred_answer: chair gt_answers: chair
+pred_answer: even gt_answers: odd
+pred_answer: washing machine gt_answers: chair
+pred_answer: washing machine gt_answers: cabinet
+pred_answer: brown gt_answers: dark brown
+pred_answer: rectangular gt_answers: unknown
+pred_answer: radiator gt_answers: water heater
+pred_answer: silver gt_answers: black
+pred_answer: there is sink gt_answers: sign
+pred_answer: left gt_answers: left
+pred_answer: no gt_answers: no
+pred_answer: no gt_answers: no
+pred_answer: yes gt_answers: yes
+pred_answer: cabinet gt_answers: window
+pred_answer: window gt_answers: projector
+pred_answer: left gt_answers: right
+pred_answer: sink is on right side of me gt_answers: right
+pred_answer: stove gt_answers: oven
+pred_answer: one gt_answers: four
+pred_answer: rectangular gt_answers: semicircle
+pred_answer: oven gt_answers: oven
+pred_answer: there is box on top of table gt_answers: crate
+pred_answer: left gt_answers: right
+pred_answer: behind gt_answers: in front
+pred_answer: one gt_answers: one
+pred_answer: counter gt_answers: sign
+pred_answer: right gt_answers: right
+pred_answer: one gt_answers: two
+pred_answer: boxes gt_answers: two
+pred_answer: door gt_answers: cabinet
+pred_answer: drying rack gt_answers: drying rack
+pred_answer: one gt_answers: two
+pred_answer: chair gt_answers: cabinet
+pred_answer: no gt_answers: no
+pred_answer: table gt_answers: table
+pred_answer: even gt_answers: odd
+pred_answer: washing machine gt_answers: water heater
+pred_answer: no gt_answers: no
+pred_answer: left gt_answers: right
+pred_answer: two gt_answers: four
+pred_answer: yes gt_answers: yes
+pred_answer: one gt_answers: one
+pred_answer: chair gt_answers: mattress
+pred_answer: right gt_answers: left
+pred_answer: cabinet is located next to table, making it easy to access gt_answers: unknown
+pred_answer: right gt_answers: right
+pred_answer: right gt_answers: left
+pred_answer: cabinet gt_answers: cabinets
+pred_answer: whiteboard gt_answers: table
+pred_answer: meeting room gt_answers: unknown
+pred_answer: odd gt_answers: even
+pred_answer: washing machine gt_answers: laundry detergent
+pred_answer: i would run to refrigerator if i walked straight backward gt_answers: water heater
+pred_answer: patterned gt_answers: patterned
+pred_answer: there is box gt_answers: crate
+pred_answer: even gt_answers: even
+pred_answer: one gt_answers: one
+pred_answer: one gt_answers: two
+pred_answer: window gt_answers: clothes
+pred_answer: radiator gt_answers: radiator
+pred_answer: one gt_answers: two
+pred_answer: cabinet gt_answers: cabinet
+pred_answer: chair gt_answers: table
+pred_answer: door gt_answers: window
+pred_answer: brown gt_answers: brown
+pred_answer: door gt_answers: table
+pred_answer: closed gt_answers: open
+pred_answer: kitchen cabinets gt_answers: kitchen cabinets
+pred_answer: one gt_answers: two
+pred_answer: yes gt_answers: no
+pred_answer: refrigerator gt_answers: water heater
+pred_answer: four gt_answers: nine
+pred_answer: washing machine gt_answers: washing machine
+pred_answer: rectangular gt_answers: semicircle
+pred_answer: chair gt_answers: chair
+pred_answer: no gt_answers: no
+pred_answer: yes gt_answers: no
+pred_answer: one gt_answers: two
+pred_answer: left gt_answers: left
+pred_answer: yes gt_answers: no
+pred_answer: refrigerator gt_answers: refrigerator
+pred_answer: left gt_answers: backward
+pred_answer: there is sink on top of kitchen counter gt_answers: sink
+pred_answer: two gt_answers: two
+pred_answer: odd gt_answers: odd
+pred_answer: there is basket gt_answers: laundry detergent
+pred_answer: one gt_answers: two
+pred_answer: yes gt_answers: yes
+pred_answer: chair gt_answers: door
+pred_answer: kitchen island gt_answers: refridgerator
+pred_answer: one gt_answers: two
+pred_answer: chair gt_answers: chairs
+pred_answer: cabinet gt_answers: window
+pred_answer: white gt_answers: red
+pred_answer: there is washing machine gt_answers: shelf
+pred_answer: on floor gt_answers: directly in front of me
+pred_answer: right gt_answers: left
+pred_answer: one gt_answers: three
+pred_answer: two gt_answers: four
+pred_answer: there is plant on top of radiator gt_answers: clothing
+pred_answer: i see cabinet when i turn around gt_answers: refridgerator
+pred_answer: powered off gt_answers: unknown
+pred_answer: door gt_answers: radiator
+pred_answer: odd gt_answers: odd
+pred_answer: whiteboard gt_answers: blackboard
+pred_answer: closed gt_answers: open
+pred_answer: clothes dryer gt_answers: drying rack
+pred_answer: washing machine gt_answers: washing machine
+pred_answer: monitor gt_answers: crate
+pred_answer: yes gt_answers: no
+pred_answer: vertical gt_answers: right
+pred_answer: window gt_answers: chair
+pred_answer: below microwave gt_answers: left
+pred_answer: you can access window through door gt_answers: front left
+pred_answer: one gt_answers: two
+pred_answer: table gt_answers: table
+pred_answer: odd gt_answers: odd
+pred_answer: closed gt_answers: closed
+pred_answer: silver gt_answers: black
+pred_answer: microwave gt_answers: microwave
+pred_answer: large gt_answers: large
+pred_answer: no gt_answers: no
+pred_answer: black gt_answers: black
+pred_answer: on blackboard gt_answers: behind
+pred_answer: carpet gt_answers: table
+pred_answer: even gt_answers: even
+pred_answer: door gt_answers: sink
+pred_answer: TV gt_answers: monitor
+pred_answer: table gt_answers: table
+pred_answer: yes gt_answers: no
+pred_answer: sitting gt_answers: standing
+pred_answer: off gt_answers: off
+pred_answer: no, it is open gt_answers: no
+pred_answer: one gt_answers: four
+pred_answer: yes gt_answers: four
+pred_answer: yes gt_answers: no
+pred_answer: there is stove next to it gt_answers: unknown
+pred_answer: chair gt_answers: cabinet
+pred_answer: yes gt_answers: yes
+pred_answer: right gt_answers: left
+pred_answer: left gt_answers: left
+pred_answer: window gt_answers: shelf
+pred_answer: shelf gt_answers: box
+pred_answer: large gt_answers: large
+pred_answer: one gt_answers: five
+pred_answer: out gt_answers: unknown
+pred_answer: yes gt_answers: yes
+pred_answer: cabinet gt_answers: kitchen cabinet
+{'[sqa3d] EM1': 0.3018867924528302, '[sqa3d] EM1_refined': 0.3632075471698113, '[sqa3d] EM_type0': 0.25294117647043945, '[sqa3d] EM_refined_type0': 0.34705882352920764, '[sqa3d] EM_type1': 0.49999999999903844, '[sqa3d] EM_refined_type1': 0.5384615384605029, '[sqa3d] EM_type2': 0.162162162161943, '[sqa3d] EM_refined_type2': 0.18918918918893352, '[sqa3d] EM_type3': 0.49999999999749994, '[sqa3d] EM_refined_type3': 0.5499999999972499, '[sqa3d] EM_type4': 0.5925925925903978, '[sqa3d] EM_refined_type4': 0.5925925925903978, '[sqa3d] EM_type5': 0.25925925925893917, '[sqa3d] EM_refined_type5': 0.32098765432059134}

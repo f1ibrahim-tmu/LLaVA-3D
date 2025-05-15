@@ -14,6 +14,8 @@ from llava.mm_utils import tokenizer_image_token, process_videos, get_model_name
 from PIL import Image
 import math
 
+import pdb
+
 
 def split_list(lst, n):
     """Split a list into n (roughly) equal-sized chunks"""
@@ -88,9 +90,13 @@ def eval_model(args):
                 num_beams=args.num_beams,
                 max_new_tokens=512,
                 use_cache=True,
+                repetition_penalty=0.5
             )
 
+
         outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)[0].strip()
+
+        #breakpoint()
 
         ans_id = shortuuid.uuid()
         ans_list.append({"question_id": idx,
@@ -118,7 +124,7 @@ if __name__ == "__main__":
     parser.add_argument("--video-folder", type=str, default="playground/data/LLaVA-3D-Pretrain")
     parser.add_argument("--question-file", type=str, default="playground/data/annotations/llava3d_sqa3d_val_question.json")
     parser.add_argument("--answers-file", type=str, default="./llava3d_sqa3d_val_answer_pred.json")
-    parser.add_argument("--conv-mode", type=str, default="llava_v1")
+    parser.add_argument("--conv-mode", type=str, default="llava_v1") # The conversation mode
     parser.add_argument("--num-chunks", type=int, default=1)
     parser.add_argument("--chunk-idx", type=int, default=0)
     parser.add_argument("--temperature", type=float, default=0.2)

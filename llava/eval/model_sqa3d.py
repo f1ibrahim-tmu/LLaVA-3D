@@ -66,7 +66,7 @@ def eval_model(args):
         videos_dict = process_videos( # just passing in the scene on the fly
             video_path,
             processor['video'],
-            mode='random',
+            mode=args.frame_selection_mode,
             device=model.device,
             text=cur_prompt
         )
@@ -130,6 +130,7 @@ if __name__ == "__main__":
     parser.add_argument("--temperature", type=float, default=0.2)
     parser.add_argument("--top_p", type=float, default=None)
     parser.add_argument("--num_beams", type=int, default=1)
+    parser.add_argument("--frame_selection_mode", type=str, default="random", choices=["random", "uniform"], help="Mode for selecting video frames. 'random' or 'uniform'.")
     args = parser.parse_args()
 
     eval_model(args)

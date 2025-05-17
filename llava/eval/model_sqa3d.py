@@ -35,6 +35,12 @@ def eval_model(args):
     model_name = get_model_name_from_path(model_path)
     tokenizer, model, processor, context_len = load_pretrained_model(model_path, args.model_base, model_name)
 
+    # Override decoding parameters if paper defaults are requested
+    if args.use_paper_decoding_params:
+        print("INFO: Using paper decoding parameters: Temperature=0.0, Top_p=1.0")
+        args.temperature = 0.0
+        args.top_p = 1.0 # Explicitly set, though None might also work as 1.0 if sampling
+    
     # questions = [json.loads(q) for q in open(os.path.expanduser(args.question_file), "r")]
     with open(args.question_file, 'r') as file:
         questions = json.load(file)
@@ -57,6 +63,11 @@ def eval_model(args):
             qs = DEFAULT_IMAGE_TOKEN + '\n' + qs
 
         conv = conv_templates[args.conv_mode].copy()
+        # Override system prompt if provided
+        if args.override_system_prompt is not None:
+            print(f"INFO: Overriding system prompt with: '{args.override_system_prompt}'")
+            conv.system = args.override_system_prompt
+            
         conv.append_message(conv.roles[0], qs)
         conv.append_message(conv.roles[1], None)
         prompt = conv.get_prompt()
@@ -137,6 +148,9 @@ if __name__ == "__main__":
     parser.add_argument("--num_beams", type=int, default=1)
     parser.add_argument("--frame_selection_mode", type=str, default="random", choices=["random", "uniform"], help="Mode for selecting video frames. 'random' or 'uniform'.")
     parser.add_argument("--no_prompt_tokenizer_truncation", action='store_true', help="If set, disables truncation in the tokenizer for the main prompt.")
+    # New arguments for decoding and system prompt
+    parser.add_argument("--use_paper_decoding_params", action='store_true', help="If set, uses Temperature=0.0 and Top_p=1.0.")
+    parser.add_argument("--override_system_prompt", type=str, default=None, help="Override the default system prompt of the conversation mode.")
     args = parser.parse_args()
 
     eval_model(args)

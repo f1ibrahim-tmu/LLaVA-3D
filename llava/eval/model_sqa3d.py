@@ -61,7 +61,12 @@ def eval_model(args):
         conv.append_message(conv.roles[1], None)
         prompt = conv.get_prompt()
 
-        input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
+        tokenizer_call_kwargs = {}
+        if args.no_prompt_tokenizer_truncation:
+            tokenizer_call_kwargs['truncation'] = False
+            # tokenizer_call_kwargs['max_length'] = None # Not strictly needed if truncation is False
+
+        input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt', **tokenizer_call_kwargs).unsqueeze(0).cuda()
 
         videos_dict = process_videos( # just passing in the scene on the fly
             video_path,
@@ -131,6 +136,7 @@ if __name__ == "__main__":
     parser.add_argument("--top_p", type=float, default=None)
     parser.add_argument("--num_beams", type=int, default=1)
     parser.add_argument("--frame_selection_mode", type=str, default="random", choices=["random", "uniform"], help="Mode for selecting video frames. 'random' or 'uniform'.")
+    parser.add_argument("--no_prompt_tokenizer_truncation", action='store_true', help="If set, disables truncation in the tokenizer for the main prompt.")
     args = parser.parse_args()
 
     eval_model(args)

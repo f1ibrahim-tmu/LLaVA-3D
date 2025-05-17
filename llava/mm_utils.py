@@ -210,8 +210,8 @@ def process_videos(videos, video_processor, mode='random', device=None, text=Non
     return videos_dict
 
 
-def tokenizer_image_token(prompt, tokenizer, image_token_index=IMAGE_TOKEN_INDEX, return_tensors=None):
-    prompt_chunks = [tokenizer(chunk).input_ids for chunk in prompt.split('<image>')] # tokenize the parts separated by <image> respectively
+def tokenizer_image_token(prompt, tokenizer, image_token_index=IMAGE_TOKEN_INDEX, return_tensors=None, **tokenizer_kwargs):
+    prompt_chunks = [tokenizer(chunk, **tokenizer_kwargs).input_ids for chunk in prompt.split('<image>')] # tokenize the parts separated by <image> respectively
 
     def insert_separator(X, sep):
         return [ele for sublist in zip(X, [sep]*len(X)) for ele in sublist][:-1]

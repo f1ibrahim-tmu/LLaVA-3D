@@ -27,9 +27,23 @@ ANNO_DIR="/data/SceneUnderstanding/7792397/ScanQA_format"
     --pred-answers ${EXP_DIR}/scrap.json \
     --gt-answers ${ANNO_DIR}/scrap_answers.json \
     --video-folder ${SCENES} \
-    --outfile ${EXP_DIR}/SQA3D/em1_below_35/scrap.txt \
+    --outfile ${EXP_DIR}/SQA3D/em1_below_35/scrap_rerunJune5.txt \
+    --chunk-idx 0 \
+    --num-chunks 1 \
+    --generate echo 'scene0000_00'
+
+# 1.2: Exact-match normalization
+
+~/SceneUnderstanding/LLaVA-3D/scripts/eval/sqa3d.sh \
+    --gpu 0 \
+    --model-path ${MODEL} \
+    --questions ${ANNO_DIR}/scrap.json \
+    --pred-answers ${EXP_DIR}/scrap.json \
+    --gt-answers ${ANNO_DIR}/scrap_answers.json \
+    --video-folder ${SCENES} \
+    --outfile ${EXP_DIR}/SQA3D/em1_below_35/scrap-1.2_rerunJune5.txt \
     --chunk-idx 0 \
     --num-chunks 1 \
     --generate echo 'scene0000_00' \
-
+    --use_enhanced_normalization
 

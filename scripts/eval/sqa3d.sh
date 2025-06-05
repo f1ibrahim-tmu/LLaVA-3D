@@ -22,7 +22,11 @@ KEY=""
 VALUE=""
 for ARGUMENT in "$@"; do
 
-        if [[ ${ARGUMENT:0:2} == "--" ]]; then
+        if [[ ${ARGUMENT} == "--use_enhanced_normalization" ]]; then
+
+                USED_ENHANCED_NORMALIZATION="--use_enhanced_normalization"
+
+        elif [[ ${ARGUMENT:0:2} == "--" ]]; then
 
                 if [[ $KEY != "" ]]; then
                         arr["$KEY"]="$VALUE"
@@ -81,6 +85,9 @@ ea=(pred-json gt-json num-chunks chunk-idx)
 for i in "${ea[@]}"; do
         if [[ ${arr[$i]+_} ]]; then EVALUATOR_ARGS+="--${i} ${arr[${i}]} "; fi
 done
+if [[ ${USED_ENHANCED_NORMALIZATION} ]]; then
+        EVALUATOR_ARGS+=${USED_ENHANCED_NORMALIZATION}
+fi
 
 echo "EVALUATOR_ARGS:"
 echo $EVALUATOR_ARGS

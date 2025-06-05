@@ -25,9 +25,11 @@ def clean_answer(data):
     data = re.sub(r' {2,}', ' ', data)
 
     data = re.sub(r'\.[ ]{2,}', '. ', data)
-    data = re.sub(r'[^a-zA-Z0-9,\'\\s\\-:]+', '', data)
+    #data = re.sub(r'[^a-zA-Z0-9,\'\\s\\-:]+', '', data)
+    data = re.sub(r'[^a-zA-Z0-9,\'\\s:-]+', '', data)
     data = re.sub('ç' ,'c', data)
-    data = re.sub('' ,'\'', data) # Corrected: replaces smart quote with standard apostrophe
+    #data = re.sub('' ,'\'', data) # Corrected: replaces smart quote with standard apostrophe
+    data = re.sub('’', '\'', data)
     data = re.sub(r'\\bletf\\b' ,'left', data)
     data = re.sub(r'\\blet\\b' ,'left', data)
     data = re.sub(r'\\btehre\\b' ,'there', data)

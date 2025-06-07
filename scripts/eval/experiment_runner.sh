@@ -6,7 +6,8 @@
 
 MODEL="/data/SceneUnderstanding/checkpoints/LLaVA-3D-7B/"
 SCENES="/data/SceneUnderstanding/ScanNet/scans/"
-EXP_DIR="/root/SceneUnderstanding/LLaVA-3D/experiments"
+#EXP_DIR="/root/SceneUnderstanding/LLaVA-3D/experiments"
+EXP_DIR="/data/SceneUnderstanding/SU_cursor/LLaVA-3D/experiments"
 ANNO_DIR="/data/SceneUnderstanding/7792397/ScanQA_format"
 
 # ~/SceneUnderstanding/LLaVA-3D/scripts/eval/sqa3d.sh \
@@ -56,7 +57,7 @@ ANNO_DIR="/data/SceneUnderstanding/7792397/ScanQA_format"
     --pred-answers ${EXP_DIR}/scrap.json \
     --gt-answers ${ANNO_DIR}/scrap_answers.json \
     --video-folder ${SCENES} \
-    --outfile ${EXP_DIR}/SQA3D/em1_below_35/scrap-AI_rerunJune6.txt \
+    --outfile ${EXP_DIR}/SQA3D/em1_below_35/scrap-AI_rerunJune7.txt \
     --chunk-idx 0 \
     --num-chunks 1 \
     --generate echo 'scene0000_00' \

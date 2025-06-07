@@ -24,7 +24,11 @@ for ARGUMENT in "$@"; do
 
         if [[ ${ARGUMENT} == "--use_enhanced_normalization" ]]; then
 
-                USED_ENHANCED_NORMALIZATION="--use_enhanced_normalization"
+                USE_ENHANCED_NORMALIZATION="--use_enhanced_normalization"
+
+        elif [[ ${ARGUMENT} == "--use_openai_evaluation" ]]; then
+
+                USE_OPENAI_EVALUATION="--use_openai_evaluation"
 
         elif [[ ${ARGUMENT:0:2} == "--" ]]; then
 
@@ -85,8 +89,11 @@ ea=(pred-json gt-json num-chunks chunk-idx)
 for i in "${ea[@]}"; do
         if [[ ${arr[$i]+_} ]]; then EVALUATOR_ARGS+="--${i} ${arr[${i}]} "; fi
 done
-if [[ ${USED_ENHANCED_NORMALIZATION} ]]; then
-        EVALUATOR_ARGS+=${USED_ENHANCED_NORMALIZATION}
+if [[ ${USE_ENHANCED_NORMALIZATION} ]]; then
+        EVALUATOR_ARGS+=" ${USE_ENHANCED_NORMALIZATION}"
+fi
+if [[ ${USE_OPENAI_EVALUATION} ]]; then
+        EVALUATOR_ARGS+=" ${USE_OPENAI_EVALUATION}"
 fi
 
 echo "EVALUATOR_ARGS:"
@@ -115,5 +122,5 @@ echo "Commands to run:"
 echo python llava/eval/model_sqa3d.py ${MODEL_ARGS} | tee ${OUTFILE}
 echo python llava/eval/sqa3d_evaluator.py ${EVALUATOR_ARGS} '>>' ${OUTFILE} | tee -a ${OUTFILE}
 
-python llava/eval/model_sqa3d.py ${MODEL_ARGS}
+#python llava/eval/model_sqa3d.py ${MODEL_ARGS}
 python llava/eval/sqa3d_evaluator.py ${EVALUATOR_ARGS} >> ${OUTFILE}

@@ -8,6 +8,8 @@ from tqdm import tqdm
 import mmengine
 import argparse
 import string # Added for punctuation
+from openai import OpenAI
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 try:
     from model_sqa3d import get_chunk, split_list
@@ -25,9 +27,11 @@ def clean_answer(data):
     data = re.sub(r' {2,}', ' ', data)
 
     data = re.sub(r'\.[ ]{2,}', '. ', data)
-    data = re.sub(r'[^a-zA-Z0-9,\'\\s\\-:]+', '', data)
+    #data = re.sub(r'[^a-zA-Z0-9,\'\\s\\-:]+', '', data)
+    data = re.sub(r'[^a-zA-Z0-9,\'\\s:-]+', '', data)
     data = re.sub('ç' ,'c', data)
-    data = re.sub('' ,'\'', data) # Corrected: replaces smart quote with standard apostrophe
+    #data = re.sub('' ,'\'', data) # Corrected: replaces smart quote with standard apostrophe
+    data = re.sub('’', '\'', data)
     data = re.sub(r'\\bletf\\b' ,'left', data)
     data = re.sub(r'\\blet\\b' ,'left', data)
     data = re.sub(r'\\btehre\\b' ,'there', data)
@@ -112,6 +116,34 @@ def normalize_text_for_em(text: str) -> str:
     return text
 
 
+def evaluate_answer(question: str, pred_answer: str, gt_answer: str) -> int:
+    prompt = (
+        "You are an expert evaluator. Given the question, the answer predicted by an LLM, "
+        "and the ground-truth answer, decide whether the predicted answer is sufficiently "
+        "close or equivalent to the ground truth; this may include ignoring lots of repeated substrings. " 
+        "If they match in meaning or value, respond with the single character \"1\". "
+        "Otherwise, respond with \"0\". Do NOT provide any additional text.\n\n"
+        f"Question: \"{question}\"\n"
+        f"Predicted Answer: \"{pred_answer}\"\n"
+        f"Ground Truth: \"{gt_answer}\"\n"
+    )
+
+    # 2. New call using client.chat.completions.create(...)
+    response = client.chat.completions.create(
+        model="o4-mini",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt},
+        ],
+        temperature=1.0,
+    )
+
+    # 3. Extract and convert to boolean
+    reply = response.choices[0].message.content.strip()
+    #breakpoint()
+    return gt_answer if (bool(int(reply)) if reply.isdigit() else False) else pred_answer
+
+
 # refer to LEO: embodied-generalist
 # https://github.com/embodied-generalist/embodied-generalist/blob/477dc44b8b18dbfbe6823c307436d896ec8b062e/evaluator/scanqa_eval.py#L41-L50
 def answer_match(pred, gts):
@@ -124,7 +156,7 @@ def answer_match(pred, gts):
             return 0, 1
     return 0, 0
 
-def calc_sqa3d_score(preds, gts, use_enhanced_normalization=False):
+def calc_sqa3d_score(preds, gts, use_enhanced_normalization=False, use_openai_evaluation=False):
     val_scores = {}
     metrics = {
         'type0_count': 1e-10, 'type1_count': 1e-10, 'type2_count': 1e-10,
@@ -141,9 +173,13 @@ def calc_sqa3d_score(preds, gts, use_enhanced_normalization=False):
         question_id = pred['question_id']
         gt_question_id = gt['question_id']
         assert question_id == gt_question_id
+        prompt = pred['prompt']
+
         
         pred_answer_orig = pred['text']
         gt_answer_orig = gt['text']
+
+        #breakpoint()
         
         if use_enhanced_normalization:
             pred_answer = normalize_text_for_em(pred_answer_orig)
@@ -151,6 +187,10 @@ def calc_sqa3d_score(preds, gts, use_enhanced_normalization=False):
         else:
             pred_answer = clean_answer(pred_answer_orig)
             gt_answers = [clean_answer(gt_answer_orig)]
+
+        if use_openai_evaluation:
+            # Use OpenAI API to evaluate the answer
+            pred_answer = evaluate_answer(prompt, pred_answer, gt_answers[0])
             
         print('pred_answer:', pred_answer, 'gt_answers:', gt_answers[0])
         em_flag, em_refined_flag = answer_match(pred_answer, gt_answers)
@@ -187,6 +227,7 @@ if __name__ == "__main__":
     parser.add_argument("--num-chunks", type=int, default=1, help="number of chunks that the predictions were partitioned into (for distributed inference)")
     parser.add_argument("--chunk-idx", type=int, nargs='+', default=0, help="list of 1+ chunk indices, representing the index of each args.pred_json entry; each should be in range [0, args.pred_json], in the same order of the args.pred_json files")
     parser.add_argument("--use_enhanced_normalization", action='store_true', help="Use enhanced text normalization (strips all punctuation, articles, canonicalizes numerals to digits) for EM calculation.")
+    parser.add_argument("--use_openai_evaluation", action='store_true', help="Use OpenAI API to evaluate the predicted answers against ground truth answers.")
     args = parser.parse_args()
 
     assert len(args.pred_json) == len(args.chunk_idx)
@@ -258,5 +299,7 @@ if __name__ == "__main__":
         print("No matching predictions and ground truths after alignment. Exiting.")
         exit(1)
 
-    val_scores = calc_sqa3d_score(aligned_preds, aligned_gts, args.use_enhanced_normalization)
+    #breakpoint()
+
+    val_scores = calc_sqa3d_score(aligned_preds, aligned_gts, args.use_enhanced_normalization, args.use_openai_evaluation)
     print(json.dumps(val_scores, indent=2))

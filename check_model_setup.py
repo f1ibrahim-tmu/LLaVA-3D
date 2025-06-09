@@ -112,7 +112,7 @@ def main():
     parser.add_argument("--model-path", type=str, required=True, help="Path to the LLaVa-3D model checkpoint (directory or file).")
     parser.add_argument("--model-base", type=str, default=None, help="Optional: Path to the base LLM if loading LoRA weights.")
     parser.add_argument("--lora-weights-filename", type=str, default="adapter_model.bin", help="Filename of the LoRA weights (e.g., adapter_model.bin, delta_weights.pt). Looked for in model_path.")
-    parser.add_argument("--expected-git-hash-prefix", type=str, default="a9cf", help="Expected short Git hash prefix of the LLaVA-3D paper.")
+    parser.add_argument("--expected-git-hash-prefix", type=str, default="49cf", help="Expected short Git hash prefix of the LLaVA-3D paper.")
     # Add other args that load_pretrained_model might need, e.g., device, quantization
     parser.add_argument("--device", type=str, default="cuda", help="Device to load the model on.")
     parser.add_argument("--load_4bit", action='store_true', help="Load model in 4-bit.")

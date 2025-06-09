@@ -66,6 +66,7 @@ def eval_model(args):
             qs = DEFAULT_IMAGE_TOKEN + '\n' + qs
 
         conv = conv_templates[args.conv_mode].copy()
+        
         # Override system prompt if provided
         if args.override_system_prompt is not None:
             print(f"INFO: Overriding system prompt with: '{args.override_system_prompt}'")

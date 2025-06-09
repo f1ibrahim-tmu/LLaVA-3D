@@ -13,6 +13,9 @@ SCENES="/data/SceneUnderstanding/ScanNet/scans/"
 EXP_DIR="${LLAVA_3D}/experiments"
 ANNO_DIR="/data/SceneUnderstanding/7792397/ScanQA_format"
 
+# optional model check
+# python ./check_model_setup.py --model-path /data/SceneUnderstanding/checkpoints/LLaVA-3D-7B/
+
 # ${LLAVA_3D}/scripts/eval/sqa3d.sh \
 #     --gpu 0 \
 #     --model-path ${MODEL} \

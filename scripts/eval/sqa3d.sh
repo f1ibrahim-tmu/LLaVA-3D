@@ -30,6 +30,14 @@ for ARGUMENT in "$@"; do
 
                 USE_OPENAI_EVALUATION="--use_openai_evaluation"
 
+        elif [[ ${ARGUMENT} == "--use_paper_decoding_params" ]]; then
+
+                USE_PAPER_DECODING_PARAMS="--use_paper_decoding_params"
+
+        elif [[ ${ARGUMENT} == "--no_prompt_tokenizer_truncation" ]]; then
+
+                NO_PROMPT_TOKENIZER_TRUNCATION="--no_prompt_tokenizer_truncation"
+
         elif [[ ${ARGUMENT:0:2} == "--" ]]; then
 
                 if [[ $KEY != "" ]]; then
@@ -80,7 +88,12 @@ arr["answers-file"]=${PRED_ANSWERS}
 for i in "${!arr[@]}"; do
         MODEL_ARGS+="--${i} ${arr[${i}]} "
 done
-
+if [[ ${USE_PAPER_DECODING_PARAMS} ]]; then
+        MODEL_ARGS+=" ${USE_PAPER_DECODING_PARAMS}"
+fi
+if [[ ${NO_PROMPT_TOKENIZER_TRUNCATION} ]]; then
+        MODEL_ARGS+=" ${NO_PROMPT_TOKENIZER_TRUNCATION}"
+fi
 # --- for sqa3d_evaluator:
 EVALUATOR_ARGS=""
 arr["pred-json"]=${PRED_ANSWERS}
@@ -106,7 +119,8 @@ export CUDA_VISIBLE_DEVICES="$GPU"
 
 # --- set the embodiedscan file ---
 unlink playground/data/annotations/embodiedscan_infos.json
-ln -s /root/SceneUnderstanding/LLaVA-3D/playground/data/annotations/embodiedscan_infos_full_formatted_cluster.json playground/data/annotations/embodiedscan_infos.json
+LLAVA_3D="${PWD%%LLaVA-3D*}LLaVA-3D/"
+ln -s "${LLAVA_3D}/playground/data/annotations/embodiedscan_infos_full_formatted_cluster.json" playground/data/annotations/embodiedscan_infos.json
 
 if [[ ${GENERATE} ]]; then
         echo generating new annotation files...
@@ -122,5 +136,5 @@ echo "Commands to run:"
 echo python llava/eval/model_sqa3d.py ${MODEL_ARGS} | tee ${OUTFILE}
 echo python llava/eval/sqa3d_evaluator.py ${EVALUATOR_ARGS} '>>' ${OUTFILE} | tee -a ${OUTFILE}
 
-#python llava/eval/model_sqa3d.py ${MODEL_ARGS}
+python llava/eval/model_sqa3d.py ${MODEL_ARGS}
 python llava/eval/sqa3d_evaluator.py ${EVALUATOR_ARGS} >> ${OUTFILE}

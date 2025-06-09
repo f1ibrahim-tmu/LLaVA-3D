@@ -30,6 +30,8 @@ def get_chunk(lst, n, k):
 
 def eval_model(args):
     # Model
+    #breakpoint()
+    
     disable_torch_init()
     model_path = os.path.expanduser(args.model_path)
     model_name = get_model_name_from_path(model_path)
@@ -79,7 +81,7 @@ def eval_model(args):
 
         input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt', **tokenizer_call_kwargs).unsqueeze(0).cuda()
 
-        videos_dict = process_videos( # just passing in the scene on the fly
+        videos_dict = process_videos( # just passing in the scene on the fly; tensors containing the images, depths, poses (4x4), and intrinsics (4x4)
             video_path,
             processor['video'],
             mode=args.frame_selection_mode,
@@ -111,8 +113,6 @@ def eval_model(args):
 
 
         outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)[0].strip()
-
-        #breakpoint()
 
         ans_id = shortuuid.uuid()
         ans_list.append({"question_id": idx,
@@ -152,5 +152,5 @@ if __name__ == "__main__":
     parser.add_argument("--use_paper_decoding_params", action='store_true', help="If set, uses Temperature=0.0 and Top_p=1.0.")
     parser.add_argument("--override_system_prompt", type=str, default=None, help="Override the default system prompt of the conversation mode.")
     args = parser.parse_args()
-
+    
     eval_model(args)

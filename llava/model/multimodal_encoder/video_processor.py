@@ -62,7 +62,7 @@ class RGBDVideoProcessor(ProcessorMixin):
         self.tokenizer = tokenizer
         self.num_frames = num_frames
         
-        with open('/root/SceneUnderstanding/LLaVA-3D/playground/data/annotations/embodiedscan_infos.json', 'r') as file: # NOTE: for generalization, this is a symlink to a file set from a script.
+        with open('/data/SceneUnderstanding/playground/data/annotations/embodiedscan_infos_full.json', 'r') as file: # NOTE: for generalization, this is a symlink to a file set from a script.
             self.scene = json.load(file)
 
     def valid_pose(self, video_poses):

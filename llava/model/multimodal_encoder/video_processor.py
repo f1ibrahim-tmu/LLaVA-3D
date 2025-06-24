@@ -174,14 +174,36 @@ class RGBDVideoProcessor(ProcessorMixin):
         return video_info
 
     def extract_embodiedscan_video(self, video):
-        # video is the full path for the video
+        # video is the full path for the video, e.g., /data/SceneUnderstanding/ScanNet/scans/scene0356_00
         video_path = Path(video)
-        video_name = str(Path(*video_path.parts[-1:]))
-        dataset = video.split('/')[-2]
-        video_folder = str(Path(*video_path.parts[:-3]))
+        scene_name = video_path.name # e.g., 'scene0356_00'
         dataset = 'ScanNet' # FIXME: Avoid hardcoding the dataset prefix
-        video_info = self.scene[dataset.lower() + '/' + video_name] 
-        video_frames = [str(key) for key in video_info.keys() if dataset in key]  # remove other parameters
+
+        # The keys in the JSON are like "ScanNet/scans/scene0191_00/...".
+        # We need to find all keys that contain the scene_name.
+        search_prefix = f"ScanNet/scans/{scene_name}/"
+        
+        # Filter the keys from the JSON to get all frames for this scene.
+        video_frames = sorted([key for key in self.scene.keys() if key.startswith(search_prefix)])
+        
+        if not video_frames:
+            raise ValueError(f"No frames found for scene '{scene_name}'. "
+                             f"Searched for keys starting with '{search_prefix}'. "
+                             f"Please check your --video-path and the keys in your annotation file. "
+                             f"Example key from annotation file: 'ScanNet/scans/scene0191_00/...'")
+
+        # The original code expects video_info to be a dictionary of frame_key -> frame_data for the scene.
+        video_info = {frame: self.scene[frame] for frame in video_frames}
+        scene_info_key = f"scannet/{scene_name}"
+        if scene_info_key not in self.scene:
+            raise ValueError(f"Scene metadata key '{scene_info_key}' not found in annotation file. "
+                             f"The file should contain scene-level metadata for intrinsics and axis alignment.")
+        scene_info = self.scene[scene_info_key]
+
+
+        # The base folder where data is stored, e.g. /data/SceneUnderstanding
+        # This assumes a structure like /path/to/data/ScanNet/scans/scene...
+        video_folder = str(Path(*video_path.parts[:-3]))
 
         if len(video_frames) > self.num_frames:
             sample_factor = len(video_frames) // self.num_frames
@@ -204,16 +226,13 @@ class RGBDVideoProcessor(ProcessorMixin):
         for frame in sample_frames:
             pose = np.array(video_info[frame]['pose']) # 4x4 array
             image = os.path.join(video_folder, frame)
-            if 'ScanNet' in frame:
-                depth = os.path.join(video_folder, video_info[frame]['depth'])
-            elif '3rscan' in frame:
-                depth = os.path.join(video_folder, frame.replace('color.jpg', 'depth.png').replace('3rscan', '3rscan_depth'))
-            elif 'matterport' in frame:
-                depth = os.path.join(video_folder, video_info[frame]['depth'])
+            depth = os.path.join(video_folder, video_info[frame]['depth'])
+            
+            if dataset == 'matterport3d':
+                # This logic seems to be based on per-frame intrinsics
                 intrinsic = np.array(video_info[frame]['intrinsic'])
-                intrinsics.append(intrinsic)  # (4, 4)
-            else:
-                raise NotImplementedError
+                intrinsics.append(intrinsic)
+                
             images.append(image)
             depths.append(depth)
             poses.append(pose)
@@ -223,11 +242,12 @@ class RGBDVideoProcessor(ProcessorMixin):
         if dataset == 'matterport3d':
             intrinsic_file = np.stack(intrinsics, axis=0) # Vx4x4 array
         else:
-            intrinsic_file = np.array(video_info['intrinsic']) # 4x4 array
-            depth_intrinsic_file = np.array(video_info['depth_intrinsic'])  # 4x4 array
+            # Assumes scene-level intrinsics
+            intrinsic_file = np.array(scene_info['intrinsic']) # 4x4 array
+            depth_intrinsic_file = np.array(scene_info['depth_intrinsic'])  # 4x4 array
             sampled_video_info['depth_intrinsic_file'] = depth_intrinsic_file
 
-        axis_align_matrix_file = np.array(video_info['axis_align_matrix'])  # 4x4 array
+        axis_align_matrix_file = np.array(scene_info['axis_align_matrix'])  # 4x4 array
         sampled_video_info['sample_image_files'] = images
         sampled_video_info['sample_depth_image_files'] = depths
         sampled_video_info['sample_pose_files'] = poses

@@ -156,8 +156,8 @@ def load_pretrained_model_llava(model_path, model_base, model_name, load_8bit=Fa
         vision_tower = model.get_vision_tower()
         if not vision_tower.is_loaded:
             vision_tower.load_model(device_map=device_map)
-        if device_map != 'auto':
-            vision_tower.to(device=device_map, dtype=torch.float16)
+        # if device_map != 'auto':
+        #     vision_tower.to(device=device_map, dtype=torch_dtype)
         image_processor = vision_tower.image_processor
 
     if hasattr(model.config, "max_sequence_length"):
@@ -305,7 +305,8 @@ def load_pretrained_model(model_path, model_base, model_name, torch_dtype=torch.
             vision_tower = model.get_vision_tower()
             if not vision_tower.is_loaded:
                 vision_tower.load_model(device_map=device_map)
-            vision_tower.to(device=device, dtype=torch_dtype)
+            # if device_map != 'auto':
+            #     vision_tower.to(device=device, dtype=torch_dtype)
             image_processor = vision_tower.image_processor
             processor['image'] = image_processor
 
@@ -313,7 +314,8 @@ def load_pretrained_model(model_path, model_base, model_name, torch_dtype=torch.
             video_tower = model.get_video_tower()
             if not video_tower.is_loaded:
                 video_tower.load_model()
-            video_tower.to(device=device, dtype=torch_dtype)
+            # if device_map != 'auto':
+            #     video_tower.to(device=device, dtype=torch_dtype)
             video_processor = video_tower.video_processor
             processor['video'] = video_processor
 

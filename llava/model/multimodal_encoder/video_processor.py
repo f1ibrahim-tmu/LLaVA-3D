@@ -176,33 +176,29 @@ class RGBDVideoProcessor(ProcessorMixin):
     def extract_embodiedscan_video(self, video):
         # video is the full path for the video, e.g., /data/SceneUnderstanding/ScanNet/scans/scene0356_00
         video_path = Path(video)
-        scene_name = video_path.name # e.g., 'scene0356_00'
-        dataset = 'ScanNet' # FIXME: Avoid hardcoding the dataset prefix
+        scene_name = video_path.name  # e.g., 'scene0191_00'
+        dataset = 'scannet'  # lowercase to match your JSON
 
-        # The keys in the JSON are like "ScanNet/scans/scene0191_00/...".
-        # We need to find all keys that contain the scene_name.
+        # Get the scene dictionary
+        scene_key = f"{dataset}/{scene_name}"
+        if scene_key not in self.scene:
+            raise ValueError(f"Scene key '{scene_key}' not found in annotation file.")
+
+        scene_dict = self.scene[scene_key]
+
+        # Now filter frame keys within the scene dictionary
         search_prefix = f"ScanNet/scans/{scene_name}/"
-        
-        # Filter the keys from the JSON to get all frames for this scene.
-        video_frames = sorted([key for key in self.scene.keys() if key.startswith(search_prefix)])
-        
+        video_frames = sorted([key for key in scene_dict.keys() if key.startswith(search_prefix)])
+
         if not video_frames:
             raise ValueError(f"No frames found for scene '{scene_name}'. "
-                             f"Searched for keys starting with '{search_prefix}'. "
-                             f"Please check your --video-path and the keys in your annotation file. "
-                             f"Example key from annotation file: 'ScanNet/scans/scene0191_00/...'")
+                             f"Searched for keys starting with '{search_prefix}' in scene '{scene_key}'. "
+                             f"Example key from annotation file: '{list(scene_dict.keys())[0]}'")
 
         # The original code expects video_info to be a dictionary of frame_key -> frame_data for the scene.
-        video_info = {frame: self.scene[frame] for frame in video_frames}
-        scene_info_key = f"scannet/{scene_name}"
-        if scene_info_key not in self.scene:
-            raise ValueError(f"Scene metadata key '{scene_info_key}' not found in annotation file. "
-                             f"The file should contain scene-level metadata for intrinsics and axis alignment.")
-        scene_info = self.scene[scene_info_key]
-
+        video_info = {frame: scene_dict[frame] for frame in video_frames}
 
         # The base folder where data is stored, e.g. /data/SceneUnderstanding
-        # This assumes a structure like /path/to/data/ScanNet/scans/scene...
         video_folder = str(Path(*video_path.parts[:-3]))
 
         if len(video_frames) > self.num_frames:
@@ -242,12 +238,12 @@ class RGBDVideoProcessor(ProcessorMixin):
         if dataset == 'matterport3d':
             intrinsic_file = np.stack(intrinsics, axis=0) # Vx4x4 array
         else:
-            # Assumes scene-level intrinsics
-            intrinsic_file = np.array(scene_info['intrinsic']) # 4x4 array
-            depth_intrinsic_file = np.array(scene_info['depth_intrinsic'])  # 4x4 array
+            # Assumes scene-level intrinsics are stored in scene_dict
+            intrinsic_file = np.array(scene_dict['intrinsic']) # 4x4 array
+            depth_intrinsic_file = np.array(scene_dict['depth_intrinsic'])  # 4x4 array
             sampled_video_info['depth_intrinsic_file'] = depth_intrinsic_file
 
-        axis_align_matrix_file = np.array(scene_info['axis_align_matrix'])  # 4x4 array
+        axis_align_matrix_file = np.array(scene_dict['axis_align_matrix'])  # 4x4 array
         sampled_video_info['sample_image_files'] = images
         sampled_video_info['sample_depth_image_files'] = depths
         sampled_video_info['sample_pose_files'] = poses
